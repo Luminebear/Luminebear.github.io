@@ -21,6 +21,11 @@
 </div><!-- /.entry-header -->
 {% endif %}
 
+<!--for mathjax supporting-->
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
+
 <div id="main" role="main">
   <article class="hentry">
     <header class="header-title">
