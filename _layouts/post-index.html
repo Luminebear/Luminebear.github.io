@@ -29,6 +29,7 @@
 
 <div id="main" role="main">
   {{ content }}
+  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </div><!-- /#main -->
 
 <div class="footer-wrapper">
