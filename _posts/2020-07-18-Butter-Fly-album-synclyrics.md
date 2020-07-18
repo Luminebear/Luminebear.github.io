@@ -1,5 +1,5 @@
 ---
-layout: Post
+layout: default
 title: "Butter-Fly앨범 싱크가사"
 tags: [Butter-Fly, DigimonAdventure, lrc, 디지몬, 버터플라이, 디지몬어드벤처, 싱크가사] # 태그 입력
 mathjax: false # MathJax 사용을 위한 태그
