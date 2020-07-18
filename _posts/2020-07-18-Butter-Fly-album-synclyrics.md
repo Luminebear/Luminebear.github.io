@@ -7,6 +7,7 @@ image:
   path: /images/abstract-5.jpg
   feature: abstract-5.jpg
 comments: true
+published: false
 ---
 
 안녕하세요. Luminebear입니다. 
