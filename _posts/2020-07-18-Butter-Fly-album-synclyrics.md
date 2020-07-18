@@ -27,7 +27,7 @@ comments: false
 * 그래도 적용이 안되시면, 제일 위 상단에 있는 <br> [ti:곡의제목] [ar:아티스트] [al:앨범이름] <br> 을 확인하여 곡과 동일하게 맞춰주세요. 저의 경우 아티스는 전영호님으로, 앨범이름은 Butter-Fly로 했습니다.
 
 # 1. Butter-Fly
-```lrc
+```
 [ti:Butter-Fly]
 [ar:전영호]
 [al:Butter-Fly]
@@ -85,7 +85,7 @@ comments: false
 ```
 
 # 2. Brave Heart
-```lrc
+```
 [ti:Brave Heart]
 [ar:전영호]
 [al:Butter-fly]
@@ -125,7 +125,7 @@ comments: false
 ```
 
 # 3. Butter-Fly (Ballad ver.)
-```lrc
+```
 [ti:Butter Fly (Ballad Ver.)]
 [ar:전영호]
 [al:Butter-fly]
@@ -180,7 +180,7 @@ comments: false
 ※ Butter-Fly (Ballad ver.)의 Oh my love 부분이 길어 끊었습니다. 그 위로 채워주시면 되겠습니다.
 
 # 4. Butter-Fly (우리들의 War Game Ver.)
-```lrc
+```
 [ti:Butter Fly (우리들의 War Game Ver.)]
 [ar:전영호]
 [al:Butter-fly]
