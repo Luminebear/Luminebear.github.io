@@ -6,6 +6,7 @@ tags:
     - Jekyll
     - LaTeX
 mathjax: true # MathJax 사용을 위한 태그
+comments: true # 댓글기능
 ---
 
 다음과 같은 표현은 " \$ ... \$ "를 이용한 문장 내 수식 표현입니다.

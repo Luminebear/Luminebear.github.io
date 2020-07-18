@@ -6,7 +6,7 @@ mathjax: false # MathJax 사용을 위한 태그
 image:
   path: /images/abstract-5.jpg
   feature: abstract-5.jpg
-comments: true
+comments: false
 ---
 
 안녕하세요. Luminebear입니다. 
