@@ -1,10 +1,6 @@
 ---
 title: "Jekyll Github 블로그에 MathJax를 이용한 수학식 테스트"
-tags:
-    - Blog
-    - MathJax
-    - Jekyll
-    - LaTeX
+tags: [MathJax, Jekyll, LaTeX]
 mathjax: true # MathJax 사용을 위한 태그
 comments: false # 댓글기능
 ---
