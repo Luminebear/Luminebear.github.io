@@ -13,10 +13,10 @@ $front-page-feature-image-height : 400px; // min 150px recommended
    Typography
    ========================================================================== */
 
-$base-font                       : 'Lato', Calibri, Arial, sans-serif;
-$heading-font                    : $base-font;
+$base-font                       : 'NanumSquareRound', 'Lato', Calibri, Arial, sans-serif;
+$heading-font                    : 'NanumSquare';
 $caption-font                    : $base-font;
-$code-font                       : monospace;
+$code-font                       : 'Nanum Gothic Coding', monospace;
 $alt-font                        : serif;
 
 $doc-font-size                   : 16;

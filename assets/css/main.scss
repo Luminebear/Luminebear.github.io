@@ -26,3 +26,7 @@ sitemap: false
 @import "animations";
 @import "dl-menu";
 @import "page";
+// custom fonts (USER ADDED)
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css); // NanumSquare for Title font
+@import url(https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css); // NanumSquareRound for main font
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css); // NanumGothicCoding for Coding font
