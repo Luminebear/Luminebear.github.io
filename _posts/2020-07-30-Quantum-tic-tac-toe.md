@@ -34,7 +34,7 @@ Tic-Tac-Toe는 간단하게 말해 '오목' '빙고' 비슷한 것이라고 보�
 너무나 간단해서 오목이나 빙고보다 재미가 **없을 수 밖에 없다!!** 하지만, 이렇게 간단하기 때문에 양자현상을 접목시키기 더 편리하다.
 기존 게임이 복잡할 수록 고려해야 할 것이 너무 많기 때문이다. 
 
-<figure class=>
+<figure>
 	<img src="/images/Classical Tic-Tac-Toe.png" alt="">
 	<figcaption>Tic-Tac-Toe 게임의 예시. Player O가 한줄을 먼저 만들었기 때문에 승리했다.</figcaption>
 </figure>
@@ -74,21 +74,21 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   \end{align}
   $$
   이 되는 것으므로 결국 1의 확률로 확정적으로 마킹한 칸에 있게 되는 것이다. 고전적인 Tic-Tac-Toe와 다른 것이 없다.
-  <figure class=>
+  <figure>
 	<img src="/images/Quantum Tic-Tac-Toe.png" alt="">
 	<figcaption>Quantum Tic-Tac-Toe의 예제.</figcaption>
   </figure>
 
 ## 3. Cyclic Entanglement
   이 현상은 두 플레이어가 게임을 하고 있는 도중에 나타나는 현상이다. 다음의 예시를 살펴보도록 하자.
-  <figure class=>
+  <figure>
 	<img src="/images/Cyclic Entanglement.png" alt="">
 	<figcaption>예제에서 Cyclic Entanglement가 형성이 된 모습.</figcaption>
   </figure>
 
 
-\[^1]: 여기서 이러한 단어를 **굳이** 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한
+[^1]: 여기서 이러한 단어를 **굳이** 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한
 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 '슈뢰딩거 고양이'현상을 아무 생각없이 현실적으로
 (고전적인 계에서)일어난다고 보고 그대로 대입하는... 어처구니 없는 행동이 있다.
-\[^2]: 앞으로는 기존의 Tic-Tac-Toe를 '고전적인(Classical) Tic-Tac-Toe'라고 지칭을 하겠다. 물리학에서는 양자계 이전의 계를
+[^2]: 앞으로는 기존의 Tic-Tac-Toe를 '고전적인(Classical) Tic-Tac-Toe'라고 지칭을 하겠다. 물리학에서는 양자계 이전의 계를
 '고전적(Classical)' 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다.
