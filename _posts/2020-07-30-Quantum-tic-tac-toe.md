@@ -5,10 +5,10 @@ tags: [Phyiscs, QuantumMechanics, Gametheory, tic-tac-toe, 물리학, 양자역�
 categories: Physics
 mathjax: true # MathJax 사용을 위한 태그
 image:
-  path: /images/abstract-5.jpg
-  feature: abstract-5.jpg
+  path: /images/abstract-6.jpg
+  feature: abstract-6.jpg
 comments: true
-published: false
+published: true
 ---
 
 # Intro
@@ -34,8 +34,13 @@ Tic-Tac-Toe는 간단하게 말해 '오목' '빙고' 비슷한 것이라고 보�
 너무나 간단해서 오목이나 빙고보다 재미가 **없을 수 밖에 없다!!** 하지만, 이렇게 간단하기 때문에 양자현상을 접목시키기 더 편리하다.
 기존 게임이 복잡할 수록 고려해야 할 것이 너무 많기 때문이다. 
 
+<figure class=>
+	<img src="/images/Classical Tic-Tac-Toe.png" alt="">
+	<figcaption>Tic-Tac-Toe 게임의 예시. Player O가 한줄을 먼저 만들었기 때문에 승리했다.</figcaption>
+</figure>
+
 # Quantum Tic-Tac-Toe의 게임방식
-Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 기존의 Tic-Tac-Toe의 Rule을 포함하고, 여기서 양자 현상을 게임에 접목시킨 
+Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic-Tac-Toe[^2]의 Rule을 포함하고, 여기서 양자 현상을 게임에 접목시킨 
 새로운 Rule을 추가한다. 추가된 Rule은 다음과 같다.
 
 * 플레이어는 자기차례가 되면 **동일한 칸을 제외한** 두 개의 칸에 마킹
@@ -46,6 +51,44 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 기존의 Tic
 일단 한 플레이어가 하나를 마킹하던 것을 두 개 마킹함으로 복잡해졌다. 그만큼 제한조건이 생겼는데, 바로 2번째 특정상황. 이것에 대해서는
 게임방법을 살펴보면서 알아보도록 하자.
 
+# Quantum Tic-Tac-Toe의 게임방법
+## 1. 기존의 Tic-Tac-Toe 규칙을 그대로 적용
+  우리가 Quantum System을 관측하게 되면 곧바로 기존의 Classical System으로 붕괴하는 것이 된다. 또한 Quantum System은
+  Classical System으로 회귀하는 대응원리가 있으므로 이 규칙을 그대로 적용한다. 다만 다음 항목부터는 양자계에서 일어난다고
+  가정하고 서술한다.
+
+## 2. Player는 자기차례일 때 **동일한 칸을 제외한** 두 개의 칸에 마킹
+  앞에서 설명한 것으로, 두 개의 칸에 마킹을 할 수 있지만, 동일한 칸에는 마킹하는 것이 불가능 하다. 이는 그렇게 하면 게임이
+  재미 없고, 또 동일한 칸에 마킹을 한다는 것은 결국 고전적으로 마킹한 것이나 다름이 없다. 보다 수학적으로 서술하면, 
+  Player Alice가 처음 시도한 횟수를
+  $$
+  \begin{align}
+  |T_1>_{A} = \frac{1}{\sqrt{2}}(|T_{11}> + |T_{12}>)
+  \end{align}
+  $$
+  이라고 할 수 있다. 그런데 여기서 같은 칸에 마킹을 한다는 것은,
+  $$
+  \begin{align}
+  |T_1>_{A} = \frac{1}{\sqrt{2}}(|T_{11}> + |T_{11}>) \\
+  |T_1>_{A} = |T_{11}>
+  \end{align}
+  $$
+  이 되는 것으므로 결국 1의 확률로 확정적으로 마킹한 칸에 있게 되는 것이다. 고전적인 Tic-Tac-Toe와 다른 것이 없다.
+  <figure class=>
+	<img src="/images/Quantum Tic-Tac-Toe.png" alt="">
+	<figcaption>Quantum Tic-Tac-Toe의 예제.</figcaption>
+  </figure>
+
+## 3. Cyclic Entanglement
+  이 현상은 두 플레이어가 게임을 하고 있는 도중에 나타나는 현상이다. 다음의 예시를 살펴보도록 하자.
+  <figure class=>
+	<img src="/images/Cyclic Entanglement.png" alt="">
+	<figcaption>예제에서 Cyclic Entanglement가 형성이 된 모습.</figcaption>
+  </figure>
+
+
 \[^1]: 여기서 이러한 단어를 **굳이** 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한
 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 '슈뢰딩거 고양이'현상을 아무 생각없이 현실적으로
 (고전적인 계에서)일어난다고 보고 그대로 대입하는... 어처구니 없는 행동이 있다.
+\[^2]: 앞으로는 기존의 Tic-Tac-Toe를 '고전적인(Classical) Tic-Tac-Toe'라고 지칭을 하겠다. 물리학에서는 양자계 이전의 계를
+'고전적(Classical)' 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다.
