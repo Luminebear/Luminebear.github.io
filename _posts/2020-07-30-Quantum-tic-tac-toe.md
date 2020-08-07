@@ -61,18 +61,22 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   앞에서 설명한 것으로, 두 개의 칸에 마킹을 할 수 있지만, 동일한 칸에는 마킹하는 것이 불가능 하다. 이는 그렇게 하면 게임이
   재미 없고, 또 동일한 칸에 마킹을 한다는 것은 결국 고전적으로 마킹한 것이나 다름이 없다. 보다 수학적으로 서술하면, 
   Player Alice가 처음 시도한 횟수를
+  
   $$
   \begin{align}
   |T_1>_{A} = \frac{1}{\sqrt{2}}(|T_{11}> + |T_{12}>)
   \end{align}
   $$
+  
   이라고 할 수 있다. 그런데 여기서 같은 칸에 마킹을 한다는 것은,
+  
   $$
   \begin{align}
   |T_1>_{A} = \frac{1}{\sqrt{2}}(|T_{11}> + |T_{11}>) \\
   |T_1>_{A} = |T_{11}>
   \end{align}
   $$
+  
   이 되는 것으므로 결국 1의 확률로 확정적으로 마킹한 칸에 있게 되는 것이다. 고전적인 Tic-Tac-Toe와 다른 것이 없다.
   <figure>
 	<img src="/images/Quantum Tic-Tac-Toe.png" alt="">
@@ -85,7 +89,31 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 	<img src="/images/Cyclic Entanglement.png" alt="">
 	<figcaption>예제에서 Cyclic Entanglement가 형성이 된 모습.</figcaption>
   </figure>
+  그림을 살펴보면 Player O가 6번째 ($O_{6}$)에 놓은 상황에서, 하나의 **Cycle**이 형성되는 것을 확인할 수 있는데,
+  하나씩 순서를 살펴보면,
+  
+  $$
+  \begin{equation}
+  O_{6}_{1,1} \rightarrow O_{6}_{3,3} \rightarrow X_{5}_{1,1} \rightarrow X_{5}_{2,3} \rightarrow O_{4}_{2,3} 
+  \rightarrow O_{4}_{1,1} \rightarrow O_{6}_{1,1}
+  \end{equation}
+  $$
+  
+  와 같이 순환 고리가 형성이 된다. 이를 **Cyclic Entanglement** 라고 부른다. 이 때 상대 Player X는 이 Cycle을 **붕괴(Collapse)**
+  해주어야 한다. 이 상황을 붕괴 시키는 방법은 Player O가 최종적으로 놓았던 위치,
+  
+  $$
+  \begin{equation}
+  O_{6}_{1,1} \qquad O_{6}_{3,3}
+  \end{equation}
+  $$
+  
+  둘 중에 $O_{6}$를 측정할 위치를 선택해야 한다.
+
+## 4. Collapse
+### Case 1. $O_{6}_{1,1}$ 을 선택하는 경우
+### Case 2. $O_{6}_{3,3}$ 을 선택하는 경우
 
 
 [^1]: 여기서 이러한 단어를 **굳이** 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 '슈뢰딩거 고양이'현상을 아무 생각없이 현실적으로 (고전적인 계에서)일어난다고 보고 그대로 대입하는... 어처구니 없는 행동이 있다.
-[^2]: 앞으로는 기존의 Tic-Tac-Toe를 '고전적인(Classical) Tic-Tac-Toe'라고 지칭을 하겠다. 물리학에서는 양자계 이전의 계를 '고전적(Classical)' 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다.
+[^2]: 앞으로는 기존의 Tic-Tac-Toe를 '고전적인(Classical) Tic-Tac-Toe'라고 지칭을 하겠다. 물리학에서는 양자계 이전까지의 계를 '고전적(Classical)' 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다.
