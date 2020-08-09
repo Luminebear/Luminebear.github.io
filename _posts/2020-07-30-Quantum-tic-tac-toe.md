@@ -176,10 +176,10 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 
   ----
 
-  # Quantum Tic-Tac-Toe에서 발생할 수 있는 상황
+# Quantum Tic-Tac-Toe에서 발생할 수 있는 상황
   * 측정 후 동시에 서로 한 줄을 만들었을 때
 
-  # References
+# References
   *  Goff, Allan; Lehmann, Dale; Siegel, Joel (2002-07-07). "Quantum Tic-Tac-Toe, Spooky-Coins & Magic-Envelopes, as Metaphors for Relativistic Quantum Physics"
   * Wikipedia [Quantum Tic-Tac-Toe](https://en.wikipedia.org/wiki/Quantum_tic-tac-toe)
 
