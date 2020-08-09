@@ -35,7 +35,7 @@ Tic-Tac-Toe는 간단하게 말해 '오목' '빙고' 비슷한 것이라고 보�
 기존 게임이 복잡할 수록 고려해야 할 것이 너무 많기 때문이다. 
 
 <figure>
-	<img src="/images/Classical Tic-Tac-Toe.png" alt="">
+	<img src="/images/Classical Tic-Tac-Toe.png" alt="" class="center">
 	<figcaption>Tic-Tac-Toe 게임의 예시. Player O가 한줄을 먼저 만들었기 때문에 승리했다.</figcaption>
 </figure>
 
@@ -79,14 +79,14 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   
   이 되는 것으므로 결국 1의 확률로 확정적으로 마킹한 칸에 있게 되는 것이다. 고전적인 Tic-Tac-Toe와 다른 것이 없다.
   <figure>
-	<img src="/images/Quantum Tic-Tac-Toe.png" alt="">
+	<img src="/images/Quantum Tic-Tac-Toe.png" alt="" class="center">
 	<figcaption>Quantum Tic-Tac-Toe의 예제.</figcaption>
   </figure>
 
 ## 3. Cyclic Entanglement
   이 현상은 두 플레이어가 게임을 하고 있는 도중에 나타나는 현상이다. 다음의 예시를 살펴보도록 하자.
   <figure>
-	<img src="/images/Cyclic Entanglement.png" alt="">
+	<img src="/images/Cyclic Entanglement.png" alt="" class="center">
 	<figcaption>예제에서 Cyclic Entanglement가 형성이 된 모습.</figcaption>
   </figure>
   그림을 살펴보면 Player O가 6번째 ($O_{6}$)에 놓은 상황에서, 하나의 **Cycle**이 형성되는 것을 확인할 수 있는데,
@@ -113,20 +113,20 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 ## 4. Collapse
   Player X는 ${O_{6}}$가 중첩된 위치 (1,1)과 (3,3)에 대하여 선택을 해야한다.
   <figure>
-	<img src="/images/Cyclic Entanglement O6.png" alt="">
+	<img src="/images/Cyclic Entanglement O6.png" alt="" class="center">
   </figure>
 
 ### Case 1. ${O_{6}}_{(1,1)}$ 을 선택하는 경우
   Player X가 (1,1)에 위치한 ${O_{6}}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.
   <figure>
-	<img src="/images/Collapse_O6(1,1).png" alt="">
+	<img src="/images/Collapse_O6(1,1).png" alt="" class="center">
 	<figcaption>(1,1)에 위치한 O6를 선택했을 때 발생한 붕괴상태</figcaption>
   </figure>
   하나씩 순서를 살펴보도록 하자.
 
   1. ${O_{6}}_{(1,1)}$을 선택했기 때문에, 이 자리에는 반드시 $O_6$가 있어야 한다.
-  2. 자리에 있던 ${O_{4}}_{(1,1)}$, ${X_{3}}_{(1,1)}$는 다른 자리에 중첩되어 있는 
-  ${O_{4}}_{(2,3)}$, ${X_{3}}_{(3,2)}$ 에 존재하게 된다.
+  2. 같은 자리에 있던 $${O_{4}}_{(1,1)}, \qquad {X_{3}}_{(1,1)}$$는 다른 자리에 중첩되어 있는 
+  $${O_{4}}_{(2,3)}, {X_{3}}_{(3,2)}$$ 에 존재하게 된다.
   3. 이 때 ${X_{3}}_{(3,2)}$는 다른 종속된 변수들이 없기 때문에, 충돌하는 것이 없지만,
   ${O_{4}}_{(2,3)}$은 ${X_{5}}_{(2,3)}$과 충돌한다. 이 경우에는, ${O_{4}}_{(2,3)}$가 자리를 차지하게 된다.
   그럴 수 밖에 없는데, 이는
@@ -138,7 +138,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   이고 Player X가 측정을 할 때 ${O_{6}}_{(1,1)}$를 선택하였기 때문에, 고전적인 상황에서는 반드시 
   ${O_{4}}_{(2,3)}$가 모습을 드러내야 한다. 이는 Entanglement 현상 때문이다.
   4. 한편 ${X_{5}}$는 (2,3)과 (3,3)으로 중첩되어 있으며 역시 Entanglement 때문에 (3,3)이 발현되어야 한다.
-  같은 자리에 있는 ${O_{6}}_{(2,3)}$는 이미 (1,1)에서 측정하였기에 Classical 상황에서는 나타나지 않으며, 따라서
+  같은 자리에 있는 ${O_{6}}_{(2,3)}$ 는 이미 (1,1)에서 측정하였기에 Classical 상황에서는 나타나지 않으며, 따라서
   ${O_{2}}_{(3,3)}$를 고려해주어야 하는데, 이 때 ${X_{5}}$가 발현되기 때문에 역시 ${O_{2}}_{(3,3)}$가 측정되는
   확률은 낮다.
   5. ${O_{2}}$는 (3,3)과 (2,2)에 중첩되어 있다. (2,2)에 위치한 ${O_{2}}$는 어떠한 것과도 연관되어
@@ -149,7 +149,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 ### Case 2. ${O_{6}}_{(3,3)}$ 을 선택하는 경우
   Player X가 (3,3)에 위치한 ${O_{6}}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.
   <figure>
-	<img src="/images/Collapse_O6(3,3).png" alt="">
+	<img src="/images/Collapse_O6(3,3).png" alt="" class="center">
 	<figcaption>(3,3)에 위치한 O6를 선택했을 때 발생한 붕괴상태</figcaption>
   </figure>
 
