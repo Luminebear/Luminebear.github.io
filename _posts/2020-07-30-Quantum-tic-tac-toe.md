@@ -25,7 +25,7 @@ published: true
 <div markdown="0"><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe" class="btn btn-info">Wikipedia Post 이동하기</a></div>
 
 # 잠깐... Tic-Tac-Toe는 뭘까요?
-Tic-Tac-Toe는 간단하게 말해 '오목' '빙고' 비슷한 것이라고 보면 된다. 물론 이들 게임보다는 재미가 없다. 이 게임에 대한 룰을 써보면,
+Tic-Tac-Toe는 간단하게 말해 **'오목' '빙고'** 비슷한 것이라고 보면 된다. 물론 이들 게임보다는 재미가 없다. 이 게임에 대한 룰을 써보면,
 
 * 두 명이서 플레이
 * 3x3의 칸으로 이루어진 판에서 번갈아가며 마킹
@@ -72,8 +72,8 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   
   $$
   \begin{align}
-  |T_1>_{A} = \frac{1}{\sqrt{2}}(|T_{11}> + |T_{11}>) \\
-  = |T_{11}>
+  |T_1>_{A} & = \frac{1}{\sqrt{2}}(|T_{11}> + |T_{11}>) \\
+  & = |T_{11}>
   \end{align}
   $$
   
@@ -133,7 +133,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   그럴 수 밖에 없는데, 이는
   $$
   \begin{align}
-  |T_{4}>_X = \frac{1}{\sqrt{2}}({|T_{4}>_{O}}_{(1,1)} + {|T_{4}>_{O}}_{(2,3)})
+  |T_{4}>_O = \frac{1}{\sqrt{2}}({|T_{4}>_{O}}_{(1,1)} + {|T_{4}>_{O}}_{(2,3)})
   \end{align}
   $$
   이고 Player X가 측정을 할 때 ${O_6}\_{(1,1)}$를 선택하였기 때문에, 고전적인 상황에서는 반드시 
@@ -155,6 +155,33 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 	<img src="/images/Collapse_O6(3,3).png" alt="" class="center">
 	<figcaption>(3,3)에 위치한 O6를 선택했을 때 발생한 붕괴상태</figcaption>
   </figure>
+  놀랍게도 Case 1과 다르게 O가 한 줄을 만들어 내어 승리했다! 순서를 살펴보도록 하자.
+
+  ----
+
+  1. ${O_6}\_{(3,3)}$을 선택했기 때문에, 이 자리에는 반드시 $O_6$가 있어야 한다.
+  2. 따라서 같은 자리에 있는 ${O_2}\_{(3,3)}$, ${X_5}\_{(3,3)}$은 다른 자리에 중첩되어 있는 ${O_2}\_{(2,2)}$, ${X_5}\_{(2,3)}$에 존재하게 된다.
+  3. ${O_2}\_{(2,2)}$에는 어떠한 것과도 관련이 없으므로, Classical로 돌아가면 O로 측정된다.
+  4. 한편 (2,3)에는 ${X_5}\_{(2,3)}$, ${O_4}\_{(2,3)}$이 존재한다. 이 때 측정되는 것은 $X_5$ 인데, 앞의 경우와 같이
+  $$
+  \begin{align}
+  |T_{5}>_X = \frac{1}{\sqrt{2}}({|T_{5}>_X}_{(2,3)} + {|T_{5}>_X}_{(3,3)})
+  \end{align}
+  $$
+  이고 Player X가 측정할 때 ${O_6}\_{(3,3)}$을 측정하였으므로 고전적인 상황에서는 반드시 
+  ${X_5}\_{(2,3)}$가 모습을 드러내야 한다.
+  5. 마찬가지로 $O_4$는 (1,1)에서 측정이 되고, 자연스레 ${X_3}\_{(1,1)}$는 측정되지 않고 (3,2)에 있는
+  ${X_3}\_{(2,3)}$이 모습을 드러낸다.
+  6. 한편 Case 1과 같이 ${X_1}$은 어떠한 것과도 얽혀있지 않기 때문에 Quantum State를 유지한다.
+
+  ----
+
+  # Quantum Tic-Tac-Toe에서 발생할 수 있는 상황
+  * 측정 후 동시에 서로 한 줄을 만들었을 때
+
+  # References
+  *  Goff, Allan; Lehmann, Dale; Siegel, Joel (2002-07-07). "Quantum Tic-Tac-Toe, Spooky-Coins & Magic-Envelopes, as Metaphors for Relativistic Quantum Physics"
+  * Wikipedia [Quantum Tic-Tac-Toe](https://en.wikipedia.org/wiki/Quantum_tic-tac-toe)
 
 [^1]: 여기서 이러한 단어를 **굳이** 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 '슈뢰딩거 고양이'현상을 아무 생각없이 현실적으로 (고전적인 계에서)일어난다고 보고 그대로 대입하는... 어처구니 없는 행동이 있다.
 [^2]: 앞으로는 기존의 Tic-Tac-Toe를 '고전적인(Classical) Tic-Tac-Toe'라고 지칭을 하겠다. 물리학에서는 양자계 이전까지의 계를 '고전적(Classical)' 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다.
