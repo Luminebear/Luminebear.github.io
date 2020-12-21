@@ -3,6 +3,7 @@ layout: post
 title: "Quantum Tic-Tac-Toe"
 tags: [Phyiscs, QuantumMechanics, Gametheory, tic-tac-toe, 물리학, 양자역학, 게임이론, 틱택토] # 태그 입력
 categories: Physics
+toc: true
 mathjax: true # MathJax 사용을 위한 태그
 image:
   path: /images/abstract-6.jpg
