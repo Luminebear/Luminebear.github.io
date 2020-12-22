@@ -1,23 +1,24 @@
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        TeX: {
-          equationNumbers: {
-            autoNumber: "AMS"
-          }
-        },
-        tex2jax: {
-        inlineMath: [ ['$', '$'] ],
-        displayMath: [ ['$$', '$$'] ],
-        processEscapes: true,
-      }
-    });
-    MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
-          alert("Math Processing Error: "+message[1]);
-        });
-    MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
-          alert("Math Processing Error: "+message[1]);
-        });
+<script>
+  window.MathJax = {
+    loader: {
+      load: ['input/tex', 'output/svg'] // input options: input/tex-base, input/tex, input/tex-full
+    },
+    tex: {
+      packages: {'[+]': ['physics']},
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams', // tag equations used ams packages
+      tagSide: 'right',
+      tagIndent: "0.8em"
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
 </script>
 <script id="MathJax-script" async 
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-</script>
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+</script> <!-- MathJax 3.0 Startup & Configurations -->
+<script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script> <!-- MathJax 3.0 Loading -->
