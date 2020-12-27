@@ -6,8 +6,8 @@ categories: Physics
 toc: true
 mathjax: true # MathJax 사용을 위한 태그
 image:
-  path: /images/abstract-3.jpg
-  feature: abstract-3.jpg
+  path: /images/abstract-6.jpg
+  feature: abstract-6.jpg
 comments: true
 published: true
 ---
@@ -16,7 +16,7 @@ published: true
 양자 정보와 양자 컴퓨팅에 대한 개념은 위대한 물리학자 Richard P. Feynman의 논문[^1]으로 시작되는 것으로 알고 있다. 아직까지도 연구되고 있는 이 분야는,
 양자 정보를 기반으로 한 양자 컴퓨터의 경우 엄청난 연산 능력으로 인해 슈퍼컴퓨터가 며칠을 걸려서 풀어낼 문제를 단시간에 풀어낸다. 한편 현재의 컴퓨터는 거의 성능 향상의
 상한선에 위치하고 있는 데, 이는 현재 개발되고 있는 CPU의 집적도만 봐도 알 수 있다. 게시글을 쓴 날짜를 기준으로 7nm의 간격을 가지는 CPU가 만들어지고 있는데, 원자들의 간격이 
-$\unicode{xC5}$ (Angstrom, equals to 0.1nm) 인 것을 고려하면 어쩔 수 없이 한계점에 다다른 것을 생각해볼 수 있다.
+'A' (Angstrom, equals to 0.1nm) 인 것을 고려하면 어쩔 수 없이 한계점에 다다른 것을 생각해볼 수 있다.
 
 정말 애석하게도 양자 정보, 양자 컴퓨팅은 아직까지 연구되고 있는 분야라 그런지, 뭔가 딱히 어디서부터 시작해야 될지 알 수가 없다는 게 단점이라고 생각한다.
 지금은 어느 정도 어떻게 진행하면 될 지 조금은 보이기 시작했지만, 그래도 정리를 해두고 가는 게 나을 것 같아서, 오랜만에 블로그 포스팅을 추가하게 되었다.
