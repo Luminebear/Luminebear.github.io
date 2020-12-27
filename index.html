@@ -10,6 +10,22 @@ image:
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
 
+<header class="site-category">
+  <h1>Categories</h1>
+  <ul>
+    
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <div markdown="0"><a class="category-link {% if page.url == node.url %} active{% endif %} btn btn-primary"
+          href="{{ site.baseurl }}{{ node.url }}"><b>{{ node.title }}</b></a></div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+</ul>
+</header>
 {% for post in paginator.posts %}
 <article class="hentry">
   <header>
