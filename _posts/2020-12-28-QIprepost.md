@@ -46,7 +46,7 @@ toc_sticky: true
 > David J. Griffiths, Introduction to Quantum Mechanics
 
 이 책으로만 공부했다면 개념정립에 어려움을 겪을 수 있다. 양자역학을 공부하기에는 더할 나위 없이 가장 좋은 입문서이지만, 이 책의 가장 큰 단점인 '파동함수와 슈뢰딩거 방정식'을 깔고 모든 것을
-설명하는 점 때문에 양자 정보 공부에는 적합하지 않다고 생각한다. 우리가 눈에 보이는 것이 파동이라 그렇지 사실은 양자계(Quantum System)가 Hilbert Space에서 P.A.M Dirac의 Bra-Ket을 기본으로 
+설명하는 점 때문에 양자 정보 공부에는 적합하지 않다고 생각한다[^3]. 우리가 눈에 보이는 것이 파동이라 그렇지 사실은 양자계(Quantum System)가 Hilbert Space에서 P.A.M Dirac의 Bra-Ket을 기본으로 
 깔고 간다는 점을 생각해보면 아이러니하다. 그러므로 현재까지 보았던 책들 중에서는
 
 > Richard P. Feynman, Lectures on Physics Vol 3
@@ -57,6 +57,13 @@ toc_sticky: true
 생각이 된다. 
 
 # 양자 정보 및 양자 컴퓨팅 학습을 위한 참고자료
+현재 양자 정보학을 한국어로 공부하기는 가장 좋은 교재는 단연
+
+> 이해웅, 양자 정보학 강의
+
+라고 말할 수 있겠다. 다만 이 책은 대학원을 대상으로 보고 있어, 앞의 선두 과목들인 통계 역학과 특히 양자 역학에 대한 내용은
+꼭 알고 있어야 한다.
 
 [^1]: Feynman, R.P. Simulating physics with computers. Int J Theor Phys 21, 467–488 (1982). https://doi.org/10.1007/BF02650179
 [^2]: 만약 상황이 Equilibrium에서 저러한 행동을 한다는 것은 곧 엔트로피를 이리저리 쥐어잡을 수 있다는 말이 된다...
+[^3]: 물론 저 책에서도 내용은 등장한다. 뒤에 더 많은 연습문제로 박아둬서 그렇지...
