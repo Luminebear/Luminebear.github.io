@@ -1,12 +1,8 @@
 ---
-layout: post
 title: "Butter-Fly앨범 싱크가사"
 tags: [Butter-Fly, DigimonAdventure, lrc, 디지몬, 버터플라이, 디지몬어드벤처, 싱크가사] # 태그 입력
 categories: 싱크가사
 mathjax: false # MathJax 사용을 위한 태그
-image:
-  path: /images/abstract-5.jpg
-  feature: abstract-5.jpg
 comments: true
 published: true
 ---
@@ -16,7 +12,7 @@ published: true
 아마 아래의 tumblbug사이트에 오신분은 '별바람'이라는 별명을 가진 분의 게시글을 보고 오셨을 것이라
 생각됩니다. **같은 사람입니다.** 다만 이렇게 따로 블로그에 게시글을 남기는 것은 tumblbug사이트가 지난 게시글을 따로 검색이 불가능한 구조다 보니, 이렇게 개인 블로그에 남기게 되었습니다. 아래의 주소가 제가 tumblbug에 본래 업로드 하였던 게시물입니다.
 
-<div markdown="0"><a href="https://tumblbug.com/junyoungho/community/252fd8d8-6b20-4495-8f52-eae21ab67be9" class="btn btn-info">tumblbug 게시글 이동하기</a></div>
+<a href="https://tumblbug.com/junyoungho/community/252fd8d8-6b20-4495-8f52-eae21ab67be9" class="btn btn--info">tumblbug 게시글 이동하기</a>
 
 사실 알송 싱크가사에 올릴 수도 있겠지만, 펀딩하신 분들을 제외하고 음원이 공개되지 않았기에 미완성을 한 채로 싱크가사를 올리는 것은
 이치에 맞지 않습니다. 그러므로 본래의 게시물과 같이 아래에 있는 싱크가사는 **2절을 제외한** 가사만을 아래에 작성했습니다. 아래의 준수사항대로 잘 따라하시면 싱크가사를 넣을 수 있을 거에요!

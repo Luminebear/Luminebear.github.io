@@ -1,124 +1,186 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<title>Quantum Tic-Tac-Toe &#8211; Luminebear's 상상허브</title>
-<meta name="description" content="잡다하게 쌓인 지식을 보관하기 위한 저장소">
-<meta name="keywords" content="Phyiscs, QuantumMechanics, Gametheory, tic-tac-toe, 물리학, 양자역학, 게임이론, 틱택토">
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Quantum Tic-Tac-Toe - Luminebear의 상상허브</title>
+<meta name="description" content="경고: 아직 완성되지 않은 게시글입니다.">
 
 
+  <meta name="author" content="Luminebear">
+  
+  <meta property="article:author" content="Luminebear">
+  
 
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
+
 <meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Luminebear의 상상허브">
 <meta property="og:title" content="Quantum Tic-Tac-Toe">
-<meta property="og:description" content="잡다하게 쌓인 지식을 보관하기 위한 저장소">
-<meta property="og:url" content="http://localhost:4000/physics/Quantum-tic-tac-toe/">
-<meta property="og:site_name" content="Luminebear's 상상허브">
+<meta property="og:url" content="/physics/Quantum-tic-tac-toe/">
+
+
+  <meta property="og:description" content="경고: 아직 완성되지 않은 게시글입니다.">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/physics/Quantum-tic-tac-toe/">
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Luminebear's 상상허브 Feed">
 
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
+
+  <meta property="article:published_time" content="2020-07-30T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/physics/Quantum-tic-tac-toe/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Luminebear",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Luminebear의 상상허브 Feed">
+
+<!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
-<!-- Webfonts -->
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
 
-<meta http-equiv="cleartype" content="on">
-
-<!-- Load Modernizr -->
-<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
-
-
-
-</head>
-
-<body id="post" class="feature">
-
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-	<button class="dl-trigger">Open Menu</button>
-	<ul class="dl-menu">
-		<li><a href="http://localhost:4000/">Home</a></li>
-		<li>
-			<a href="#">About</a>
-			<ul class="dl-submenu">
-				<li>
-					<img src="http://localhost:4000/images/avatar.jpg" alt="Luminebear photo" class="author-photo">
-					<h4>Luminebear</h4>
-					<p>Physics, Computing, Quantum Computing and More</p>
-				</li>
-				<li><a href="http://localhost:4000/about/"><span class="btn btn-inverse">Learn More</span></a></li>
-				<li>
-					<a href="mailto:rainstar77@outlook.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
-				</li>
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
-				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
-			</ul>
-		</li>
-		
-	    
-	    <li><a href="http://localhost:4000/categories/" >Categories</a></li>
-	  
-	    
-	    <li><a href="http://localhost:4000/theme-setup/" >Theme Setup</a></li>
-	  
-	</ul><!-- /.dl-menu -->
-</nav><!-- /.dl-menuwrapper -->
-
-
-
-<div class="entry-header">
-  
-  <div class="entry-image">
-    <img src="http://localhost:4000/images/abstract-6.jpg" alt="Quantum Tic-Tac-Toe">
-  </div><!-- /.entry-image -->
-</div><!-- /.entry-header -->
-
-
-<!--for mathjax supporting-->
-
+  <link rel="stylesheet alternate" href="/assets/css/theme2.css" id="theme_source_2">
   <script>
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark")
+    {
+      sessionStorage.setItem('theme', 'dark');
+      node1 = document.getElementById('theme_source');
+      node2 = document.getElementById('theme_source_2');
+      node1.setAttribute('rel', 'stylesheet alternate'); 
+      node2.setAttribute('rel', 'stylesheet');
+    }
+    else
+    {
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<button type="button" onclick="node1=document.getElementById('theme_source');node2=document.getElementById('theme_source_2');if(node1.getAttribute('rel')=='stylesheet'){node1.setAttribute('rel', 'stylesheet alternate'); node2.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'dark');}else{node2.setAttribute('rel', 'stylesheet alternate'); node1.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'light');} return false;">  
+  Change White/Dark theme
+</button>
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Luminebear의 상상허브
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="initial-content">
+      <!--for mathjax supporting-->
+      
+        <script>
   window.MathJax = {
     loader: {
       load: ['input/tex', 'output/chtml'] // input options: input/tex-base, input/tex, input/tex-full // output: svg
@@ -139,46 +201,190 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     // another src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"
 </script> <!-- MathJax 3.0 Startup & Configurations -->
+      
+      
+
 
 
 <div id="main" role="main">
-  <article class="hentry">
-    <header class="header-title">
-      <div class="header-title-wrap">
-        
-          <h1 class="entry-title"><a href="http://localhost:4000/physics/Quantum-tic-tac-toe/" rel="bookmark" title="Quantum Tic-Tac-Toe">Quantum Tic-Tac-Toe</a></h1>
-        
-        <h2><span class="entry-date date published"><time datetime="2020-07-30T00:00:00+09:00">July 30, 2020</time></span></h2>
-        
-        <p class="entry-reading-time">
-          <i class="fa fa-clock-o"></i>
-          
-Reading time ~4 minutes
-        </p><!-- /.entry-reading-time -->
-        
-      </div><!-- /.header-title-wrap -->
-    </header>
-    <div class="entry-content">
+  
+  <div class="sidebar sticky">
+  
 
-      <aside class="sidebar__right sticky" style="height: auto !important;">
-      <div class="toc">
-        <ul><li><a href="#intro">Intro</a></li><li><a href="#잠깐-tic-tac-toe는-뭘까요">잠깐… Tic-Tac-Toe는 뭘까요?</a></li><li><a href="#quantum-tic-tac-toe의-게임방식">Quantum Tic-Tac-Toe의 게임방식</a></li><li><a href="#quantum-tic-tac-toe의-게임방법">Quantum Tic-Tac-Toe의 게임방법</a><ul><li><a href="#1-기존의-tic-tac-toe-규칙을-그대로-적용">1. 기존의 Tic-Tac-Toe 규칙을 그대로 적용</a></li><li><a href="#2-player는-자기차례일-때-동일한-칸을-제외한-두-개의-칸에-마킹">2. Player는 자기차례일 때 동일한 칸을 제외한 두 개의 칸에 마킹</a></li><li><a href="#3-cyclic-entanglement">3. Cyclic Entanglement</a></li><li><a href="#4-collapse">4. Collapse</a></li></ul></li><li><a href="#quantum-tic-tac-toe에서-발생할-수-있는-상황">Quantum Tic-Tac-Toe에서 발생할 수 있는 상황</a></li><li><a href="#references">References</a></li></ul>
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/avatar.jpg" alt="Luminebear" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Luminebear</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Physics, Computing, Quantum Computing and More</p>
+
       </div>
-      </aside><!-- Table of Contents -->
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:rainstar77@outlook.com">
+            <meta itemprop="email" content="rainstar77@outlook.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
 
 
-      <h1 id="intro">Intro</h1>
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Quantum Tic-Tac-Toe">
+    <meta itemprop="description" content="경고: 아직 완성되지 않은 게시글입니다.">
+    <meta itemprop="datePublished" content="2020-07-30T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Quantum Tic-Tac-Toe
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Table of Contents</h4></header>
+              <ul class="toc__menu"><li><a href="#intro">Intro</a></li><li><a href="#잠깐-tic-tac-toe는-뭘까요">잠깐… Tic-Tac-Toe는 뭘까요?</a></li><li><a href="#quantum-tic-tac-toe의-게임방식">Quantum Tic-Tac-Toe의 게임방식</a></li><li><a href="#quantum-tic-tac-toe의-게임방법">Quantum Tic-Tac-Toe의 게임방법</a><ul><li><a href="#1-기존의-tic-tac-toe-규칙을-그대로-적용">1. 기존의 Tic-Tac-Toe 규칙을 그대로 적용</a></li><li><a href="#2-player는-자기차례일-때-동일한-칸을-제외한-두-개의-칸에-마킹">2. Player는 자기차례일 때 동일한 칸을 제외한 두 개의 칸에 마킹</a></li><li><a href="#3-cyclic-entanglement">3. Cyclic Entanglement</a></li><li><a href="#4-collapse">4. Collapse</a><ul><li><a href="#case-1-o_6_11-을-선택하는-경우">Case 1. ${O_{6}}_{(1,1)}$ 을 선택하는 경우</a></li><li><a href="#case-2-o_6_33-을-선택하는-경우">Case 2. ${O_6}_{(3,3)}$ 을 선택하는 경우</a></li></ul></li></ul></li><li><a href="#quantum-tic-tac-toe에서-발생할-수-있는-상황">Quantum Tic-Tac-Toe에서 발생할 수 있는 상황</a></li><li><a href="#references">References</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p class="notice--warning"><strong>경고</strong>: 아직 완성되지 않은 게시글입니다.</p>
+
+<h1 id="intro">Intro</h1>
 <p>지금까지는 우리가 사는 세상을 물리학적으로 두 가지로 구분할 수 있는데, 하나는 우리가 일상에서 쉽게 접하고 접촉을 할 수 있는 
 <strong>‘고전적인(Classical)’</strong> 세상과, 일반 사람의 눈으로 관찰조차 힘든, 매우 미시적인 세계인 <strong>‘양자(Quantum)’</strong> 세상으로 나눌 수 있다.
 이 양자 세계에서는 관측 조차 힘들 뿐더러 관측하는 행위 조차 계에 영향을 끼치는 등, 도통 일반 사람들이 이해하기 어려운 모습들이
 보인다.</p>
 
-<p>이러한 Quantum System에서 나타나는 현상을 ‘고전적인 대응물(Classical counterpart)’<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>에 설명을 하려는 여러가지 시도가 있다.
+<p>이러한 Quantum System에서 나타나는 현상을 ‘고전적인 대응물(Classical counterpart)’<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>에 설명을 하려는 여러가지 시도가 있다.
 예를 들면 전자의 스핀현상을 구의 형태의 회전으로 생각하고 설명을 하는 등이 있다. 이렇게 양자적 현상을 설명하는 방법 중, 
 게임을 이용하여 설명하려는 방법이 있다. 이 게시글에서는 <strong>Tic-Tac-Toe</strong> 게임에 양자적 현상을 접목시킨 
 <strong>Quantum Tic-Tac-Toe</strong>에 대해 소개하려고 한다. 이 게시글에 대한 설명이 부족하다고 생각되면 Wikipedia를 참고하면 된다.</p>
 
-<div><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe" class="btn btn-info">Wikipedia Post 이동하기</a></div>
+<p><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe" class="btn btn--info">Wikipedia Post 이동하기</a></p>
 
 <h1 id="잠깐-tic-tac-toe는-뭘까요">잠깐… Tic-Tac-Toe는 뭘까요?</h1>
 <p>Tic-Tac-Toe는 간단하게 말해 <strong>‘오목’ ‘빙고’</strong> 비슷한 것이라고 보면 된다. 물론 이들 게임보다는 재미가 없다. 이 게임에 대한 룰을 써보면,</p>
@@ -193,12 +399,12 @@ Reading time ~4 minutes
 기존 게임이 복잡할 수록 고려해야 할 것이 너무 많기 때문이다.</p>
 
 <figure>
-	<img src="/images/Classical Tic-Tac-Toe.png" alt="" class="center" />
+	<img src="/assets/images/Classical Tic-Tac-Toe.png" alt="" class="center" />
 	<figcaption>Tic-Tac-Toe 게임의 예시. Player O가 한줄을 먼저 만들었기 때문에 승리했다.</figcaption>
 </figure>
 
 <h1 id="quantum-tic-tac-toe의-게임방식">Quantum Tic-Tac-Toe의 게임방식</h1>
-<p>Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic-Tac-Toe<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>의 Rule을 포함하고, 여기서 양자 현상을 게임에 접목시킨 
+<p>Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic-Tac-Toe<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup>의 Rule을 포함하고, 여기서 양자 현상을 게임에 접목시킨 
 새로운 Rule을 추가한다. 추가된 Rule은 다음과 같다.</p>
 
 <ul>
@@ -222,57 +428,56 @@ Reading time ~4 minutes
   재미 없고, 또 동일한 칸에 마킹을 한다는 것은 결국 고전적으로 마킹한 것이나 다름이 없다. 보다 수학적으로 서술하면, 
   Player Alice가 처음 시도한 횟수를</p>
 
-<script type="math/tex; mode=display">\begin{align}
-  \vert T_1>_{A} = \frac{1}{\sqrt{2}}(\vert T_{11}> + \vert T_{12}>)
-  \end{align}</script>
+\[\begin{align}
+  \vert {T_1}\rangle_{A} = \frac{1}{\sqrt{2}}(\vert T_{11}\rangle + \vert T_{12}\rangle)
+  \end{align}\]
 
 <p>이라고 할 수 있다. 그런데 여기서 같은 칸에 마킹을 한다는 것은,</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align}
-  \vert T_1>_{A} & = \frac{1}{\sqrt{2}}(\vert T_{11}> + \vert T_{11}>) \\
-  & = \vert T_{11}>
-  \end{align} %]]></script>
+\[\begin{align}
+  \vert T_1\rangle_{A} &amp; = \frac{1}{\sqrt{2}}(\vert T_{11}\rangle + \vert T_{11}\rangle) \\
+  &amp; = \vert T_{11}\rangle
+  \end{align}\]
 
 <p>이 되는 것으므로 결국 1의 확률로 확정적으로 마킹한 칸에 있게 되는 것이다. 고전적인 Tic-Tac-Toe와 다른 것이 없다.</p>
 <figure>
-	<img src="/images/Quantum Tic-Tac-Toe.png" alt="" class="center" />
+	<img src="/assets/images/Quantum Tic-Tac-Toe.png" alt="" class="center" />
 	<figcaption>Quantum Tic-Tac-Toe의 예제.</figcaption>
   </figure>
 
 <h2 id="3-cyclic-entanglement">3. Cyclic Entanglement</h2>
 <p>이 현상은 두 플레이어가 게임을 하고 있는 도중에 나타나는 현상이다. 다음의 예시를 살펴보도록 하자.</p>
 <figure>
-	<img src="/images/Cyclic Entanglement.png" alt="" class="center" />
+	<img src="/assets/images/Cyclic Entanglement.png" alt="" class="center" />
 	<figcaption>예제에서 Cyclic Entanglement가 형성이 된 모습.</figcaption>
   </figure>
 <p>그림을 살펴보면 Player O가 6번째 ($O_{6}$)에 놓은 상황에서, 하나의 <strong>Cycle</strong>이 형성되는 것을 확인할 수 있는데,
   하나씩 순서를 살펴보면,</p>
 
-<script type="math/tex; mode=display">\begin{align}
-  {O_{6}}_{(1,1)} \rightarrow {O_{6}}_{(3,3)} \rightarrow {X_{5}}_{(1,1)} \rightarrow {X_{5}}_{(2,3)} \rightarrow {O_{4}}_{(2,3)} 
-  \rightarrow {O_{4}}_{(1,1)} \rightarrow {O_{6}}_{(1,1)}
-  \end{align}</script>
+\[\begin{align}
+  {O_{6}}_{(1,1)} \rightarrow {O_{6}}_{(3,3)} \rightarrow {X_{5}}_{(1,1)} \rightarrow {X_{5}}_{(2,3)} \rightarrow {O_{4}}_{(2,3)} \\
+  \rightarrow {O_{4}}_{(1,1)} \rightarrow {O_{6}}_{(1,1)} \nonumber
+  \end{align}\]
 
 <p>와 같이 순환 고리가 형성이 된다. 이를 <strong>Cyclic Entanglement</strong> 라고 부른다. 이 때 상대 Player X는 이 Cycle을 <strong>붕괴(Collapse)</strong>
   해주어야 한다. 이 상황을 붕괴 시키는 방법은 Player O가 최종적으로 놓았던 위치,</p>
 
-<script type="math/tex; mode=display">\begin{align}
+\[\begin{align}
   {O_{6}}_{(1,1)} \qquad {O_{6}}_{(3,3)}
-  \end{align}</script>
+  \end{align}\]
 
 <p>둘 중에 $O_{6}$를 측정할 위치를 선택해야 한다.</p>
 
 <h2 id="4-collapse">4. Collapse</h2>
 <p>Player X는 ${O_{6}}$가 중첩된 위치 (1,1)과 (3,3)에 대하여 선택을 해야한다.</p>
 <figure>
-	<img src="/images/Cyclic Entanglement O6.png" alt="" class="center" />
+	<img src="/assets/images/Cyclic Entanglement O6.png" alt="" class="center" />
   </figure>
 
 <h3 id="case-1-o_6_11-을-선택하는-경우">Case 1. ${O_{6}}_{(1,1)}$ 을 선택하는 경우</h3>
 <p>Player X가 (1,1)에 위치한 ${O_{6}}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.</p>
 <figure>
-	<img src="/images/Collapse_O6(1,1).png" alt="" class="center" />
+	<img src="/assets/images/Collapse_O6(1,1).png" alt="" class="center" />
 	<figcaption>(1,1)에 위치한 O6를 선택했을 때 발생한 붕괴상태</figcaption>
   </figure>
 <p>하나씩 순서를 살펴보도록 하자.</p>
@@ -285,9 +490,9 @@ Reading time ~4 minutes
   <li>이 때 ${X_3}_{(3,2)}$는 다른 종속된 변수들이 없기 때문에, 충돌하는 것이 없지만,
   ${O_4}_{(2,3)}$은 ${X_5}_{(2,3)}$과 충돌한다. 이 경우에는, ${O_4}_{(2,3)}$가 자리를 차지하게 된다.
   그럴 수 밖에 없는데, 이는
-  <script type="math/tex">\begin{align}
-  \vert T_{4}>_O = \frac{1}{\sqrt{2}}({\vert T_{4}>_{O}}_{(1,1)} + {\vert T_{4}>_{O}}_{(2,3)})
-  \end{align}</script>
+  \(\begin{align}
+  \vert T_{4}\rangle_O = \frac{1}{\sqrt{2}}({\vert T_{4}\rangle_{O}}_{(1,1)} + {\vert T_{4}\rangle_{O}}_{(2,3)})
+  \end{align}\)
   이고 Player X가 측정을 할 때 ${O_6}_{(1,1)}$를 선택하였기 때문에, 고전적인 상황에서는 반드시 
   ${O_4}_{(2,3)}$가 모습을 드러내야 한다. 이는 Entanglement 현상 때문이다.</li>
   <li>한편 ${X_5}$는 (2,3)과 (3,3)으로 중첩되어 있으며 역시 Entanglement 때문에 (3,3)이 발현되어야 한다.
@@ -305,7 +510,7 @@ Reading time ~4 minutes
 <h3 id="case-2-o_6_33-을-선택하는-경우">Case 2. ${O_6}_{(3,3)}$ 을 선택하는 경우</h3>
 <p>Player X가 (3,3)에 위치한 ${O_6}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.</p>
 <figure>
-	<img src="/images/Collapse_O6(3,3).png" alt="" class="center" />
+	<img src="/assets/images/Collapse_O6(3,3).png" alt="" class="center" />
 	<figcaption>(3,3)에 위치한 O6를 선택했을 때 발생한 붕괴상태</figcaption>
   </figure>
 <p>놀랍게도 Case 1과 다르게 O가 한 줄을 만들어 내어 승리했다! 순서를 살펴보도록 하자.</p>
@@ -317,9 +522,9 @@ Reading time ~4 minutes
   <li>따라서 같은 자리에 있는 ${O_2}_{(3,3)}$, ${X_5}_{(3,3)}$은 다른 자리에 중첩되어 있는 ${O_2}_{(2,2)}$, ${X_5}_{(2,3)}$에 존재하게 된다.</li>
   <li>${O_2}_{(2,2)}$에는 어떠한 것과도 관련이 없으므로, Classical로 돌아가면 O로 측정된다.</li>
   <li>한편 (2,3)에는 ${X_5}_{(2,3)}$, ${O_4}_{(2,3)}$이 존재한다. 이 때 측정되는 것은 $X_5$ 인데, 앞의 경우와 같이
-  <script type="math/tex">\begin{align}
-  |T_{5}>_X = \frac{1}{\sqrt{2}}({|T_{5}>_X}_{(2,3)} + {|T_{5}>_X}_{(3,3)})
-  \end{align}</script>
+  \(\begin{align}
+  |T_{5}\rangle_X = \frac{1}{\sqrt{2}}({|T_{5}\rangle_X}_{(2,3)} + {|T_{5}\rangle_X}_{(3,3)})
+  \end{align}\)
   이고 Player X가 측정할 때 ${O_6}_{(3,3)}$을 측정하였으므로 고전적인 상황에서는 반드시 
   ${X_5}_{(2,3)}$가 모습을 드러내야 한다.</li>
   <li>마찬가지로 $O_4$는 (1,1)에서 측정이 되고, 자연스레 ${X_3}_{(1,1)}$는 측정되지 않고 (3,2)에 있는
@@ -340,92 +545,346 @@ Reading time ~4 minutes
   <li>Wikipedia <a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum Tic-Tac-Toe</a></li>
 </ul>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>여기서 이러한 단어를 <strong>굳이</strong> 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 ‘슈뢰딩거 고양이’현상을 아무 생각없이 현실적으로 (고전적인 계에서)일어난다고 보고 그대로 대입하는… 어처구니 없는 행동이 있다. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>여기서 이러한 단어를 <strong>굳이</strong> 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 ‘슈뢰딩거 고양이’현상을 아무 생각없이 현실적으로 (고전적인 계에서)일어난다고 보고 그대로 대입하는… 어처구니 없는 행동이 있다. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
-      <p>앞으로는 기존의 Tic-Tac-Toe를 ‘고전적인(Classical) Tic-Tac-Toe’라고 지칭을 하겠다. 물리학에서는 양자계 이전까지의 계를 ‘고전적(Classical)’ 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>앞으로는 기존의 Tic-Tac-Toe를 ‘고전적인(Classical) Tic-Tac-Toe’라고 지칭을 하겠다. 물리학에서는 양자계 이전까지의 계를 ‘고전적(Classical)’ 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
-      <footer class="entry-meta">
-        <span class="entry-tags"><a href="http://localhost:4000/tags/#Phyiscs" title="Pages tagged Phyiscs" class="tag"><span class="term">Phyiscs</span></a><a href="http://localhost:4000/tags/#QuantumMechanics" title="Pages tagged QuantumMechanics" class="tag"><span class="term">QuantumMechanics</span></a><a href="http://localhost:4000/tags/#Gametheory" title="Pages tagged Gametheory" class="tag"><span class="term">Gametheory</span></a><a href="http://localhost:4000/tags/#tic-tac-toe" title="Pages tagged tic-tac-toe" class="tag"><span class="term">tic-tac-toe</span></a><a href="http://localhost:4000/tags/#물리학" title="Pages tagged 물리학" class="tag"><span class="term">물리학</span></a><a href="http://localhost:4000/tags/#양자역학" title="Pages tagged 양자역학" class="tag"><span class="term">양자역학</span></a><a href="http://localhost:4000/tags/#게임이론" title="Pages tagged 게임이론" class="tag"><span class="term">게임이론</span></a><a href="http://localhost:4000/tags/#틱택토" title="Pages tagged 틱택토" class="tag"><span class="term">틱택토</span></a></span>
         
-        <div class="social-share">
-  <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/physics/Quantum-tic-tac-toe/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/physics/Quantum-tic-tac-toe/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/physics/Quantum-tic-tac-toe/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
-  </ul>
-</div><!-- /.social-share -->
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#gametheory" class="page__taxonomy-item" rel="tag">Gametheory</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#phyiscs" class="page__taxonomy-item" rel="tag">Phyiscs</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#quantummechanics" class="page__taxonomy-item" rel="tag">QuantumMechanics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#tic-tac-toe" class="page__taxonomy-item" rel="tag">tic-tac-toe</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EA%B2%8C%EC%9E%84%EC%9D%B4%EB%A1%A0" class="page__taxonomy-item" rel="tag">게임이론</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EB%AC%BC%EB%A6%AC%ED%95%99" class="page__taxonomy-item" rel="tag">물리학</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%96%91%EC%9E%90%EC%97%AD%ED%95%99" class="page__taxonomy-item" rel="tag">양자역학</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%ED%8B%B1%ED%83%9D%ED%86%A0" class="page__taxonomy-item" rel="tag">틱택토</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#physics" class="page__taxonomy-item" rel="tag">Physics</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-07-30T00:00:00+09:00">July 30, 2020</time></p>
+
+
       </footer>
-    </div><!-- /.entry-content -->
-    <section id="disqus_thread"></section><!-- /#disqus_thread -->
-    <div class="read-more">
+
+      <section class="page__share">
   
-    <div class="read-more-header">
-      <a href="http://localhost:4000/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/" class="read-more-btn">Read More</a>
-    </div><!-- /.read-more-header -->
-    <div class="read-more-content">
-      <h3><a href="http://localhost:4000/physics/QIprepost/" title="양자 정보학을 위한 준비">양자 정보학을 위한 준비</a></h3>
-      <p># Intro양자 정보와 양자 컴퓨팅에 대한 개념은 위대한 물리학자 Richard P. Feynman의 논문[^1]으로 시작되는 것으로 알고 있다. 아직까지도 연구되고 있는 이 분야는,양자 정보를 기반으로 한 양자 컴퓨터의 경우 엄청난 연산 능력...&hellip; <a href="http://localhost:4000/physics/QIprepost/">Continue reading</a></p>
-    </div><!-- /.read-more-content -->
+    <h4 class="page__share-title">공유하기</h4>
   
-  <div class="read-more-list">
+
+  <a href="https://twitter.com/intent/tweet?text=Quantum+Tic-Tac-Toe%20%2Fphysics%2FQuantum-tic-tac-toe%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fphysics%2FQuantum-tic-tac-toe%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fphysics%2FQuantum-tic-tac-toe%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
     
-      <div class="list-item">
-        <h4><a href="http://localhost:4000/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/" title="Butter-Fly앨범 싱크가사">Butter-Fly앨범 싱크가사</a></h4>
-        <span>Published on July 18, 2020</span>
-      </div><!-- /.list-item -->
+      <a href="/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/" class="pagination--pager" title="Butter-Fly앨범 싱크가사
+">이전</a>
     
-      <div class="list-item">
-        <h4><a href="http://localhost:4000/MathJax-Test/" title="MathJax를 이용한 수학식 테스트">MathJax를 이용한 수학식 테스트</a></h4>
-        <span>Published on July 14, 2020</span>
-      </div><!-- /.list-item -->
     
-  </div><!-- /.read-more-list -->
-</div><!-- /.read-more -->
+      <a href="/physics/QIprepost/" class="pagination--pager" title="양자 정보학을 위한 준비
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
   </article>
-</div><!-- /#main -->
 
-<div class="footer-wrapper">
-  <footer role="contentinfo">
-    <span>&copy; 2020 Luminebear. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
 
 
 
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/QIprepost/" rel="permalink">양자 정보학을 위한 준비
+</a>
+      
+    </h2>
+    
 
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'luminebear-github-io'; // required: replace example with your forum shortname
+  <p class="page__meta">
+    
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+    
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-	        
+    
+      
+      
 
-</body>
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Intro
+양자 정보와 양자 컴퓨팅에 대한 개념은 위대한 물리학자 Richard P. Feynman의 논문1으로 시작되는 것으로 알고 있다. 아직까지도 연구되고 있는 이 분야는,
+양자 정보를 기반으로 한 양자 컴퓨터의 경우 엄청난 연산 능력으로 인해 슈퍼컴퓨터가 며칠을 걸려서 풀어...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/" rel="permalink">Butter-Fly앨범 싱크가사
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">안녕하세요. Luminebear입니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/MathJax-Test/" rel="permalink">MathJax를 이용한 수학식 테스트
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Heading 1
+다음과 같은 표현은 문장 내 수식 표현입니다.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Luminebear. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "/physics/Quantum-tic-tac-toe/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/physics/Quantum-tic-tac-toe"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://luminebear-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
 </html>

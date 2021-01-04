@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-28T01:01:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Luminebear’s 상상허브</title><subtitle>잡다하게 쌓인 지식을 보관하기 위한 저장소</subtitle><entry><title type="html">양자 정보학을 위한 준비</title><link href="http://localhost:4000/physics/QIprepost/" rel="alternate" type="text/html" title="양자 정보학을 위한 준비" /><published>2020-12-28T00:00:00+09:00</published><updated>2020-12-28T00:00:00+09:00</updated><id>http://localhost:4000/physics/QIprepost</id><content type="html" xml:base="http://localhost:4000/physics/QIprepost/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
-&lt;p&gt;양자 정보와 양자 컴퓨팅에 대한 개념은 위대한 물리학자 Richard P. Feynman의 논문&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;으로 시작되는 것으로 알고 있다. 아직까지도 연구되고 있는 이 분야는,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-04T12:10:53+09:00</updated><id>/feed.xml</id><title type="html">Luminebear의 상상허브</title><subtitle>잡다하게 쌓인 지식을 보관하기 위한 저장소</subtitle><author><name>Luminebear</name><email>rainstar77@outlook.com</email></author><entry><title type="html">양자 정보학을 위한 준비</title><link href="/physics/QIprepost/" rel="alternate" type="text/html" title="양자 정보학을 위한 준비" /><published>2020-12-28T00:00:00+09:00</published><updated>2020-12-28T00:00:00+09:00</updated><id>/physics/QIprepost</id><content type="html" xml:base="/physics/QIprepost/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;양자 정보와 양자 컴퓨팅에 대한 개념은 위대한 물리학자 Richard P. Feynman의 논문&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;으로 시작되는 것으로 알고 있다. 아직까지도 연구되고 있는 이 분야는,
 양자 정보를 기반으로 한 양자 컴퓨터의 경우 엄청난 연산 능력으로 인해 슈퍼컴퓨터가 며칠을 걸려서 풀어낼 문제를 단시간에 풀어낸다. 한편 현재의 컴퓨터는 거의 성능 향상의
 상한선에 위치하고 있는 데, 이는 현재 개발되고 있는 CPU의 집적도만 봐도 알 수 있다. 게시글을 쓴 날짜를 기준으로 7nm의 간격을 가지는 CPU가 만들어지고 있는데, 원자들의 간격이 
 ‘$\unicode{xC5}$’ (Angstrom, equals to 0.1nm) 인 것을 고려하면 어쩔 수 없이 한계점에 다다른 것을 생각해볼 수 있다.&lt;/p&gt;
@@ -24,48 +24,55 @@
 이리저리 문을 여닫으며 출입하는 입자를 조절한다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;여기서 주요하게 볼 문제점은 ‘악마가 조건이 주어짐에 따라 행동하는 것’이다. 물론 예시로 든 경우들이 물리적으로 말도 안되지만&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. 악마는 이러한 조건을 ‘어디선가 받아 알고 있어야 한다.’
+&lt;p&gt;여기서 주요하게 볼 문제점은 ‘악마가 조건이 주어짐에 따라 행동하는 것’이다. 물론 예시로 든 경우들이 물리적으로 말도 안되지만&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. 악마는 이러한 조건을 ‘어디선가 받아 알고 있어야 한다.’
 즉, 이 과정에서 악마는 &lt;strong&gt;‘조건’이라는 정보&lt;/strong&gt;를 가지고 행동을 취한다고 말할 수 있다.&lt;/p&gt;
 
 &lt;h2 id=&quot;양자-역학&quot;&gt;양자 역학&lt;/h2&gt;
 &lt;p&gt;고전적인 정보이론을 양자 현상을 접목시키려는 것이므로 당연히 양자 역학은 필수가 아닐 수 없다. 여기서 주의할 점은, 양자 정보와 양자 컴퓨팅을 위해 양자역학을 공부하기 위해서는 
 &lt;strong&gt;양자역학을 기술하는 근본적인 것&lt;/strong&gt;을 알아야 한다는 것이다. 아주 좋은 예시로, 학부 양자역학의 스테디 셀러인&lt;/p&gt;
 
-&lt;p&gt;David J. Griffiths, Introduction to Quantum Mechanics&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;David J. Griffiths, Introduction to Quantum Mechanics&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;이 책으로만 공부했다면 개념정립에 어려움을 겪을 수 있다. 양자역학을 공부하기에는 더할 나위 없이 가장 좋은 입문서이지만, 이 책의 가장 큰 단점인 ‘파동함수와 슈뢰딩거 방정식’을 깔고 모든 것을
 설명하는 점 때문에 양자 정보 공부에는 적합하지 않다고 생각한다. 우리가 눈에 보이는 것이 파동이라 그렇지 사실은 양자계(Quantum System)가 Hilbert Space에서 P.A.M Dirac의 Bra-Ket을 기본으로 
 깔고 간다는 점을 생각해보면 아이러니하다. 그러므로 현재까지 보았던 책들 중에서는&lt;/p&gt;
 
-&lt;p&gt;Richard P. Feynman, Lectures on Physics Vol 3
- J.J. Sakurai, Modern Quantum Mechanics&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Richard P. Feynman, Lectures on Physics Vol 3&lt;/p&gt;
+
+  &lt;p&gt;J.J. Sakurai, Modern Quantum Mechanics&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;이것이 도움이 될 것 같다. 물론 두 번째 책은 대학원용 교재이기도 하고 양자역학의 다양한 것들을 다루기 때문에 차라리 파인만 물리학 강의 Vol.3을 보는 것이 양자 정보 학습에 도움이 되지 않을 까
 생각이 된다.&lt;/p&gt;
 
 &lt;h1 id=&quot;양자-정보-및-양자-컴퓨팅-학습을-위한-참고자료&quot;&gt;양자 정보 및 양자 컴퓨팅 학습을 위한 참고자료&lt;/h1&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Feynman, R.P. Simulating physics with computers. Int J Theor Phys 21, 467–488 (1982). https://doi.org/10.1007/BF02650179 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Feynman, R.P. Simulating physics with computers. Int J Theor Phys 21, 467–488 (1982). https://doi.org/10.1007/BF02650179 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;만약 상황이 Equilibrium에서 저러한 행동을 한다는 것은 곧 엔트로피를 이리저리 쥐어잡을 수 있다는 말이 된다… &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;만약 상황이 Equilibrium에서 저러한 행동을 한다는 것은 곧 엔트로피를 이리저리 쥐어잡을 수 있다는 말이 된다… &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Physics" /><category term="Phyiscs" /><category term="QuantumMechanics" /><category term="QuantumInformation" /><category term="물리학" /><category term="양자역학" /><category term="양자정보" /><summary type="html">Intro 양자 정보와 양자 컴퓨팅에 대한 개념은 위대한 물리학자 Richard P. Feynman의 논문1으로 시작되는 것으로 알고 있다. 아직까지도 연구되고 있는 이 분야는, 양자 정보를 기반으로 한 양자 컴퓨터의 경우 엄청난 연산 능력으로 인해 슈퍼컴퓨터가 며칠을 걸려서 풀어낼 문제를 단시간에 풀어낸다. 한편 현재의 컴퓨터는 거의 성능 향상의 상한선에 위치하고 있는 데, 이는 현재 개발되고 있는 CPU의 집적도만 봐도 알 수 있다. 게시글을 쓴 날짜를 기준으로 7nm의 간격을 가지는 CPU가 만들어지고 있는데, 원자들의 간격이 ‘$\unicode{xC5}$’ (Angstrom, equals to 0.1nm) 인 것을 고려하면 어쩔 수 없이 한계점에 다다른 것을 생각해볼 수 있다. Feynman, R.P. Simulating physics with computers. Int J Theor Phys 21, 467–488 (1982). https://doi.org/10.1007/BF02650179 &amp;#8617;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/abstract-3.jpg" /><media:content medium="image" url="http://localhost:4000/images/abstract-3.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Quantum Tic-Tac-Toe</title><link href="http://localhost:4000/physics/Quantum-tic-tac-toe/" rel="alternate" type="text/html" title="Quantum Tic-Tac-Toe" /><published>2020-07-30T00:00:00+09:00</published><updated>2020-07-30T00:00:00+09:00</updated><id>http://localhost:4000/physics/Quantum-tic-tac-toe</id><content type="html" xml:base="http://localhost:4000/physics/Quantum-tic-tac-toe/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Luminebear</name><email>rainstar77@outlook.com</email></author><category term="Physics" /><category term="Phyiscs" /><category term="QuantumMechanics" /><category term="QuantumInformation" /><category term="물리학" /><category term="양자역학" /><category term="양자정보" /><summary type="html">Intro 양자 정보와 양자 컴퓨팅에 대한 개념은 위대한 물리학자 Richard P. Feynman의 논문1으로 시작되는 것으로 알고 있다. 아직까지도 연구되고 있는 이 분야는, 양자 정보를 기반으로 한 양자 컴퓨터의 경우 엄청난 연산 능력으로 인해 슈퍼컴퓨터가 며칠을 걸려서 풀어낼 문제를 단시간에 풀어낸다. 한편 현재의 컴퓨터는 거의 성능 향상의 상한선에 위치하고 있는 데, 이는 현재 개발되고 있는 CPU의 집적도만 봐도 알 수 있다. 게시글을 쓴 날짜를 기준으로 7nm의 간격을 가지는 CPU가 만들어지고 있는데, 원자들의 간격이 ‘$\unicode{xC5}$’ (Angstrom, equals to 0.1nm) 인 것을 고려하면 어쩔 수 없이 한계점에 다다른 것을 생각해볼 수 있다. Feynman, R.P. Simulating physics with computers. Int J Theor Phys 21, 467–488 (1982). https://doi.org/10.1007/BF02650179 &amp;#8617;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/_images/abstract-3.jpg" /><media:content medium="image" url="/_images/abstract-3.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Quantum Tic-Tac-Toe</title><link href="/physics/Quantum-tic-tac-toe/" rel="alternate" type="text/html" title="Quantum Tic-Tac-Toe" /><published>2020-07-30T00:00:00+09:00</published><updated>2020-07-30T00:00:00+09:00</updated><id>/physics/Quantum-tic-tac-toe</id><content type="html" xml:base="/physics/Quantum-tic-tac-toe/">&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;경고&lt;/strong&gt;: 아직 완성되지 않은 게시글입니다.&lt;/p&gt;
+
+&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 &lt;p&gt;지금까지는 우리가 사는 세상을 물리학적으로 두 가지로 구분할 수 있는데, 하나는 우리가 일상에서 쉽게 접하고 접촉을 할 수 있는 
 &lt;strong&gt;‘고전적인(Classical)’&lt;/strong&gt; 세상과, 일반 사람의 눈으로 관찰조차 힘든, 매우 미시적인 세계인 &lt;strong&gt;‘양자(Quantum)’&lt;/strong&gt; 세상으로 나눌 수 있다.
 이 양자 세계에서는 관측 조차 힘들 뿐더러 관측하는 행위 조차 계에 영향을 끼치는 등, 도통 일반 사람들이 이해하기 어려운 모습들이
 보인다.&lt;/p&gt;
 
-&lt;p&gt;이러한 Quantum System에서 나타나는 현상을 ‘고전적인 대응물(Classical counterpart)’&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;에 설명을 하려는 여러가지 시도가 있다.
+&lt;p&gt;이러한 Quantum System에서 나타나는 현상을 ‘고전적인 대응물(Classical counterpart)’&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;에 설명을 하려는 여러가지 시도가 있다.
 예를 들면 전자의 스핀현상을 구의 형태의 회전으로 생각하고 설명을 하는 등이 있다. 이렇게 양자적 현상을 설명하는 방법 중, 
 게임을 이용하여 설명하려는 방법이 있다. 이 게시글에서는 &lt;strong&gt;Tic-Tac-Toe&lt;/strong&gt; 게임에 양자적 현상을 접목시킨 
 &lt;strong&gt;Quantum Tic-Tac-Toe&lt;/strong&gt;에 대해 소개하려고 한다. 이 게시글에 대한 설명이 부족하다고 생각되면 Wikipedia를 참고하면 된다.&lt;/p&gt;
 
-&lt;div&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Quantum_tic-tac-toe&quot; class=&quot;btn btn-info&quot;&gt;Wikipedia Post 이동하기&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Quantum_tic-tac-toe&quot; class=&quot;btn btn--info&quot;&gt;Wikipedia Post 이동하기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;잠깐-tic-tac-toe는-뭘까요&quot;&gt;잠깐… Tic-Tac-Toe는 뭘까요?&lt;/h1&gt;
 &lt;p&gt;Tic-Tac-Toe는 간단하게 말해 &lt;strong&gt;‘오목’ ‘빙고’&lt;/strong&gt; 비슷한 것이라고 보면 된다. 물론 이들 게임보다는 재미가 없다. 이 게임에 대한 룰을 써보면,&lt;/p&gt;
@@ -80,12 +87,12 @@
 기존 게임이 복잡할 수록 고려해야 할 것이 너무 많기 때문이다.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/images/Classical Tic-Tac-Toe.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
+	&lt;img src=&quot;/assets/images/Classical Tic-Tac-Toe.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
 	&lt;figcaption&gt;Tic-Tac-Toe 게임의 예시. Player O가 한줄을 먼저 만들었기 때문에 승리했다.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h1 id=&quot;quantum-tic-tac-toe의-게임방식&quot;&gt;Quantum Tic-Tac-Toe의 게임방식&lt;/h1&gt;
-&lt;p&gt;Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic-Tac-Toe&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;의 Rule을 포함하고, 여기서 양자 현상을 게임에 접목시킨 
+&lt;p&gt;Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic-Tac-Toe&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;의 Rule을 포함하고, 여기서 양자 현상을 게임에 접목시킨 
 새로운 Rule을 추가한다. 추가된 Rule은 다음과 같다.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -109,57 +116,56 @@
   재미 없고, 또 동일한 칸에 마킹을 한다는 것은 결국 고전적으로 마킹한 것이나 다름이 없다. 보다 수학적으로 서술하면, 
   Player Alice가 처음 시도한 횟수를&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align}
-  \vert T_1&gt;_{A} = \frac{1}{\sqrt{2}}(\vert T_{11}&gt; + \vert T_{12}&gt;)
-  \end{align}&lt;/script&gt;
+\[\begin{align}
+  \vert {T_1}\rangle_{A} = \frac{1}{\sqrt{2}}(\vert T_{11}\rangle + \vert T_{12}\rangle)
+  \end{align}\]
 
 &lt;p&gt;이라고 할 수 있다. 그런데 여기서 같은 칸에 마킹을 한다는 것은,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  \vert T_1&gt;_{A} &amp; = \frac{1}{\sqrt{2}}(\vert T_{11}&gt; + \vert T_{11}&gt;) \\
-  &amp; = \vert T_{11}&gt;
-  \end{align} %]]&gt;&lt;/script&gt;
+\[\begin{align}
+  \vert T_1\rangle_{A} &amp;amp; = \frac{1}{\sqrt{2}}(\vert T_{11}\rangle + \vert T_{11}\rangle) \\
+  &amp;amp; = \vert T_{11}\rangle
+  \end{align}\]
 
 &lt;p&gt;이 되는 것으므로 결국 1의 확률로 확정적으로 마킹한 칸에 있게 되는 것이다. 고전적인 Tic-Tac-Toe와 다른 것이 없다.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;/images/Quantum Tic-Tac-Toe.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
+	&lt;img src=&quot;/assets/images/Quantum Tic-Tac-Toe.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
 	&lt;figcaption&gt;Quantum Tic-Tac-Toe의 예제.&lt;/figcaption&gt;
   &lt;/figure&gt;
 
 &lt;h2 id=&quot;3-cyclic-entanglement&quot;&gt;3. Cyclic Entanglement&lt;/h2&gt;
 &lt;p&gt;이 현상은 두 플레이어가 게임을 하고 있는 도중에 나타나는 현상이다. 다음의 예시를 살펴보도록 하자.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;/images/Cyclic Entanglement.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
+	&lt;img src=&quot;/assets/images/Cyclic Entanglement.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
 	&lt;figcaption&gt;예제에서 Cyclic Entanglement가 형성이 된 모습.&lt;/figcaption&gt;
   &lt;/figure&gt;
 &lt;p&gt;그림을 살펴보면 Player O가 6번째 ($O_{6}$)에 놓은 상황에서, 하나의 &lt;strong&gt;Cycle&lt;/strong&gt;이 형성되는 것을 확인할 수 있는데,
   하나씩 순서를 살펴보면,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align}
-  {O_{6}}_{(1,1)} \rightarrow {O_{6}}_{(3,3)} \rightarrow {X_{5}}_{(1,1)} \rightarrow {X_{5}}_{(2,3)} \rightarrow {O_{4}}_{(2,3)} 
-  \rightarrow {O_{4}}_{(1,1)} \rightarrow {O_{6}}_{(1,1)}
-  \end{align}&lt;/script&gt;
+\[\begin{align}
+  {O_{6}}_{(1,1)} \rightarrow {O_{6}}_{(3,3)} \rightarrow {X_{5}}_{(1,1)} \rightarrow {X_{5}}_{(2,3)} \rightarrow {O_{4}}_{(2,3)} \\
+  \rightarrow {O_{4}}_{(1,1)} \rightarrow {O_{6}}_{(1,1)} \nonumber
+  \end{align}\]
 
 &lt;p&gt;와 같이 순환 고리가 형성이 된다. 이를 &lt;strong&gt;Cyclic Entanglement&lt;/strong&gt; 라고 부른다. 이 때 상대 Player X는 이 Cycle을 &lt;strong&gt;붕괴(Collapse)&lt;/strong&gt;
   해주어야 한다. 이 상황을 붕괴 시키는 방법은 Player O가 최종적으로 놓았던 위치,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align}
+\[\begin{align}
   {O_{6}}_{(1,1)} \qquad {O_{6}}_{(3,3)}
-  \end{align}&lt;/script&gt;
+  \end{align}\]
 
 &lt;p&gt;둘 중에 $O_{6}$를 측정할 위치를 선택해야 한다.&lt;/p&gt;
 
 &lt;h2 id=&quot;4-collapse&quot;&gt;4. Collapse&lt;/h2&gt;
 &lt;p&gt;Player X는 ${O_{6}}$가 중첩된 위치 (1,1)과 (3,3)에 대하여 선택을 해야한다.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;/images/Cyclic Entanglement O6.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
+	&lt;img src=&quot;/assets/images/Cyclic Entanglement O6.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
   &lt;/figure&gt;
 
 &lt;h3 id=&quot;case-1-o_6_11-을-선택하는-경우&quot;&gt;Case 1. ${O_{6}}_{(1,1)}$ 을 선택하는 경우&lt;/h3&gt;
 &lt;p&gt;Player X가 (1,1)에 위치한 ${O_{6}}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;/images/Collapse_O6(1,1).png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
+	&lt;img src=&quot;/assets/images/Collapse_O6(1,1).png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
 	&lt;figcaption&gt;(1,1)에 위치한 O6를 선택했을 때 발생한 붕괴상태&lt;/figcaption&gt;
   &lt;/figure&gt;
 &lt;p&gt;하나씩 순서를 살펴보도록 하자.&lt;/p&gt;
@@ -172,9 +178,9 @@
   &lt;li&gt;이 때 ${X_3}_{(3,2)}$는 다른 종속된 변수들이 없기 때문에, 충돌하는 것이 없지만,
   ${O_4}_{(2,3)}$은 ${X_5}_{(2,3)}$과 충돌한다. 이 경우에는, ${O_4}_{(2,3)}$가 자리를 차지하게 된다.
   그럴 수 밖에 없는데, 이는
-  &lt;script type=&quot;math/tex&quot;&gt;\begin{align}
-  \vert T_{4}&gt;_O = \frac{1}{\sqrt{2}}({\vert T_{4}&gt;_{O}}_{(1,1)} + {\vert T_{4}&gt;_{O}}_{(2,3)})
-  \end{align}&lt;/script&gt;
+  \(\begin{align}
+  \vert T_{4}\rangle_O = \frac{1}{\sqrt{2}}({\vert T_{4}\rangle_{O}}_{(1,1)} + {\vert T_{4}\rangle_{O}}_{(2,3)})
+  \end{align}\)
   이고 Player X가 측정을 할 때 ${O_6}_{(1,1)}$를 선택하였기 때문에, 고전적인 상황에서는 반드시 
   ${O_4}_{(2,3)}$가 모습을 드러내야 한다. 이는 Entanglement 현상 때문이다.&lt;/li&gt;
   &lt;li&gt;한편 ${X_5}$는 (2,3)과 (3,3)으로 중첩되어 있으며 역시 Entanglement 때문에 (3,3)이 발현되어야 한다.
@@ -192,7 +198,7 @@
 &lt;h3 id=&quot;case-2-o_6_33-을-선택하는-경우&quot;&gt;Case 2. ${O_6}_{(3,3)}$ 을 선택하는 경우&lt;/h3&gt;
 &lt;p&gt;Player X가 (3,3)에 위치한 ${O_6}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;/images/Collapse_O6(3,3).png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
+	&lt;img src=&quot;/assets/images/Collapse_O6(3,3).png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
 	&lt;figcaption&gt;(3,3)에 위치한 O6를 선택했을 때 발생한 붕괴상태&lt;/figcaption&gt;
   &lt;/figure&gt;
 &lt;p&gt;놀랍게도 Case 1과 다르게 O가 한 줄을 만들어 내어 승리했다! 순서를 살펴보도록 하자.&lt;/p&gt;
@@ -204,9 +210,9 @@
   &lt;li&gt;따라서 같은 자리에 있는 ${O_2}_{(3,3)}$, ${X_5}_{(3,3)}$은 다른 자리에 중첩되어 있는 ${O_2}_{(2,2)}$, ${X_5}_{(2,3)}$에 존재하게 된다.&lt;/li&gt;
   &lt;li&gt;${O_2}_{(2,2)}$에는 어떠한 것과도 관련이 없으므로, Classical로 돌아가면 O로 측정된다.&lt;/li&gt;
   &lt;li&gt;한편 (2,3)에는 ${X_5}_{(2,3)}$, ${O_4}_{(2,3)}$이 존재한다. 이 때 측정되는 것은 $X_5$ 인데, 앞의 경우와 같이
-  &lt;script type=&quot;math/tex&quot;&gt;\begin{align}
-  |T_{5}&gt;_X = \frac{1}{\sqrt{2}}({|T_{5}&gt;_X}_{(2,3)} + {|T_{5}&gt;_X}_{(3,3)})
-  \end{align}&lt;/script&gt;
+  \(\begin{align}
+  |T_{5}\rangle_X = \frac{1}{\sqrt{2}}({|T_{5}\rangle_X}_{(2,3)} + {|T_{5}\rangle_X}_{(3,3)})
+  \end{align}\)
   이고 Player X가 측정할 때 ${O_6}_{(3,3)}$을 측정하였으므로 고전적인 상황에서는 반드시 
   ${X_5}_{(2,3)}$가 모습을 드러내야 한다.&lt;/li&gt;
   &lt;li&gt;마찬가지로 $O_4$는 (1,1)에서 측정이 되고, 자연스레 ${X_3}_{(1,1)}$는 측정되지 않고 (3,2)에 있는
@@ -227,21 +233,21 @@
   &lt;li&gt;Wikipedia &lt;a href=&quot;https://en.wikipedia.org/wiki/Quantum_tic-tac-toe&quot;&gt;Quantum Tic-Tac-Toe&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;여기서 이러한 단어를 &lt;strong&gt;굳이&lt;/strong&gt; 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 ‘슈뢰딩거 고양이’현상을 아무 생각없이 현실적으로 (고전적인 계에서)일어난다고 보고 그대로 대입하는… 어처구니 없는 행동이 있다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;여기서 이러한 단어를 &lt;strong&gt;굳이&lt;/strong&gt; 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 ‘슈뢰딩거 고양이’현상을 아무 생각없이 현실적으로 (고전적인 계에서)일어난다고 보고 그대로 대입하는… 어처구니 없는 행동이 있다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;앞으로는 기존의 Tic-Tac-Toe를 ‘고전적인(Classical) Tic-Tac-Toe’라고 지칭을 하겠다. 물리학에서는 양자계 이전까지의 계를 ‘고전적(Classical)’ 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;앞으로는 기존의 Tic-Tac-Toe를 ‘고전적인(Classical) Tic-Tac-Toe’라고 지칭을 하겠다. 물리학에서는 양자계 이전까지의 계를 ‘고전적(Classical)’ 이라고 지칭하기 때문에 이쪽 용어를 쓰는 것이 더 편리하다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Physics" /><category term="Phyiscs" /><category term="QuantumMechanics" /><category term="Gametheory" /><category term="tic-tac-toe" /><category term="물리학" /><category term="양자역학" /><category term="게임이론" /><category term="틱택토" /><summary type="html">Intro 지금까지는 우리가 사는 세상을 물리학적으로 두 가지로 구분할 수 있는데, 하나는 우리가 일상에서 쉽게 접하고 접촉을 할 수 있는 ‘고전적인(Classical)’ 세상과, 일반 사람의 눈으로 관찰조차 힘든, 매우 미시적인 세계인 ‘양자(Quantum)’ 세상으로 나눌 수 있다. 이 양자 세계에서는 관측 조차 힘들 뿐더러 관측하는 행위 조차 계에 영향을 끼치는 등, 도통 일반 사람들이 이해하기 어려운 모습들이 보인다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/abstract-6.jpg" /><media:content medium="image" url="http://localhost:4000/images/abstract-6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Butter-Fly앨범 싱크가사</title><link href="http://localhost:4000/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/" rel="alternate" type="text/html" title="Butter-Fly앨범 싱크가사" /><published>2020-07-18T00:00:00+09:00</published><updated>2020-07-18T00:00:00+09:00</updated><id>http://localhost:4000/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics</id><content type="html" xml:base="http://localhost:4000/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/">&lt;p&gt;안녕하세요. Luminebear입니다.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Luminebear</name><email>rainstar77@outlook.com</email></author><category term="Physics" /><category term="Phyiscs" /><category term="QuantumMechanics" /><category term="Gametheory" /><category term="tic-tac-toe" /><category term="물리학" /><category term="양자역학" /><category term="게임이론" /><category term="틱택토" /><summary type="html">경고: 아직 완성되지 않은 게시글입니다.</summary></entry><entry><title type="html">Butter-Fly앨범 싱크가사</title><link href="/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/" rel="alternate" type="text/html" title="Butter-Fly앨범 싱크가사" /><published>2020-07-18T00:00:00+09:00</published><updated>2020-07-18T00:00:00+09:00</updated><id>/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics</id><content type="html" xml:base="/%EC%8B%B1%ED%81%AC%EA%B0%80%EC%82%AC/Butter-Fly-album-synclyrics/">&lt;p&gt;안녕하세요. Luminebear입니다.&lt;/p&gt;
 
 &lt;p&gt;아마 아래의 tumblbug사이트에 오신분은 ‘별바람’이라는 별명을 가진 분의 게시글을 보고 오셨을 것이라
 생각됩니다. &lt;strong&gt;같은 사람입니다.&lt;/strong&gt; 다만 이렇게 따로 블로그에 게시글을 남기는 것은 tumblbug사이트가 지난 게시글을 따로 검색이 불가능한 구조다 보니, 이렇게 개인 블로그에 남기게 되었습니다. 아래의 주소가 제가 tumblbug에 본래 업로드 하였던 게시물입니다.&lt;/p&gt;
 
-&lt;div&gt;&lt;a href=&quot;https://tumblbug.com/junyoungho/community/252fd8d8-6b20-4495-8f52-eae21ab67be9&quot; class=&quot;btn btn-info&quot;&gt;tumblbug 게시글 이동하기&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://tumblbug.com/junyoungho/community/252fd8d8-6b20-4495-8f52-eae21ab67be9&quot; class=&quot;btn btn--info&quot;&gt;tumblbug 게시글 이동하기&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;사실 알송 싱크가사에 올릴 수도 있겠지만, 펀딩하신 분들을 제외하고 음원이 공개되지 않았기에 미완성을 한 채로 싱크가사를 올리는 것은
 이치에 맞지 않습니다. 그러므로 본래의 게시물과 같이 아래에 있는 싱크가사는 &lt;strong&gt;2절을 제외한&lt;/strong&gt; 가사만을 아래에 작성했습니다. 아래의 준수사항대로 잘 따라하시면 싱크가사를 넣을 수 있을 거에요!&lt;/p&gt;
@@ -260,7 +266,7 @@
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;1-butter-fly&quot;&gt;1. Butter-Fly&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Butter-Fly]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Butter-Fly]
 [ar:전영호]
 [al:Butter-Fly]
 [offset:0]
@@ -317,7 +323,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;2-brave-heart&quot;&gt;2. Brave Heart&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Brave Heart]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Brave Heart]
 [ar:전영호]
 [al:Butter-fly]
 [offset:0]
@@ -356,7 +362,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;3-butter-fly-ballad-ver&quot;&gt;3. Butter-Fly (Ballad ver.)&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Butter Fly (Ballad Ver.)]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Butter Fly (Ballad Ver.)]
 [ar:전영호]
 [al:Butter-fly]
 [offset:0]
@@ -410,7 +416,7 @@
 &lt;p&gt;※ Butter-Fly (Ballad ver.)의 Oh my love 부분이 길어 끊었습니다. 그 위로 채워주시면 되겠습니다.&lt;/p&gt;
 
 &lt;h1 id=&quot;4-butter-fly-우리들의-war-game-ver&quot;&gt;4. Butter-Fly (우리들의 War Game Ver.)&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Butter Fly (우리들의 War Game Ver.)]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ti:Butter Fly (우리들의 War Game Ver.)]
 [ar:전영호]
 [al:Butter-fly]
 [offset:0]
@@ -462,10 +468,12 @@
 &lt;p&gt;나머지 반주만 있는 파일들은 4번과 2번 가사를 반주 파일과 일치시켜서 넣으시면 됩니다.&lt;/p&gt;
 
 &lt;p&gt;다시한번 강조드리지만, 싱크가사는 후원자 여러분들의 편의를 위해서 만든 것이며, 그리고 약속을 지키고자 2절 가사를 제외하였으니, 
-가사 파일의 2차 배포는 하지 말아주시길 바랍니다. &lt;strong&gt;부디 불법적인 행동을 하지 마시길 바랍니다 :)&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="싱크가사" /><category term="Butter-Fly" /><category term="DigimonAdventure" /><category term="lrc" /><category term="디지몬" /><category term="버터플라이" /><category term="디지몬어드벤처" /><category term="싱크가사" /><summary type="html">안녕하세요. Luminebear입니다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/abstract-5.jpg" /><media:content medium="image" url="http://localhost:4000/images/abstract-5.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">MathJax를 이용한 수학식 테스트</title><link href="http://localhost:4000/MathJax-Test/" rel="alternate" type="text/html" title="MathJax를 이용한 수학식 테스트" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/MathJax-Test</id><content type="html" xml:base="http://localhost:4000/MathJax-Test/">&lt;p&gt;다음과 같은 표현은 “ $ ‘$…$’ $ “를 이용한 문장 내 수식 표현입니다.&lt;/p&gt;
+가사 파일의 2차 배포는 하지 말아주시길 바랍니다. &lt;strong&gt;부디 불법적인 행동을 하지 마시길 바랍니다 :)&lt;/strong&gt;&lt;/p&gt;</content><author><name>Luminebear</name><email>rainstar77@outlook.com</email></author><category term="싱크가사" /><category term="Butter-Fly" /><category term="DigimonAdventure" /><category term="lrc" /><category term="디지몬" /><category term="버터플라이" /><category term="디지몬어드벤처" /><category term="싱크가사" /><summary type="html">안녕하세요. Luminebear입니다.</summary></entry><entry><title type="html">MathJax를 이용한 수학식 테스트</title><link href="/MathJax-Test/" rel="alternate" type="text/html" title="MathJax를 이용한 수학식 테스트" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>/MathJax-Test</id><content type="html" xml:base="/MathJax-Test/">&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;p&gt;다음과 같은 표현은 문장 내 수식 표현입니다.&lt;/p&gt;
 
-&lt;p&gt;이것은 $\sin(\frac{2\pi}{n})$함수의 표현입니다.&lt;/p&gt;
+&lt;p&gt;이것은 ${X_5}_{(2,3)}$ 표현입니다.&lt;/p&gt;
 
-&lt;p&gt;다음과 같은 표현은 “ $ ‘&lt;script type=&quot;math/tex&quot;&gt;...&lt;/script&gt;’ $ “를 이용한 문단 수식 표현입니다.&lt;/p&gt;
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;p&gt;다음과 같은 표현은 문단 수식 표현입니다.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;{\bf B} = \nabla\times{\bf A}&lt;/script&gt;</content><author><name></name></author><category term="MathJax" /><category term="Jekyll" /><category term="LaTeX" /><summary type="html">다음과 같은 표현은 “ $ ‘$…$’ $ “를 이용한 문장 내 수식 표현입니다.</summary></entry></feed>
+\[\nabla\times\vec{A}\]</content><author><name>Luminebear</name><email>rainstar77@outlook.com</email></author><category term="MathJax" /><category term="Jekyll" /><category term="LaTeX" /><summary type="html">Heading 1 다음과 같은 표현은 문장 내 수식 표현입니다.</summary></entry></feed>

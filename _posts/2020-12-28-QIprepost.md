@@ -1,15 +1,15 @@
 ---
-layout: post
 title: "양자 정보학을 위한 준비"
 tags: [Phyiscs, QuantumMechanics, QuantumInformation, 물리학, 양자역학, 양자정보] # 태그 입력
 categories: Physics
-toc: true
 mathjax: true # MathJax 사용을 위한 태그
 image:
-  path: /images/abstract-3.jpg
+  path: /_images/abstract-3.jpg
   feature: abstract-3.jpg
 comments: true
 published: true
+toc: true
+toc_sticky: true
 ---
 
 # Intro
@@ -43,14 +43,15 @@ published: true
 고전적인 정보이론을 양자 현상을 접목시키려는 것이므로 당연히 양자 역학은 필수가 아닐 수 없다. 여기서 주의할 점은, 양자 정보와 양자 컴퓨팅을 위해 양자역학을 공부하기 위해서는 
 **양자역학을 기술하는 근본적인 것**을 알아야 한다는 것이다. 아주 좋은 예시로, 학부 양자역학의 스테디 셀러인
 
- David J. Griffiths, Introduction to Quantum Mechanics
+> David J. Griffiths, Introduction to Quantum Mechanics
 
 이 책으로만 공부했다면 개념정립에 어려움을 겪을 수 있다. 양자역학을 공부하기에는 더할 나위 없이 가장 좋은 입문서이지만, 이 책의 가장 큰 단점인 '파동함수와 슈뢰딩거 방정식'을 깔고 모든 것을
 설명하는 점 때문에 양자 정보 공부에는 적합하지 않다고 생각한다. 우리가 눈에 보이는 것이 파동이라 그렇지 사실은 양자계(Quantum System)가 Hilbert Space에서 P.A.M Dirac의 Bra-Ket을 기본으로 
 깔고 간다는 점을 생각해보면 아이러니하다. 그러므로 현재까지 보았던 책들 중에서는
 
- Richard P. Feynman, Lectures on Physics Vol 3
- J.J. Sakurai, Modern Quantum Mechanics
+> Richard P. Feynman, Lectures on Physics Vol 3
+>
+> J.J. Sakurai, Modern Quantum Mechanics
 
 이것이 도움이 될 것 같다. 물론 두 번째 책은 대학원용 교재이기도 하고 양자역학의 다양한 것들을 다루기 때문에 차라리 파인만 물리학 강의 Vol.3을 보는 것이 양자 정보 학습에 도움이 되지 않을 까
 생각이 된다. 

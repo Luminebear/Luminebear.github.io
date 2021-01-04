@@ -1,16 +1,16 @@
 ---
-layout: post
 title: "Quantum Tic-Tac-Toe"
 tags: [Phyiscs, QuantumMechanics, Gametheory, tic-tac-toe, 물리학, 양자역학, 게임이론, 틱택토] # 태그 입력
 categories: Physics
 toc: true
+toc_label: Table of Contents
+toc_sticky: true
 mathjax: true # MathJax 사용을 위한 태그
-image:
-  path: /images/abstract-6.jpg
-  feature: abstract-6.jpg
 comments: true
 published: true
 ---
+**경고**: 아직 완성되지 않은 게시글입니다.
+{: .notice--warning}
 
 # Intro
 지금까지는 우리가 사는 세상을 물리학적으로 두 가지로 구분할 수 있는데, 하나는 우리가 일상에서 쉽게 접하고 접촉을 할 수 있는 
@@ -23,7 +23,7 @@ published: true
 게임을 이용하여 설명하려는 방법이 있다. 이 게시글에서는 **Tic-Tac-Toe** 게임에 양자적 현상을 접목시킨 
 **Quantum Tic-Tac-Toe**에 대해 소개하려고 한다. 이 게시글에 대한 설명이 부족하다고 생각되면 Wikipedia를 참고하면 된다.
 
-<div markdown="0"><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe" class="btn btn-info">Wikipedia Post 이동하기</a></div>
+<a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe" class="btn btn--info">Wikipedia Post 이동하기</a>
 
 # 잠깐... Tic-Tac-Toe는 뭘까요?
 Tic-Tac-Toe는 간단하게 말해 **'오목' '빙고'** 비슷한 것이라고 보면 된다. 물론 이들 게임보다는 재미가 없다. 이 게임에 대한 룰을 써보면,
@@ -36,7 +36,7 @@ Tic-Tac-Toe는 간단하게 말해 **'오목' '빙고'** 비슷한 것이라고 
 기존 게임이 복잡할 수록 고려해야 할 것이 너무 많기 때문이다. 
 
 <figure>
-	<img src="/images/Classical Tic-Tac-Toe.png" alt="" class="center">
+	<img src="/assets/images/Classical Tic-Tac-Toe.png" alt="" class="center">
 	<figcaption>Tic-Tac-Toe 게임의 예시. Player O가 한줄을 먼저 만들었기 때문에 승리했다.</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 
   $$
   \begin{align}
-  \vert T_1>_{A} = \frac{1}{\sqrt{2}}(\vert T_{11}> + \vert T_{12}>)
+  \vert {T_1}\rangle_{A} = \frac{1}{\sqrt{2}}(\vert T_{11}\rangle + \vert T_{12}\rangle)
   \end{align}
   $$
   
@@ -73,21 +73,21 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   
   $$
   \begin{align}
-  \vert T_1>_{A} & = \frac{1}{\sqrt{2}}(\vert T_{11}> + \vert T_{11}>) \\
-  & = \vert T_{11}>
+  \vert T_1\rangle_{A} & = \frac{1}{\sqrt{2}}(\vert T_{11}\rangle + \vert T_{11}\rangle) \\
+  & = \vert T_{11}\rangle
   \end{align}
   $$
   
   이 되는 것으므로 결국 1의 확률로 확정적으로 마킹한 칸에 있게 되는 것이다. 고전적인 Tic-Tac-Toe와 다른 것이 없다.
   <figure>
-	<img src="/images/Quantum Tic-Tac-Toe.png" alt="" class="center">
+	<img src="/assets/images/Quantum Tic-Tac-Toe.png" alt="" class="center">
 	<figcaption>Quantum Tic-Tac-Toe의 예제.</figcaption>
   </figure>
 
 ## 3. Cyclic Entanglement
   이 현상은 두 플레이어가 게임을 하고 있는 도중에 나타나는 현상이다. 다음의 예시를 살펴보도록 하자.
   <figure>
-	<img src="/images/Cyclic Entanglement.png" alt="" class="center">
+	<img src="/assets/images/Cyclic Entanglement.png" alt="" class="center">
 	<figcaption>예제에서 Cyclic Entanglement가 형성이 된 모습.</figcaption>
   </figure>
   그림을 살펴보면 Player O가 6번째 ($O_{6}$)에 놓은 상황에서, 하나의 **Cycle**이 형성되는 것을 확인할 수 있는데,
@@ -95,8 +95,8 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   
   $$
   \begin{align}
-  {O_{6}}_{(1,1)} \rightarrow {O_{6}}_{(3,3)} \rightarrow {X_{5}}_{(1,1)} \rightarrow {X_{5}}_{(2,3)} \rightarrow {O_{4}}_{(2,3)} 
-  \rightarrow {O_{4}}_{(1,1)} \rightarrow {O_{6}}_{(1,1)}
+  {O_{6}}_{(1,1)} \rightarrow {O_{6}}_{(3,3)} \rightarrow {X_{5}}_{(1,1)} \rightarrow {X_{5}}_{(2,3)} \rightarrow {O_{4}}_{(2,3)} \\
+  \rightarrow {O_{4}}_{(1,1)} \rightarrow {O_{6}}_{(1,1)} \nonumber
   \end{align}
   $$
   
@@ -114,13 +114,13 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 ## 4. Collapse
   Player X는 ${O_{6}}$가 중첩된 위치 (1,1)과 (3,3)에 대하여 선택을 해야한다.
   <figure>
-	<img src="/images/Cyclic Entanglement O6.png" alt="" class="center">
+	<img src="/assets/images/Cyclic Entanglement O6.png" alt="" class="center">
   </figure>
 
 ### Case 1. ${O_{6}}_{(1,1)}$ 을 선택하는 경우
   Player X가 (1,1)에 위치한 ${O_{6}}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.
   <figure>
-	<img src="/images/Collapse_O6(1,1).png" alt="" class="center">
+	<img src="/assets/images/Collapse_O6(1,1).png" alt="" class="center">
 	<figcaption>(1,1)에 위치한 O6를 선택했을 때 발생한 붕괴상태</figcaption>
   </figure>
   하나씩 순서를 살펴보도록 하자.
@@ -134,7 +134,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   그럴 수 밖에 없는데, 이는
   $$
   \begin{align}
-  \vert T_{4}>_O = \frac{1}{\sqrt{2}}({\vert T_{4}>_{O}}_{(1,1)} + {\vert T_{4}>_{O}}_{(2,3)})
+  \vert T_{4}\rangle_O = \frac{1}{\sqrt{2}}({\vert T_{4}\rangle_{O}}_{(1,1)} + {\vert T_{4}\rangle_{O}}_{(2,3)})
   \end{align}
   $$
   이고 Player X가 측정을 할 때 ${O_6}\_{(1,1)}$를 선택하였기 때문에, 고전적인 상황에서는 반드시 
@@ -153,7 +153,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
 ### Case 2. ${O_6}\_{(3,3)}$ 을 선택하는 경우
   Player X가 (3,3)에 위치한 ${O_6}$를 선택하면, Collapse가 발생한 뒤 아래와 같이 Classical Tic-Tac-Toe 상태로 돌아가게 된다.
   <figure>
-	<img src="/images/Collapse_O6(3,3).png" alt="" class="center">
+	<img src="/assets/images/Collapse_O6(3,3).png" alt="" class="center">
 	<figcaption>(3,3)에 위치한 O6를 선택했을 때 발생한 붕괴상태</figcaption>
   </figure>
   놀랍게도 Case 1과 다르게 O가 한 줄을 만들어 내어 승리했다! 순서를 살펴보도록 하자.
@@ -166,7 +166,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   4. 한편 (2,3)에는 ${X_5}\_{(2,3)}$, ${O_4}\_{(2,3)}$이 존재한다. 이 때 측정되는 것은 $X_5$ 인데, 앞의 경우와 같이
   $$
   \begin{align}
-  |T_{5}>_X = \frac{1}{\sqrt{2}}({|T_{5}>_X}_{(2,3)} + {|T_{5}>_X}_{(3,3)})
+  |T_{5}\rangle_X = \frac{1}{\sqrt{2}}({|T_{5}\rangle_X}_{(2,3)} + {|T_{5}\rangle_X}_{(3,3)})
   \end{align}
   $$
   이고 Player X가 측정할 때 ${O_6}\_{(3,3)}$을 측정하였으므로 고전적인 상황에서는 반드시 
@@ -181,7 +181,7 @@ Tic-Tac-Toe의 양자현상을 접목시킨 Quantum Tic-Tac-Toe는 Classical Tic
   * 측정 후 동시에 서로 한 줄을 만들었을 때
 
 # References
-  *  Goff, Allan; Lehmann, Dale; Siegel, Joel (2002-07-07). "Quantum Tic-Tac-Toe, Spooky-Coins & Magic-Envelopes, as Metaphors for Relativistic Quantum Physics"
+  * Goff, Allan; Lehmann, Dale; Siegel, Joel (2002-07-07). "Quantum Tic-Tac-Toe, Spooky-Coins & Magic-Envelopes, as Metaphors for Relativistic Quantum Physics"
   * Wikipedia [Quantum Tic-Tac-Toe](https://en.wikipedia.org/wiki/Quantum_tic-tac-toe)
 
 [^1]: 여기서 이러한 단어를 **굳이** 언급하는 이유는, 양자계를 반드시 고전적인 계와 구분할 필요가 있기 때문이다. 일부 사람들은 이러한 계를 구분하지 않고 양자역학을 잘못 이해하는 사람이 너무 많다. 대표적인 예를 든다면 '슈뢰딩거 고양이'현상을 아무 생각없이 현실적으로 (고전적인 계에서)일어난다고 보고 그대로 대입하는... 어처구니 없는 행동이 있다.
