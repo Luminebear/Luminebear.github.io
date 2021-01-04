@@ -14,7 +14,10 @@ toc_sticky: true
 **경고**: 아직 완성되지 않은 게시글입니다.
 {: .notice--warning}
 
-이번 게시글은 상태의 구분을 위해 만들어진 개념들이다.
+우리가 살고있는 지구에서 대기는 질소(78%), 산소(21%), 아르곤(0.93%), 이산화 탄소(0.04%)로 이루어져 있다고 알려져 있다. 
+이처럼 지구의 대기는 인간이 숨을 들이내쉬어 생명활동을 하는 산소로만 이루져 있지 않다. 이와 같이 양자계에서도 하나의 물질이 아닌
+섞여있는 상태로 이루어져 있거나, 또는 하나의 물질로만 이루어진 순수한 상태를 생각해볼 수 있다. 이 게시글에서는 양자역학에서 구분하는
+**순수 상태**와 **혼합 상태**를 알아보자 한다.
 
 ## 순수 상태 (Pure State)
 정의부터 알아보고 가자.
@@ -57,12 +60,46 @@ $$
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-하지만 이 정의로는 Pure State와 Mixed State에서 Density Operator[^1]로 구분하기는 어렵다. 그러므로 여기에 더해 A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)에서 다루어야 한다. 다시말해,
+하지만 이 정의로는 Pure State와 Mixed State에서 Density Operator[^1]로 구분하기는 어렵다. 그러므로 여기에 더해 A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)에서 다루어 보도록 하자. 다시말해,
 
 $$
-\mathcal{H}_A\otimes\mathcal{H}_B
+\mathcal{H}_{AB} = \mathcal{H}_A\otimes\mathcal{H}_B
 $$
 
-를 생각해보자.
+를 생각해보자. 이와 같은 경우에는 A공간과 B공간의 Unit Vector로 얽혀있는 파동함수,
+
+$$
+\vert\psi\rangle_{AB} = \sum_{i,j}{C_{ij}}\vert{i}\rangle_A\vert{j}\rangle_B
+$$
+
+이다. 이를 Density Matrix의 정의에 따라 적으면,
+
+$$
+\begin{aligned}
+\rho &= \vert\psi\rangle_{AB} \langle\psi\vert_{AB} \\
+&= \left( \sum_{i,j}{C_{ij}}\vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}\vert_A\langle{l}\vert_B \right) \\
+&= \sum_{i,j}\sum_{k,l}{C_{ij}}{C_{kl}^*} \left( \vert{i}\rangle_A \langle{k}\vert_A \right) \left( \vert{j}\rangle_B\langle{l}\vert_B \right)
+\end{aligned}
+$$
+
+이 때 파동함수의 Bra와 ket의 index는 다르게 구성됨에 주의하자. 이제 여기서 A나 B의 Density Matrix는 어떻게 구하는가? 이 때 사용되는
+정의가 바로 **환산 밀도 행렬 (Reduced Density Matrix)**이다.
+
+{% capture notice-2 %}
+**DEFINITION**: 두 Hilbert Space \mathcal{H}_A와 \mathcal{H}_B로 이루어진 공간에서 얽혀진 Density Matrix의 
+**Reduced Density Matrix** $\rho_A$, $\rho_B$는 
+
+$$
+\begin{aligned}
+\rho_A = Tr_B\vert \psi \rangle_{AB} \langle \psi \vert_{AB} \\
+\rho_B = Tr_A\vert \psi \rangle_{AB} \langle \psi \vert_{AB}
+\end{aligned}
+$$
+
+{% endcapture %}
+<div class="notice--info">{{ notice-2 | markdownify }}</div>
+
+식을 간단하게 해석해보면, $\rho_A$는 Density Matrix에서 B의 대각 성분을 모두 합하고 남은 것들[^2], 즉 A만을 의미한다.
 
 [^1]: Density Matrix가 연산자의 역할을 수행하기 때문에 연산자로 부르기도 한다.
+[^2]: 여기서 B의 off-diagonal elements는 0으로 정당화 할 수 있을까? 이것은 차후 게시물에서 참조하자.
