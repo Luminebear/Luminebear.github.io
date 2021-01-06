@@ -59,11 +59,18 @@ $$
 $$
 \begin{aligned}
 \rho_A &= Tr_B\vert{\psi}\rangle_{AB}\langle{\psi}\vert_{AB} \\
-&= Tr_B\sum_{i,j,k,l}\delta_{jl}{C_{ij}}{C^*_{kl}}(\vert{i}\rangle_A\langle{k}\vert_A)(\vert{j}\rangle_B\langle{l}\vert_B) \\
-    &= \sum_{i,k}(Tr_B\sum_{j}{C_{ij}}{C^*_{kj}}(\vert{j}\rangle_B\langle{j}\vert_B))(\vert{i}\rangle_A\langle{k}\vert_A) \\
-    &= \sum_{i,k}{C_{ij}}{C^*_{kl}}\vert{i}\rangle_A\langle{k}\vert_A \\
-    &= \sum_{i,k}\vert{i}\rangle_A({C_{ij}}{C_{kl}}^{*})\langle{k}\vert_A \\
+&= Tr_B\sum_{i,j,k,l}{C_{ij}}{C^*_{kl}}(\vert{i}\rangle_A\langle{k}\vert_A)(\vert{j}\rangle_B\langle{l}\vert_B) \\
+&= \sum_{i,j,k,l}{C_{ij}}{C^*_{kl}}(\vert{i}\rangle_A\langle{k}\vert_A)Tr_B(\vert{j}\rangle_B\langle{l}\vert_B) \\
+&= \sum_{i,k}\sum_{jl}{C_{ij}}{C^*_{kl}}(\vert{i}\rangle_A\langle{k}\vert_A)\delta_{jl} \\
+&= \sum_{i,k}\sum_{j}{C_{ij}}{C^*_{kj}}\vert{i}\rangle_A\langle{k}\vert_A \\
+&= \sum_{i,j,k}\vert{i}\rangle_A({C_{ij}}{C_{kj}}^{*})\langle{k}\vert_A \\
 \end{aligned}
 $$
 
-여기서 Kronecker Delta $\delta_{jl}$이 들어가는 것은, Trace의 성질을 만족하기 위함이다. 
+여기서 Kronecker Delta는 Trace의 성질에 따라
+
+$$
+Tr_B(\vert{j}\rangle_B\langle{l}\vert_B) = \delta_{jl}
+$$
+
+바뀐 것이다.
