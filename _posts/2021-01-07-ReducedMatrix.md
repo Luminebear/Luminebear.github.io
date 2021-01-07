@@ -1,5 +1,5 @@
 ---
-title: "슈미트 분해 (Schmidt Decomposition)"
+title: "얽혀있는 공간의 밀도 행렬"
 tags: [Phyiscs, QuantumMechanics, QuantumInformation, 물리학, 양자역학, 양자정보] # 태그 입력
 categories: Physics
 mathjax: true # MathJax 사용을 위한 태그
@@ -7,26 +7,27 @@ image:
   path: /_images/abstract-3.jpg
   feature: abstract-3.jpg
 comments: true
-published: false
+published: true
 toc: true
 toc_sticky: true
 ---
 **경고**: 아직 완성되지 않은 게시글입니다.
 {: .notice--warning}
 
-하지만 이 정의로는 Pure State와 Mixed State에서 Density Operator[^1]로 구분하기는 어렵다. 그러므로 여기에 더해 A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)에서 다루어 보도록 하자. 다시말해,
+앞의 게시글에서는 Pure State와 Mixed State가 어떤 차이가 있는 지 알아보았다. 이번에는 Pure State에서 기술하되, 
+A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)이 존재하고, 이것의 텐서곱으로 이루어진 공간에서 Density Matrix가 어떻게 나타나는지 살펴보고자 한다. 먼저 주어진 조건의 Hilbert Space를
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A\otimes\mathcal{H}_B
 $$
 
-를 생각해보자. 이와 같은 경우에는 A공간과 B공간의 Unit Vector로 얽혀있는 파동함수,
+으로 기술할 수 있다. 그리고 이와 같은 경우에는 A공간과 B공간의 Unit Vector로 얽혀있는 파동함수는,
 
 $$
 \vert\psi\rangle_{AB} = \sum_{i,j}{C_{ij}}\vert{i}\rangle_A\vert{j}\rangle_B
 $$
 
-이다. 이를 Density Matrix의 정의에 따라 적으면,
+이다. 이를 Pure State의 Density Matrix의 정의에 따라 적어보면,
 
 $$
 \begin{aligned}
