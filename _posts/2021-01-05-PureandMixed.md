@@ -36,7 +36,7 @@ $$
 혼합 상태는 순수 상태와 반대의 개념이라고 생각하면 된다. 
 
 {% capture notice-2 %}
-**DEFINITION**: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 없고 여러 Pure State가 섞인 경우
+<u>**DEFINITION**</u>: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 없고 여러 Pure State가 섞인 경우
 이를 **Mixed State**라고 한다. 이 경우에는 앞과는 달리 섞여있기 때문에 개별 파동함수의 구별이 불가능 하다.
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
@@ -48,7 +48,7 @@ $$
 밀도 행렬은 다음과 같이 정의된다.
 
 {% capture notice-2 %}
-**DEFINITION**: 유한 차원 함수 공간에서 **Denstiy Matrix**는
+<u>**DEFINITION**</u>: 유한 차원 함수 공간에서 **Denstiy Matrix**는
 
 $$
 \rho = \vert \psi \rangle \langle \psi \vert = \sum_i a_ia_i^*\vert\phi_i\rangle \langle\phi_i\vert
@@ -119,13 +119,13 @@ $$
 으로 나타난다. 이제 Pure State와 Mixed State의 등식을 정리하자.
 
 {% capture notice-2 %}
-**THEOREM**: **Pure State**에서 Density Matrix의 Trace가
+<u>**THEOREM**</u>: **Pure State**에서 Density Matrix의 Trace는
 
 $$
 Tr \rho^2 = Tr \rho = 1
 $$
 
-**Mixed State**에서 Denstiy Matrix의 Trace가
+**Mixed State**에서 Denstiy Matrix의 Trace는
 
 $$
 Tr \rho^2 < 1
