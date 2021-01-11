@@ -15,7 +15,7 @@ toc_sticky: true
 {: .notice--warning}
 
 앞의 게시글에서는 Pure State와 Mixed State가 어떤 차이가 있는 지 알아보았다. 이번에는 Pure State에서 기술하되, 
-A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)이 존재하고, 이것의 텐서곱으로 이루어진 공간에서 Density Matrix가 어떻게 나타나는지 살펴보고자 한다. 먼저 주어진 조건의 Hilbert Space를
+A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)이 존재하고, 이것의 텐서곱으로 이루어져 있을 때, Density Matrix가 어떻게 나타나는지 살펴보고자 한다. 먼저 주어진 조건의 Hilbert Space를
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A\otimes\mathcal{H}_B
@@ -41,7 +41,8 @@ $$
 정의가 바로 **환산 밀도 행렬 (Reduced Density Matrix)**이다.
 
 {% capture notice-2 %}
-**<u>DEFINITION</u>**: 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 Density Matrix의 
+<span style = "font-size:16pt">**<u>DEFINITION</u>**</span>
+: 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 Density Matrix의 
 **Reduced Density Matrix** $\rho_A$, $\rho_B$는 
 
 $$
@@ -59,19 +60,42 @@ $$
 
 $$
 \begin{aligned}
-\rho_A &= Tr_B\vert{\psi}\rangle_{AB}\langle{\psi}\vert_{AB} \\
-&= Tr_B\sum_{i,j,k,l}{C_{ij}}{C^*_{kl}}(\vert{i}\rangle_A\langle{k}\vert_A)(\vert{j}\rangle_B\langle{l}\vert_B) \\
-&= \sum_{i,j,k,l}{C_{ij}}{C^*_{kl}}(\vert{i}\rangle_A\langle{k}\vert_A)Tr_B(\vert{j}\rangle_B\langle{l}\vert_B) \\
-&= \sum_{i,k}\sum_{jl}{C_{ij}}{C^*_{kl}}(\vert{i}\rangle_A\langle{k}\vert_A)\delta_{jl} \\
-&= \sum_{i,k}\sum_{j}{C_{ij}}{C^*_{kj}}\vert{i}\rangle_A\langle{k}\vert_A \\
-&= \sum_{i,j,k}\vert{i}\rangle_A({C_{ij}}{C_{kj}}^{*})\langle{k}\vert_A \\
+\rho_A &= Tr_B \rho_{AB} \\
+&= Tr_B \left( \sum_{i,j}{C_{ij}}\vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}\vert_A\langle{l}\vert_B \right) \\
 \end{aligned}
 $$
 
-여기서 Kronecker Delta는 Trace의 성질에 따라
+이 때 B에 대한 Trace는 아래와 같은 관계식을 만족한다.[^1]
 
 $$
 Tr_B(\vert{j}\rangle_B\langle{l}\vert_B) = \delta_{jl}
 $$
 
-바뀐 것이다.
+그러므로 $\rho_A$는
+
+$$
+\begin{aligned}
+\rho_A &= \sum_{i,j}\sum_{k,l} \delta_{jl} {C_{ij}}{C_{kl}^*} \left( \vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \langle{k}\vert_A\langle{l}\vert_B \right) \\
+&= \sum_{i,j}\sum_{k} {C_{ij}}{C_{kj}^*} \left( \vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \langle{k}\vert_A\langle{j}\vert_B \right)
+\end{aligned}
+$$
+
+이 때 여기서 Completeness Relation
+
+$$
+\sum_{j} = \vert j \rangle \langle j \vert_B = \mathbf{I}
+$$
+
+을 만족하기 때문에 최종적으로 A의 Reduced Density Matrix는
+
+$$
+\rho_A = \sum_{i,k}{C_{i}}{C_{k}^*}\vert{i}\rangle_A\langle{k}\vert_A
+$$
+
+으로 결정된다. 마찬가지로 B에 대한 Reduced Density Matrix는
+
+$$
+\rho_B = \sum_{j,l}{C_{j}}{C_{l}^*}\vert{j}\rangle_B\langle{l}\vert_B
+$$
+
+[^1] J.J. Sakurai, Jim Napolitano, 'Modern Quantum Mechanics', 1.5 Change of Basis - Transformation Matrix 참조.
