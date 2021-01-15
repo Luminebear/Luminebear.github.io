@@ -30,7 +30,7 @@ $$
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-다시 말해서 순수 상태는 중첩되어 있지만 각 직교 규격화된 Base Ket과 그것의 확률을 알 수 있는 상황을 말한다. 
+다시 말해서 순수 상태는 각 직교 규격화된 Base Ket으로 중첩 되고 그것의 확률을 알 수 있는 상황을 말한다. 
 
 ## 혼합 상태 (Mixed State)
 혼합 상태는 순수 상태가 통계적으로 잘 섞여진 상태(statistically ensemble state)라고 생각하면 된다.
