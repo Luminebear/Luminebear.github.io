@@ -24,16 +24,16 @@ $$
 으로 기술할 수 있다. 그리고 이와 같은 경우에는 A공간과 B공간의 Unit Vector로 얽혀있는 파동함수는,
 
 $$
-\vert\psi\rangle_{AB} = \sum_{i,j}{C_{ij}}\vert{i}\rangle_A\vert{j}\rangle_B
+\vert\psi_{AB}\rangle = \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle
 $$
 
 이다. 이를 Pure State의 Density Matrix의 정의에 따라 적어보면,
 
 $$
 \begin{aligned}
-\rho_{AB} &= \vert\psi\rangle_{AB} \langle\psi\vert_{AB} \\
-&= \left( \sum_{i,j}{C_{ij}}\vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}\vert_A\langle{l}\vert_B \right) \\
-&= \sum_{i,j}\sum_{k,l}{C_{ij}}{C_{kl}^*} \left( \vert{i}\rangle_A \langle{k}\vert_A \right) \left( \vert{j}\rangle_B\langle{l}\vert_B \right)
+\rho_{AB} &= \vert\psi_{AB}\rangle \langle\psi_{AB}\vert \\
+&= \left( \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}_A\vert\langle{l}_B\vert \right) \\
+&= \sum_{i,j}\sum_{k,l}{C_{ij}}{C_{kl}^*} \left( \vert{i}_A\rangle \langle{k}_A\vert \right) \left( \vert{j}_B\rangle\langle{l}_B\vert \right)
 \end{aligned}
 $$
 
@@ -41,14 +41,14 @@ $$
 정의가 바로 **환산 밀도 행렬 (Reduced Density Matrix)**이다.
 
 {% capture notice-2 %}
-<span style = "font-size:16pt">**<u>DEFINITION</u>**</span>
+<div style = "font-size:16pt" markdown="1">**<u>DEFINITION</u>**</div>
 : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 Density Matrix의 
 **Reduced Density Matrix** $\rho_A$, $\rho_B$는 
 
 $$
 \begin{aligned}
-\rho_A = Tr_B\vert \psi \rangle_{AB} \langle \psi \vert_{AB} \\
-\rho_B = Tr_A\vert \psi \rangle_{AB} \langle \psi \vert_{AB}
+\rho_A = Tr_B\vert \psi_{AB} \rangle \langle \psi_{AB} \vert \\
+\rho_B = Tr_A\vert \psi_{AB} \rangle \langle \psi_{AB} \vert
 \end{aligned}
 $$
 
@@ -61,21 +61,21 @@ $$
 $$
 \begin{aligned}
 \rho_A &= Tr_B \rho_{AB} \\
-&= Tr_B \left( \sum_{i,j}{C_{ij}}\vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}\vert_A\langle{l}\vert_B \right) \\
+&= Tr_B \left( \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}_A\vert\langle{l}_B\vert \right) \\
 \end{aligned}
 $$
 
 이 때 B에 대한 Trace는 아래와 같은 관계식을 만족한다.[^1]
 
 $$
-Tr_B(\vert{j}\rangle_B\langle{l}\vert_B) = \delta_{jl}
+Tr_B(\vert{j}_B\rangle\langle{l}_B\vert) = \delta_{jl}
 $$
 
 그러므로 $\rho_A$는
 
 $$
 \begin{aligned}
-\rho_A &= \sum_{i,j}\sum_{k,l} \delta_{jl} {C_{ij}}{C_{kl}^*} \left( \vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \langle{k}\vert_A\langle{l}\vert_B \right) \\
+\rho_A &= \sum_{i,j}\sum_{k,l} \delta_{jl} {C_{ij}}{C_{kl}^*} \left( \vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \langle{k}_A\vert\langle{l}_B\vert \right) \\
 &= \sum_{i,j}\sum_{k} {C_{ij}}{C_{kj}^*} \left( \vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \langle{k}\vert_A\langle{j}\vert_B \right)
 \end{aligned}
 $$
@@ -83,19 +83,19 @@ $$
 이 때 여기서 Completeness Relation
 
 $$
-\sum_{j} = \vert j \rangle \langle j \vert_B = \mathbf{I}
+\sum_{j} = \vert j_B \rangle \langle j_B \vert = \mathbf{I}
 $$
 
 을 만족하기 때문에 최종적으로 A의 Reduced Density Matrix는
 
 $$
-\rho_A = \sum_{i,k}{C_{i}}{C_{k}^*}\vert{i}\rangle_A\langle{k}\vert_A
+\rho_A = \sum_{i,j,k} {C_{ij}}{C_{kj}^*} \left( \vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \langle{k}_A\vert\langle{j}_B\vert \right)
 $$
 
 으로 결정된다. 마찬가지로 B에 대한 Reduced Density Matrix는
 
 $$
-\rho_B = \sum_{j,l}{C_{j}}{C_{l}^*}\vert{j}\rangle_B\langle{l}\vert_B
+\rho_B = \sum_{i,j,l}{C_{ij}}{C_{il}^*}\vert{j}\rangle_B\langle{l}\vert_B
 $$
 
-[^1] J.J. Sakurai, Jim Napolitano, 'Modern Quantum Mechanics', 1.5 Change of Basis - Transformation Matrix 참조.
+[^1]: J.J. Sakurai, Jim Napolitano, 'Modern Quantum Mechanics', 1.5 Change of Basis - Transformation Matrix 참조.
