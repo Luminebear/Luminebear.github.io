@@ -26,42 +26,79 @@ $$
 \vert \psi \rangle = \sum_i a_i\vert \phi_i \rangle
 $$
 
-여기서 $a_i$는 i번째 확률 진폭(Probability Amplitude), $\vert \phi \rangle_i$는 i번째 직교 규격화된 파동함수이다.
+여기서 $a_i$는 i번째 확률 진폭(Probability Amplitude), $\vert \phi \rangle_i$는 i번째 직교 규격화된 고유 함수이다.
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-다시 말해서 순수 상태는 중첩되어 있지만 각 직교 규격화된 Base ket과 그것의 확률을 알 수 있는 상황을 말한다. 
+다시 말해서 순수 상태는 중첩되어 있지만 각 직교 규격화된 Base Ket과 그것의 확률을 알 수 있는 상황을 말한다. 
 
 ## 혼합 상태 (Mixed State)
-혼합 상태는 순수 상태와 반대의 개념이라고 생각하면 된다. 
+혼합 상태는 순수 상태가 통계적으로 잘 섞여진 상태(statistically ensemble state)라고 생각하면 된다.
 
 {% capture notice-2 %}
 **<u>DEFINITION</u>**: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 없고 여러 Pure State가 섞인 경우
-이를 **Mixed State**라고 한다. 이 경우에는 앞과는 달리 섞여있기 때문에 개별 파동함수의 구별이 불가능 하다.
+이를 **Mixed State**라고 한다. 이 경우에는 앞과는 달리 섞여있기 때문에 개별 파동함수의 구별이 불가능 하다. 수식으로는 다음과 같이 나타낼 수 있다.
+
+$$
+\sum_i^n b_i\vert \psi_i \rangle = b_1\vert \psi_1 \rangle + b_2\vert \psi_2 \rangle + b_3\vert \psi_3 \rangle + \cdots
+$$
+
+이 때 규격화 조건으로 $\sum_i^n b_i = 1$이다.
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-혼합 상태에서는 완전히 섞여있는 탓에 섞여져 있는 것의 각 파동함수를 알 수가 없다. 그렇다면, 두 상태를 이렇게만 구분하는 걸까?
-그렇지 않다. 두 상태를 구분하는 방법은 바로 **밀도행렬**을 이용하면 구별할 수 있다.
+혼합 상태에서는 완전히 섞여있는 탓에 섞여져 있는 것의 각 파동함수를 알 수가 없다. 그러므로 주의할 점은 저 식에서 모든 파동함수의 개수와, 각 파동함수의 차원이 같을 필요가 없다. 그렇다면, 두 상태를 이렇게만 구분하는 걸까? 그렇지 않다. 두 상태를 구분하는 방법은 바로 **밀도행렬**을 이용하면 구별할 수 있다.
 
 ## 밀도 행렬 (Density Matrix)
 밀도 행렬은 다음과 같이 정의된다.
 
 {% capture notice-2 %}
-**<u>DEFINITION</u>**: 유한 차원 함수 공간에서 **Denstiy Matrix**는
+**<u>DEFINITION</u>**: 유한 차원 함수 공간에서 Pure State의 **Denstiy Matrix**는
 
 $$
-\rho = \vert \psi \rangle \langle \psi \vert = \sum_i a_ia_i^*\vert\phi_i\rangle \langle\phi_i\vert
+\rho_{PS} \equiv \vert \psi \rangle \langle \psi \vert = \sum_i a_ia_i^*\vert\phi_i\rangle \langle\phi_i\vert
 $$
 
+이 때 $a_ia_i^*$는 Probability Coefficient이고 $\sum_i a_ia_i^* = 1$인 Normalization Condition을 만족한다. 만약 Pure State가 아닌 Mixed State인 경우에는,
+
+$$
+\rho_{MS} \equiv \sum_ib_i \vert \psi_i \rangle \langle \psi_i \vert
+$$
+
+그리고 $\sum_i^n b_i = 1$
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-여기서 밀도 행렬은 어떤 Base Ket이 주어지면 밀도 행렬의 공간으로 투영(Projection)해주는 연산자의 역할도 수행한다. 다시말해,
+보다 이해를 돕기 위해서 Density Operator가 등장하는 과정을 살펴보도록 하자. 먼저 우리가 어떤 관측가능한(Observable) 'A'가 있다고 가정을 하자. Observable 'A'는 기본적으로 Eigenfunction
 
 $$
-\left( \vert \psi \rangle \langle \psi \vert \right) \cdot \vert \phi \rangle = \vert \psi \rangle \cdot \left( \langle \psi \vert \phi \rangle \right) = a_\psi \vert \psi \rangle
+A\vert a' \rangle = a'\vert a' \rangle
 $$
+
+을 만족하며, 이를 Mixed Ensemble (State)에서 측정(Measurement in Q.M.)한다고 하자. 아주 많이 측정을 했다고 가정을 하면, Observable 'A'의 평균을 알 수 있을 것이다. 이를 A에 대한 **앙상블 평균(Ensemble Average)**이라고 하며 계산하면
+
+$$
+\begin{aligned}
+\langle A \rangle &= \sum_i b_i\langle \psi_i \vert A \vert \psi_i \rangle \\
+&= \sum_{i,j} b_i \langle\psi_i\vert  A \vert a'_j\rangle\langle a'_j \vert\psi_i\rangle \\
+&= \sum_{i,j} b_i \vert \langle a'_j \vert \psi_i \rangle \vert^2 a'_j
+\end{aligned}
+$$
+
+이다. 그렇다면 여기서 또 다른 Base ket set를 걸어보면 어떨까?
+
+$$
+\begin{aligned}
+\langle A \rangle &= \sum_{i,j} b_i \langle\psi_i\vert  A \vert a'_j\rangle\langle a'_j \vert\psi_i\rangle \\
+&= \sum_i \sum_j \sum_k b_i \langle\psi_i\vert a_k^{''} \rangle \langle a_k^{''} \vert A \vert a'_j\rangle\langle a'_j \vert\psi_i\rangle \\
+&= \sum_j \sum_k \left( \sum_i b_i \langle a'_j \vert\psi_i\rangle \langle\psi_i\vert a_k^{''} \rangle \right) \langle a_k^{''} \vert A \vert a'_j\rangle
+\end{aligned}
+$$
+
+방금전의 식과 하나가 있을 때와 비교하면, 몇 개의 Base ket set이 있던 하나의 고정된 항이 있고 단순히 Pure State의 합에만 의존하는 것을 볼 수 있다. 이것이 Density Matrix이다. 
+여기서 Summation만 없으면 Pure State의 Desity Matrix가 된다.
+
+## Density Matrix를 이용한 Pure State와 Mixed State의 차이
 
 이제 Pure State와 Mixed State의 차이를 살펴보자. Pure State와 Mixed State를 구분하는 방법은 바로 **대각합(Trace, 트레이스)**를 이용한다.
 먼저 Pure State에서는 파동함수를 구별할 수 있다고 언급하였다. 여기서 중요한 성질이 하나 있는데 Pure State에서,
@@ -134,4 +171,9 @@ $$
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
+## References
+* J.J. Sakurai, Modern Quantum Mechanics, 3rd Ed., 3.4.2 Ensemble Averages and Desntiy Operator
+* 이해웅, 양자 정보학 강의, 1장
+
+## Footnote
 [^1]: Density Matrix가 연산자의 역할을 수행하기 때문에 연산자로 부르기도 한다.
