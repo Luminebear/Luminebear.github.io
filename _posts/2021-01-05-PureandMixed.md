@@ -59,7 +59,7 @@ $$
 \rho_{PS} \equiv \vert \psi \rangle \langle \psi \vert = \sum_i a_ia_i^*\vert\phi_i\rangle \langle\phi_i\vert
 $$
 
-이 때 ${a_ia_i^*}$는 Probability Coefficient이고 ${\sum_i a_ia_i^* = 1}$인 Normalization Condition을 만족한다. 만약 Pure State가 아닌 Mixed State인 경우에는,
+이 때 ${a_ia_i^*}$ 는 Probability Coefficient이고 ${\sum_i a_ia_i^* = 1}$ 인 Normalization Condition을 만족한다. 만약 Pure State가 아닌 Mixed State인 경우에는,
 
 $$
 \rho_{MS} \equiv \sum_ib_i \vert \psi_i \rangle \langle \psi_i \vert
