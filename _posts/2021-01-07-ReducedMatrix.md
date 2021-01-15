@@ -41,9 +41,7 @@ $$
 정의가 바로 **환산 밀도 행렬 (Reduced Density Matrix)**이다.
 
 {% capture notice-2 %}
-<span style = "font-size:16pt" markdown="1">**<u>DEFINITION</u>**</span>
-
-: 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 Density Matrix의 
+**<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 Density Matrix의 
 **Reduced Density Matrix** $\rho_A$, $\rho_B$는 
 
 $$

@@ -59,7 +59,7 @@ $$
 \rho_{PS} \equiv \vert \psi \rangle \langle \psi \vert = \sum_i a_ia_i^*\vert\phi_i\rangle \langle\phi_i\vert
 $$
 
-이 때 $a_ia_i^*$는 Probability Coefficient이고 $\sum_i a_ia_i^* = 1$인 Normalization Condition을 만족한다. 만약 Pure State가 아닌 Mixed State인 경우에는,
+이 때 ${a_ia_i^*}$는 Probability Coefficient이고 ${\sum_i a_ia_i^* = 1}$인 Normalization Condition을 만족한다. 만약 Pure State가 아닌 Mixed State인 경우에는,
 
 $$
 \rho_{MS} \equiv \sum_ib_i \vert \psi_i \rangle \langle \psi_i \vert
@@ -69,7 +69,7 @@ $$
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-보다 이해를 돕기 위해서 Density Operator가 등장하는 과정을 살펴보도록 하자. 먼저 우리가 어떤 관측가능한(Observable) 'A'가 있다고 가정을 하자. Observable 'A'는 기본적으로 Eigenfunction
+보다 이해를 돕기 위해서 Density Operator[^1]가 등장하는 과정을 살펴보도록 하자. 먼저 우리가 어떤 관측가능한(Observable) 'A'가 있다고 가정을 하자. Observable 'A'는 기본적으로 Eigenfunction
 
 $$
 A\vert a' \rangle = a'\vert a' \rangle
@@ -175,5 +175,4 @@ $$
 * J.J. Sakurai, Modern Quantum Mechanics, 3rd Ed., 3.4.2 Ensemble Averages and Desntiy Operator
 * 이해웅, 양자 정보학 강의, 1장
 
-## Footnote
 [^1]: Density Matrix가 연산자의 역할을 수행하기 때문에 연산자로 부르기도 한다.
