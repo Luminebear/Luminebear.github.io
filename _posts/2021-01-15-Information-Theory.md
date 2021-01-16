@@ -63,7 +63,13 @@ $$
 따라서 에너지 보존식이 T,S,p,V의 함수로 만들어졌다. 
 
 ### 볼츠만 엔트로피 (Boltzman Entropy)
-앞에서 얻은 또 다른 에너지 보존식의 표현을 이용할 것이다. 이 식으로부터 온도에 대한 식을 다음과 같이
+앞에서 얻은 또 다른 에너지 보존식의 표현을 이용할 것이다. 이 식을 전미분의 형태로 쓰게되면,
+
+$$
+dU = \frac{\partial{U}}{\partial{S}} \vert_V dS + \frac{\partial{U}}{\partial{V}} \vert_S dV
+$$
+
+그러면 온도에 대한 식을 다음과 같이
 
 $$
 T = \frac{\partial{U}}{\partial{S}} \vert_V
@@ -75,6 +81,7 @@ $$
 \frac{1}{k_BT} = \frac{d\ln\Omega}{dE}
 $$
 
+여기서 $\Omega$는 microstate의 총 상태수로 양의 정수값을 가진다. E는 그 상태수가 가지는 에너지이다.
 두 식을 결합하면,
 
 $$
@@ -88,25 +95,27 @@ S = k_B\ln\Omega
 $$
 
 ### 깁스 엔트로피 (Gibbs Entropy)
-앞에서 살펴본 엔트로피는 거시적으로 살펴본 것으로, 상태 측정이 불가능한 미시 상태(microstate)를 생각해야 한다. 전체적인 엔트로피를 다음과 같이 쓰자.
+앞에서 살펴본 엔트로피는 사실 거시적으로 살펴본 것이다. 만약에 이 거시상태들에 각각 동등한 미시 상태(microstate)가 주어진다면 어떻게 생각해야 할까? 전체적인 엔트로피를 다음과 같이 쓰자.
 
 $$
 S_{tot} = S + S_{micro}
-$$
+$$ 
 
-microstate에 대해서 상태 측정은 불가능 하지만, 간단한 통계를 이용하여 가늠할 수 있다. 먼저 모든 microstate의 합을 써보면,
+여기서 $S_{micro}$가 추가된 것이 우리가 고려해줘야 할 미시 상태의 엔트로피이며, S가 그것을 고려하지 않았을 때 엔트로피이다.[^1]
+
+microstate에 대해서 상태 측정은 불가능 하지만, 간단한 통계를 이용하여 가늠할 수 있다. 먼저 모든 microstate의 합이 우리가 측정한 거시상태의 수와 동일해야 하므로, 이를 N 이라고 할 때
 
 $$
 N = \sum_i{n_i}
 $$
 
-$n_i$는 각 개별 상태이다. 그리고 이 개별 상태를 발견할 확률을 $P_i$라고 하면
+$n_i$는 각 개별 상태이다. 그리고 이를 발견할 확률을 $P_i$라고 하면
 
 $$
 P_i = \frac{n_i}{\sum_i{n_i}} \qquad \sum_iP_i = 1
 $$
 
-볼츠만의 엔트로피 표현에서 $\Omega$는 미시상태의 수로 여기서 N과 같기 때문에, Total Entropy를
+볼츠만의 엔트로피 표현에서 $\Omega$는 거시상태에서 보는 microstate의 총 수로 여기서 N과 같기 때문에, Total Entropy를
 
 $$
 S_{tot} = k_B\ln{N}
@@ -118,7 +127,7 @@ $$
 S_{micro} = \langle s_i \rangle = \sum_i P_is_i = \sum_i P_ik_B\ln{n_i}
 $$
 
-그러므로 microstate를 제외한 엔트로피 S는
+그러므로 microstate를 제외한 엔트로피 S를
 
 $$
 \begin{aligned}
@@ -131,6 +140,8 @@ S &= S_{tot} - S_{micro} \\
 \end{aligned}
 $$
 
+Gibbs Entropy 표현은 우리가 실제 측정할 수 없는 microstate를 제외하고 상태의 확률을 알려주는 역할을 해준다.
+
 ## 정보이론적 엔트로피 (Informatic Entropy)
 ### 섀넌 엔트로피 (Shannon Entropy)
 Claude Shannon은 어떤 정보량 Q에 대해 다음과 같이 정의하였다.
@@ -139,16 +150,14 @@ $$
 Q = -k\log_2 P
 $$
 
-여기서 k는 양의 상수로, 어떤 문장에 담겨있는 확률이 작으면 정보는 많아지는 의미를 가진다. 대부분의 상황에서는 $k=1$로둔다. 그리고 P는 앞의 Gibbs Entropy와 같이 확률을 의미한다.
-
-Gibbs Entropy 표현과 같이 맞추면
+여기서 k는 양의 상수로, 대부분 1 로 둔다. 정보량에 음수가 붇는다는 것은, 어떤 문장에 담겨있는 확률 P가 작으면 정보 Q는 많아지는 의미를 가진다. Gibbs Entropy 표현과 같이 맞추면
 
 $$
 S = \langle Q \rangle = -k\sum_iP_i\log_2P_i
 $$
 
-이를 Shannon Entropy라고 한다. 엄밀하게 따지면 정보이론에서의 엔트로피는 상수들이 의미하는 바가 열역학적 엔트로피와는 같지 않다.
-하지만 이러한 접근이 정보이론과 통계역학을 연관짓는데에는 도움이 된다.
+이를 Shannon Entropy라고 한다. 엄밀하게 따지면, $k=k_B, log_2 \rightarrow \ln$을 만족해야 Gibbs Entropy가 된다. 그러므로 정보이론에서의 엔트로피는 상수들이 의미하는 바가 열역학적 엔트로피와는 같지 않다.
+하지만 다소 정확하지 않은 접근이지만, 표현할 수 있는 식의 형태가 비슷하다. 그러므로 정보이론과 통계역학을 연관 짓는데에는 도움이 된다.[^2]
 
 ### 폰 노이만 엔트로피 (von Neumann Entropy)
 이제 폰 노이만 엔트로피에 대해서 알아볼 차례가 되었다. 폰 노이만 엔트로피는 확률이 있는 자리에 양자역학에서의 밀도 행렬(Density Matrix)로 대치가 된다. 즉 다시 말해,
@@ -169,3 +178,6 @@ $$
 ## References
 * Stephen J. Blundell, Concepts in Thermal Physics, CH14, CH15
 * Wikipedia, [von Neumann entropy](https://en.wikipedia.org/wiki/Von_Neumann_entropy)
+
+[^1]: 여기서 의문점, 만약에 microstate까지 고려한다면 곱의 형태로 나타내야 하지 않을 까? 그것은 앞의 볼츠만의 엔트로피 표현에서, **로그**가 들어간다는 점을 생각해보면 된다.
+[^2]: 물론 열과 정보 사이의 관계는 Rolf Landauer가 제시한 란다우어의 원리라는 것으로 연결짓기도 한다.
