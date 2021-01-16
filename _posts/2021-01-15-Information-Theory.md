@@ -11,6 +11,9 @@ published: true
 toc: true
 toc_sticky: true
 ---
+**경고**: 아직 완성되지 않은 게시글입니다. (폰노이만 엔트로피 관련 설명이 부실함)
+{: .notice--warning}
+
 이 게시글에서는 양자 정보를 배우기 앞서 통계역학적으로 필요한 개념들을 소개한다. 많은 내용을 함축적으로 담았기 때문에 양자 정보에 대해 어떤 흐름으로 가게 되는지 살펴보는 정도로 알아본다.
 
 ## 맥스웰의 악마 (Maxwell's Demon)
@@ -45,7 +48,7 @@ $$
 dS = \frac{\delta{Q_{rev}}}{T} \geq \frac{\delta{Q}}{T} 
 $$
 
-그리고 같은 양의 기체가 용기에 들어있고 등압(Isobaric Work) 조건에서 가역과정인 경우, 열원에서 열을 받아들임으로 기체가 외부에 하는 일은
+여기서 rev는 가역적인(Reversible)을 의미한다. 그리고 같은 양의 기체가 용기에 들어있고 등압(Isobaric Work) 조건에서 가역과정인 경우, 열원에서 열을 받아들임으로 기체가 외부에 하는 일은
 
 $$
 \delta{W}_{rev} = -pdV
@@ -85,7 +88,7 @@ S = k_B\ln\Omega
 $$
 
 ### 깁스 엔트로피 (Gibbs Entropy)
-앞에서 살펴본 엔트로피는 거시적으로 살펴본 것으로, 상태 측정이 불가능한 미시 상태(micro state)를 생각해야 한다. 전체적인 엔트로피를 다음과 같이 쓰자.
+앞에서 살펴본 엔트로피는 거시적으로 살펴본 것으로, 상태 측정이 불가능한 미시 상태(microstate)를 생각해야 한다. 전체적인 엔트로피를 다음과 같이 쓰자.
 
 $$
 S_{tot} = S + S_{micro}
@@ -122,8 +125,8 @@ $$
 S &= S_{tot} - S_{micro} \\
 &= k_B\ln{N} - \sum_i P_ik_B\ln{n_i} \\
 &= k_B\sum_i P_i \left( \ln{N} - \ln{n_i} \right) \\
-&= k_B\sum_i P_i \frac{\ln{N}}{\ln{n_i}} \\
-&= -k_B\sum_i P_i \frac{\ln{n_i}}{\ln{N}} \\
+&= k_B\sum_i P_i \ln\frac{N}{{n_i}} \\
+&= -k_B\sum_i P_i \ln\frac{{n_i}}{N} \\
 &= -k_B\sum_i P_i \ln{P_i}
 \end{aligned}
 $$
@@ -136,7 +139,7 @@ $$
 Q = -k\log_2 P
 $$
 
-여기서 k는 양의 상수로, 어떤 문장에 담겨있는 확률이 작으면 정보는 많아지는 의미를 가진다. 대부분의 상황에서는 1로둔다. 그리고 P는 앞의 Gibbs Entropy와 같이 확률을 의미한다.
+여기서 k는 양의 상수로, 어떤 문장에 담겨있는 확률이 작으면 정보는 많아지는 의미를 가진다. 대부분의 상황에서는 $k=1$로둔다. 그리고 P는 앞의 Gibbs Entropy와 같이 확률을 의미한다.
 
 Gibbs Entropy 표현과 같이 맞추면
 

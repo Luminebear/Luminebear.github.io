@@ -81,7 +81,8 @@ $$
 \begin{aligned}
 \langle A \rangle &= \sum_i b_i\langle \psi_i \vert A \vert \psi_i \rangle \\
 &= \sum_{i,j} b_i \langle\psi_i\vert  A \vert a'_j\rangle\langle a'_j \vert\psi_i\rangle \\
-&= \sum_{i,j} b_i \vert \langle a'_j \vert \psi_i \rangle \vert^2 a'_j
+&= \sum_{i,j} b_i \vert \langle a'_j \vert \psi_i \rangle \vert^2 a'_j \\
+&= \sum_{i,j} b_i \langle a'_j \vert \psi_i \rangle \langle \psi_i \vert a'_j \rangle a'_j
 \end{aligned}
 $$
 
@@ -95,8 +96,13 @@ $$
 \end{aligned}
 $$
 
-방금전의 식과 하나가 있을 때와 비교하면, 몇 개의 Base ket set이 있던 하나의 고정된 항이 있고 단순히 Pure State의 합에만 의존하는 것을 볼 수 있다. 이것이 Density Matrix이다. 
-여기서 Summation만 없으면 Pure State의 Desity Matrix가 된다.
+방금전의 식과 하나가 있을 때와 비교하면, 몇 개의 Base ket set이 있던 하나의 고정된 항이 있고 단순히 Pure State의 합에만 의존하는 것을 볼 수 있다. 즉
+
+$$
+\sum_{i} b_i \vert \psi_i \rangle \langle \psi_i \vert
+$$
+
+이것이 Density Matrix이다. 여기서 Summation만 없으면 Pure State의 Desity Matrix가 된다.
 
 ## Density Matrix를 이용한 Pure State와 Mixed State의 차이
 
@@ -147,13 +153,13 @@ $$
 \end{aligned}
 $$
 
-정의를 다시 생각해보면, 당연히 성립이 되지 않는다. 왜냐하면 우리는 Mixed State에서 정확한 파동함수를 알 수 없다고 했기 때문이다. 따라서 Mixed State의 $Tr\rho^2$은
+정의를 다시 생각해보면, 당연히 성립이 되지 않는다. 왜냐하면 우리는 Mixed State에서 정확히 직교 규격화된 ket으로 이루어진 파동함수를 알 수 없다고 했기 때문이다. 따라서 Mixed State의 $Tr\rho^2$은
 
 $$
 Tr\rho^2 = \sum_ip_i^2 < 1
 $$
 
-으로 나타난다. 이제 Pure State와 Mixed State의 등식을 정리하자.
+으로 나타난다.[^2] 이제 Pure State와 Mixed State의 등식을 정리하자.
 
 {% capture notice-2 %}
 **<u>THEOREM</u>**: **Pure State**에서 Density Matrix의 Trace는
@@ -176,3 +182,4 @@ $$
 * 이해웅, 양자 정보학 강의, 1장
 
 [^1]: Density Matrix가 연산자의 역할을 수행하기 때문에 연산자로 부르기도 한다.
+[^2]: 사실 이부분에서도 뭔가 불명확한 느낌이 없지 않다. 단순히 Normalization 때문에 합이 1이 아니라는 것으로 작다고만 표현한다는 것이 정당화가 되는 것일까? 
