@@ -167,10 +167,10 @@ S = -Tr(\rho\ln\rho)
 $$
 
 여기서 자연로그로 바뀐것은 일반적으로는 양자계에서 밑이 2인 로그 보다는 자연로그를 사용하기가 용이하기 때문이다. 이 때 여기서 Density Matrix가 Pure State이면
-Matrix Diagonalization으로
+[행렬 고윳값 분해(대각화)](https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix)로
 
 $$
-S = -\sum_i^n\lambda_i^2\ln{\lambda_i^2}
+S = -\sum_i^n\lambda_i\ln{\lambda_i}
 $$
 
 이 되며 앞의 Shannon Entropy와 유사한 형태를 띄게된다.
