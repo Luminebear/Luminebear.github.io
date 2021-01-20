@@ -7,7 +7,7 @@ image:
   path: /_images/abstract-3.jpg
   feature: abstract-3.jpg
 comments: true
-published: false
+published: true
 toc: true
 toc_sticky: true
 ---
@@ -48,4 +48,31 @@ $$
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
 임의의 파동함수와 슈미트 분해식과 비교할 때 눈에 보이는 차이점은 바로 **인덱스**를 보면 알 수 있다.
-슈미트 분해식을 살펴보면 합의 표현이 하나의 Dummy Index 'k'으로 나타난다. 그리고 Ket Vector 앞에 붙는 계수에 대해 특별히 Schmidt Number라고 부르는데, 이것이 중요한 역할을 한다.
+슈미트 분해식을 살펴보면 합의 표현이 하나의 Dummy Index 'k'으로 나타난다. 그리고 Ket Vector 앞에 붙는 계수에 대해 특별히 Schmidt Number라고 부르는데, 이것이 중요한 역할을 한다. 예를 들어 스핀계에서 다음과 같은 순수상태의 파동함수
+
+$$
+\vert \psi \rangle = \frac{1}{2} \left( \vert \uparrow \uparrow \rangle + \vert \uparrow \downarrow \rangle + \vert \downarrow \uparrow \rangle + \vert \downarrow \downarrow \rangle \right)
+$$
+
+가 주어졌다고 하자. 이 때 주어진 파동함수의 항 $\vert \uparrow \uparrow \rangle = \vert \uparrow \rangle_A \otimes \vert \uparrow \rangle_B$ 으로 표현된 것이다. 얼핏보면 이 항들이 Schmidt Decomposition이 될 것인가 생각할 수 있다. 하지만 다음과 같이 임의의 Base Ket을 새로 잡아보자.
+
+$$
+\begin{aligned}
+\vert + \rangle_A = \frac{1}{\sqrt{2}} \left( \vert \uparrow \rangle_A + \vert \downarrow \rangle_A \right) \qquad \vert - \rangle_A = \frac{1}{\sqrt{2}} \left( \vert \uparrow \rangle_A - \vert \downarrow \rangle_A \right) \\
+\vert + \rangle_B = \frac{1}{\sqrt{2}} \left( \vert \uparrow \rangle_B + \vert \downarrow \rangle_B \right) \qquad \vert - \rangle_B = \frac{1}{\sqrt{2}} \left( \vert \uparrow \rangle_B - \vert \downarrow \rangle_B \right) 
+\end{aligned}
+$$
+
+그러면 주어진 파동함수를 새로 만든 Base Ket으로 다음과 같이 표현할 수 있다.
+
+$$
+\begin{aligned}
+\vert \psi \rangle_A = \frac{1}{2}(\vert + \rangle_A \vert + \rangle_B)
+\end{aligned}
+$$
+
+앞의 정의와 같이 같은 Index로 나타내지는 것을 확인할 수 있다. 이것이 Schmidt Decomposition이며, 이 때 Schmidt Number는 1이 된다.[^1]
+
+
+
+[^1]: 이 수가 상수 값인 1/2을 의미하는 것이 아님을 상기하자. 
