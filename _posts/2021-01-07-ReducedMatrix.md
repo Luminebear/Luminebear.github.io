@@ -88,7 +88,7 @@ $$
 을 만족하기 때문에 최종적으로 A의 Reduced Density Matrix는
 
 $$
-\rho_A = \sum_{i,j,k} {C_{ij}}{C_{kj}^*} \left( \vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \langle{k}_A\vert\langle{j}_B\vert \right)
+\rho_A = \sum_{i,j,k} {C_{ij}}{C_{kj}^*} \vert{i}_A\rangle \langle{k} \vert_A
 $$
 
 으로 결정된다. 마찬가지로 B에 대한 Reduced Density Matrix는
@@ -96,5 +96,44 @@ $$
 $$
 \rho_B = \sum_{i,j,l}{C_{ij}}{C_{il}^*}\vert{j}\rangle_B\langle{l}\vert_B
 $$
+
+스핀계에서 다음과 같은 순수상태의 파동함수가 주어질 때 Reduced Density Matrix를 계산해보도록 하자. 
+
+$$
+\vert \psi \rangle = \frac{1}{2} \left( \vert \uparrow \uparrow \rangle + \vert \uparrow \downarrow \rangle + \vert \downarrow \uparrow \rangle + \vert \downarrow \downarrow \rangle \right)
+$$
+
+여기서 $\vert \uparrow \uparrow \rangle = \vert \uparrow_A \rangle \otimes \vert \uparrow_B \rangle$를 의미한다. 먼저 Density Matrix는
+
+$$
+\begin{aligned}
+\rho &= \vert \psi \rangle \langle \psi \vert \\
+&= \frac{1}{4} \left( \vert \uparrow \uparrow \rangle + \vert \uparrow \downarrow \rangle + \vert \downarrow \uparrow \rangle + \vert \downarrow \downarrow \rangle \right) \left( \langle \uparrow \uparrow \vert + \langle \uparrow \downarrow \vert + \langle \downarrow \uparrow \vert + \langle \downarrow \downarrow \vert \right) \\
+\end{aligned}
+$$
+
+으로 4x4 Matrix로 구성이 될 것이다. A에 대한 Reduced Density Matrix를 구해보자.
+
+$$
+\begin{aligned}
+\rho_A &= Tr_B\rho_{AB} \\
+&= \sum_i \langle i_B \vert \rho_{AB} \vert i_B \rangle \\
+&= \langle \uparrow_B \vert \rho_{AB} \vert \uparrow_B \rangle + \langle \downarrow_B \vert \rho_{AB} \vert \downarrow_B \rangle \\
+&= \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right) + \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right)
+\end{aligned}
+$$
+
+B에 대한 Reduced Density Matrix도 계산해보면
+
+$$
+\begin{aligned}
+\rho_B &= Tr_B\rho_{AB} \\
+&= \sum_i \langle i_A \vert \rho_{AB} \vert i_A \rangle \\
+&= \langle \uparrow_A \vert \rho_{AB} \vert \uparrow_A \rangle + \langle \downarrow_A \vert \rho_{AB} \vert \downarrow_A \rangle \\
+&= \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right) + \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right)
+\end{aligned}
+$$
+
+으로 A와 B에 대한 Reduced Denstiy Matrix를 구했다. 지금과 같은 상황에서는 두 공간이 다르지만 동일한 식을 구성하는 모습을 보인다.
 
 [^1]: J.J. Sakurai, Jim Napolitano, 'Modern Quantum Mechanics', 1.5 Change of Basis - Transformation Matrix 참조.
