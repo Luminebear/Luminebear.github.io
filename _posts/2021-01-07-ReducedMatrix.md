@@ -15,7 +15,10 @@ toc_sticky: true
 {: .notice--warning}
 
 앞의 게시글에서는 Pure State와 Mixed State가 어떤 차이가 있는 지 알아보았다. 이번에는 Pure State에서 기술하되, 
-A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)이 존재하고, 이것의 텐서곱으로 이루어져 있을 때, Density Matrix가 어떻게 나타나는지 살펴보고자 한다. 먼저 주어진 조건의 Hilbert Space를
+A와 B라는 서로 다른 힐베르트 공간(Hilbert Space)이 존재하고, 이것의 텐서곱으로 이루어져 있을 때, Density Matrix가 어떻게 나타나는지 살펴보고자 한다. 
+
+## 개요
+먼저 주어진 조건의 Hilbert Space를
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A\otimes\mathcal{H}_B
@@ -97,6 +100,7 @@ $$
 \rho_B = \sum_{i,j,l}{C_{ij}}{C_{il}^*}\vert{j}\rangle_B\langle{l}\vert_B
 $$
 
+## Example: Spin System
 스핀계에서 다음과 같은 순수상태의 파동함수가 주어질 때 Reduced Density Matrix를 계산해보도록 하자. 
 
 $$
