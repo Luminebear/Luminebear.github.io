@@ -75,7 +75,7 @@ $$
 
 ## 일반적인 경우
 앞에서 $\vert\psi_{AB}\rangle$와 같은 상태에 있는 일반적인 경우에 Schmidt Decomposition을 어떻게 기술할 수 있을까? 
-이를 구하는 방법은 이전의 게시글 '[얽혀있는 공간의 밀도 행렬](/_posts/2021-01-07-ReducedMatrix.md)'에서 Reduced Density Matrix로부터 계산되며, 이 행렬을 [행렬 고윳값 분해(대각화)](https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix)를 통해 Eigenvalue, Eigenvector를 구함으로 얻어진다.
+이를 구하는 방법은 이전의 게시글 '[얽혀있는 공간의 밀도 행렬](/physics/ReducedMatrix)'에서 Reduced Density Matrix로부터 계산되며, 이 행렬을 [행렬 고윳값 분해(대각화)](https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix)를 통해 Eigenvalue, Eigenvector를 구함으로 얻어진다.
 그 과정을 살펴보도록 하자. 먼저 Reduced Density Matrix는 밀도 행렬 $\rho_{AB}$에 대해
 
 $$
@@ -122,6 +122,7 @@ $$
 \mathbf{x_1} = \left( x_{11}, x_{12} \right) \qquad
 \mathbf{x_2} = \left( x_{21}, x_{22} \right)
 $$
+
 $$
 X = 
 \begin{pmatrix}
@@ -143,7 +144,7 @@ $$
 이 식을 이용하여 $\rho_A$를 다시 써보면
 
 $$
-\rho_A = \sum_{\{i,k\}=1}^{2}\vert{i}_A\rangle X^{-1}XUX^{-1}X \langle{k}_A \vert
+\rho_A = \sum_{\{i,k\}=0}^{1}\vert{i}_A\rangle X^{-1}XUX^{-1}X \langle{k}_A \vert
 $$
 
 으로 쓸 수 있고, 이 때 행렬 X를 Transformation Matrix로 간주하면, 다시말해
@@ -173,7 +174,11 @@ $$
 이며 따라서 Reduced Density Matrix $\rho_A$를 다음으로 바꿔쓸 수 있다.
 
 $$
-\rho_A = \lambda_1\vert{+}_A\rangle \langle{+}_A\vert + \lambda_2\vert{-}_A\rangle \langle{-}_A\vert 
+\begin{aligned}
+\rho_A &= \vert{0}_A\rangle X^{-1}XUX^{-1}X \langle{0}_A \vert + \vert{0}_A\rangle X^{-1}XUX^{-1}X \langle{1}_A \vert \\
+&+ \vert{1}_A\rangle X^{-1}XUX^{-1}X \langle{0}_A \vert + \vert{1}_A\rangle X^{-1}XUX^{-1}X \langle{1}_A \vert \\
+&= \lambda_1\vert{+}_A\rangle \langle{+}_A\vert + \lambda_2\vert{-}_A\rangle \langle{-}_A\vert
+\end{aligned}
 $$
 
 마찬가지로 B에 대한 Reduced Density Matrix도 동일하게 계산이 될 것이다. 그러면 다시 우리가 생각한 Pure State의 파동함수 $\psi_{AB}$를 새로운 Basis에 대한 것으로 쓸 수 있다.
@@ -186,6 +191,95 @@ $$
 $$
 
 ## 폰 노이만 엔트로피와 Concurrence
+사실은 폰 노이만 엔트로피를 계산하는 방법이 위와 동일하다. 폰 노이만 엔트로피는 섀넌 엔트로피와 대치할 때, 다음과 같은 조건을 만족하는 경우 순수 상태에 있는 두 시스템은 얽혀있다고 간주한다.
+
+{% capture notice-2 %}
+**<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진  
+공간에서 임의의 파동함수 $\vert \psi_{AB} \rangle$에 대한 **얽힘의 정도 $E_{AB}$**는
+
+$$
+E_{AB} = S[\rho_{A}] = S[\rho_{B}]
+$$
+
+여기서 $S$는 von Neumann Entropy
+
+$$
+S[\rho] = -Tr[\rho\ln\rho]
+$$
+{% endcapture %}
+<div class="notice--info">{{ notice-2 | markdownify }}</div>
+
+정의상으로 보면 어느 부분에서 일치할까 싶지만, 사실은 밀도행렬에서 Trace를 만족하기 위해 행렬 고윳값 분해 과정이 필요하게 된다. 
+먼저 얽혀있는 파동함수의 Density Matrix를 구하고, A나 B에 대한 Reduced Density Matrix를 계산한다. 
+다음으로 고윳값 분해 과정을 거치게 됨으로 엔트로피의 식이 앞의 게시글 '[엔트로피와 정보이론](Information-Theory/#폰-노이만-엔트로피-von-neumann-entropy)'에서 마지막식인
+
+$$
+S = -\sum_i^n \lambda_i \ln \lambda_i
+$$
+
+으로 바뀌는 것이다.
+
+다음으로 Concurrence[^3]라는 척도가 존재한다. 정의를 살펴보자.
+
+{% capture notice-2 %}
+**<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진  
+공간에서 임의의 파동함수 $\vert \psi_{AB} \rangle$에 대한 **Concurrence**는
+
+$$
+C = \left| \langle \psi_{AB} \vert \sigma_A^y \sigma_B^y \vert \psi_{AB}^* \rangle \right|
+$$
+
+여기서 $\sigma_A^y, \sigma_B^y$는 Pauli Matrices 중 하나인
+
+$$
+\sigma^y =
+\begin{pmatrix}
+  0 & -i \\
+  i & 0
+\end{pmatrix}
+$$
+{% endcapture %}
+<div class="notice--info">{{ notice-2 | markdownify }}</div>
+
+역시 정의로 바라보았을 때 명확하게 보이지 않기 때문에 앞에서 들었던 예시를 가져오자.
+앞에서 A에 대한 Reduced Density Matrix의 행렬 U를
+
+$$
+U =
+\begin{pmatrix}
+  |a|^2 + |b|^2 & ac^{*} + bd^{*} \\
+  ca^{*} + db^{*} & |c|^2 + |d|^2
+\end{pmatrix}
+$$
+
+으로 나타냈다. 참고로 여기서 계수를 다음과 같이 바꾸었다.
+
+$$
+{C_{00}} = a, \qquad {C_{01}} = b, \qquad {C_{10}} = c, \qquad {C_{11}} = d
+$$
+
+행렬 고윳값 분해를 통해 특성방정식을 구해보면, 
+
+$$
+\begin{aligned}
+U\lambda - I &= 0 \\
+(|a|^2 + |b|^2 - \lambda)(|c|^2 + |d|^2 - \lambda) - (ac^{*} + bd^{*})(ca^{*} + db^{*}) &= 0 \\
+\lambda^2 - \lambda + (bc-ad)(b^{*}c^{*}-a^{*}d^{*}) &= 0
+\end{aligned}
+$$
+
+이고 이제 Eigenvalue를 구하면
+
+$$
+\begin{aligned}
+\lambda_{\pm} &= \frac{1 \pm \sqrt{1 - 4 \vert bc-ad \vert^2}}{2} \\
+&= \frac{1 \pm \sqrt{1 - C^2}}{2} \\
+C &=  2\vert bc-ad \vert
+\end{aligned}
+$$
+
+으로 구해진다. 여기서 C로 대치한 값이 바로 **Concurrence** 이다. 즉 다시 말해 행렬의 Off-Diagonal 성분이 Concurrence가 된다.
 
 [^1]: 이 수가 상수 값인 1/2을 의미하는 것이 아님을 상기하자. 
 [^2]: 이것은 Matrix Representation으로 간주할 수 있다.
+[^3]: 양자 얽힘의 정도, 일치도라는 한국어의 번역이 있으나 정해진 단어는 없는 것 같아서 영문 명칭으로 표기함. [Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/concurrence)에서는 다음으로 설명한다. 'a situation in which things or events happen or exist at the same time'
