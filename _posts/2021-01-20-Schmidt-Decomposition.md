@@ -194,7 +194,7 @@ $$
 사실은 폰 노이만 엔트로피를 계산하는 방법이 위와 동일하다. 폰 노이만 엔트로피는 섀넌 엔트로피와 대치할 때, 다음과 같은 조건을 만족하는 경우 순수 상태에 있는 두 시스템은 얽혀있다고 간주한다.
 
 {% capture notice-2 %}
-**<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진  
+**<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 
 공간에서 임의의 파동함수 $\vert \psi_{AB} \rangle$에 대한 **얽힘의 정도 $E_{AB}$**는
 
 $$
@@ -211,7 +211,7 @@ $$
 
 정의상으로 보면 어느 부분에서 일치할까 싶지만, 사실은 밀도행렬에서 Trace를 만족하기 위해 행렬 고윳값 분해 과정이 필요하게 된다. 
 먼저 얽혀있는 파동함수의 Density Matrix를 구하고, A나 B에 대한 Reduced Density Matrix를 계산한다. 
-다음으로 고윳값 분해 과정을 거치게 됨으로 엔트로피의 식이 앞의 게시글 '[엔트로피와 정보이론](Information-Theory/#폰-노이만-엔트로피-von-neumann-entropy)'에서 마지막식인
+다음으로 고윳값 분해 과정을 거치게 됨으로 엔트로피의 식이 앞의 게시글 '[엔트로피와 정보이론](/physics/Information-Theory/#폰-노이만-엔트로피-von-neumann-entropy)'에서 마지막식인
 
 $$
 S = -\sum_i^n \lambda_i \ln \lambda_i
@@ -222,7 +222,7 @@ $$
 다음으로 Concurrence[^3]라는 척도가 존재한다. 정의를 살펴보자.
 
 {% capture notice-2 %}
-**<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진  
+**<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 
 공간에서 임의의 파동함수 $\vert \psi_{AB} \rangle$에 대한 **Concurrence**는
 
 $$
