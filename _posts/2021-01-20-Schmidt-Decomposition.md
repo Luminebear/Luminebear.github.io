@@ -195,7 +195,7 @@ $$
 
 {% capture notice-2 %}
 **<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 
-공간에서 임의의 파동함수 $\vert \psi_{AB} \rangle$에 대한 **얽힘의 정도 $E_{AB}$**는
+공간에서 임의의 파동함수 $\vert \psi\_{AB} \rangle$에 대한 **얽힘의 정도 $E_{AB}$**는
 
 $$
 E_{AB} = S[\rho_{A}] = S[\rho_{B}]
@@ -223,7 +223,7 @@ $$
 
 {% capture notice-2 %}
 **<u>DEFINITION</u>** : 두 Hilbert Space $\mathcal{H}_A$와 $\mathcal{H}_B$로 이루어진 공간에서 얽혀진 
-공간에서 임의의 파동함수 $\vert \psi_{AB} \rangle$에 대한 **Concurrence**는
+공간에서 임의의 파동함수 $\vert \psi\_{AB} \rangle$에 대한 **Concurrence**는
 
 $$
 C = \left| \langle \psi_{AB} \vert \sigma_A^y \sigma_B^y \vert \psi_{AB}^* \rangle \right|
