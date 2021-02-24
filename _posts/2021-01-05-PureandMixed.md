@@ -36,14 +36,14 @@ $$
 혼합 상태는 순수 상태가 통계적으로 잘 섞여진 상태(statistically ensemble state)라고 생각하면 된다.
 
 {% capture notice-2 %}
-**<u>DEFINITION</u>**: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 없고 여러 Pure State가 섞인 경우
+**<u>DEFINITION</u>**: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 없고 여러 pure state가 섞인 경우
 이를 **Mixed State**라고 한다. 이 경우에는 앞과는 달리 섞여있기 때문에 개별 파동함수의 구별이 불가능 하다. 수식으로는 다음과 같이 나타낼 수 있다.
 
 $$
 \sum_i^n b_i\vert \psi_i \rangle = b_1\vert \psi_1 \rangle + b_2\vert \psi_2 \rangle + b_3\vert \psi_3 \rangle + \cdots
 $$
 
-이 때 규격화 조건으로 $\sum_i^n b_i = 1$이다.
+이 때 규격화 조건으로 $\sum_i^n b_i = 1$이고 여기서 $b_i$는 단순히 확률이다.
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
@@ -69,13 +69,13 @@ $$
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-보다 이해를 돕기 위해서 Density Operator[^1]가 등장하는 과정을 살펴보도록 하자. 먼저 우리가 어떤 관측가능한(Observable) 'A'가 있다고 가정을 하자. Observable 'A'는 기본적으로 Eigenfunction
+보다 이해를 돕기 위해서 density operator[^1]가 등장하는 과정을 살펴보도록 하자. 먼저 우리가 어떤 관측가능한(Observable) 'A'가 있다고 가정을 하자. Observable 'A'는 기본적으로 eigenfunction
 
 $$
 A\vert a' \rangle = a'\vert a' \rangle
 $$
 
-을 만족하며, 이를 Mixed Ensemble (State)에서 측정(Measurement in Q.M.)한다고 하자. 아주 많이 측정을 했다고 가정을 하면, Observable 'A'의 평균을 알 수 있을 것이다. 이를 A에 대한 **앙상블 평균(Ensemble Average)**이라고 하며 계산하면
+을 만족하며, 이를 mixed ensemble (state)에서 측정(measurements in Q.M.)한다고 하자. 아주 많이 측정을 했다고 가정을 하면, Observable 'A'의 평균을 알 수 있을 것이다. 이를 A에 대한 **앙상블 평균(Ensemble Average)**이라고 하며 계산하면
 
 $$
 \begin{aligned}
@@ -86,7 +86,7 @@ $$
 \end{aligned}
 $$
 
-이다. 그렇다면 여기서 또 다른 Base ket set를 걸어보면 어떨까?
+이다. 그렇다면 여기서 또 다른 base ket set를 걸어보면 어떨까?
 
 $$
 \begin{aligned}
@@ -96,18 +96,20 @@ $$
 \end{aligned}
 $$
 
-방금전의 식과 하나가 있을 때와 비교하면, 몇 개의 Base ket set이 있던 하나의 고정된 항이 있고 단순히 Pure State의 합에만 의존하는 것을 볼 수 있다. 즉
+방금전의 식과 하나가 있을 때와 비교하면, 몇 개의 Base ket set이 있던 하나의 고정된 항이 있고 단순히 pure state의 합에만 의존하는 것을 볼 수 있다. 즉
 
 $$
 \sum_{i} b_i \vert \psi_i \rangle \langle \psi_i \vert
 $$
 
-이것이 Density Matrix이다. 여기서 Summation만 없으면 Pure State의 Desity Matrix가 된다.
+이것이 density operator 이다. 여기서 summation 만 없으면 pure state의 desity operator 가 된다. 그리고
+주어진 orthonormal basis (eigenvector) 으로 matrix representation 을 하는 경우, denstiy matrix 가
+구성된다.
 
 ## Density Matrix를 이용한 Pure State와 Mixed State의 차이
 
-이제 Pure State와 Mixed State의 차이를 살펴보자. Pure State와 Mixed State를 구분하는 방법은 바로 **대각합(Trace, 트레이스)**를 이용한다.
-먼저 Pure State에서는 파동함수를 구별할 수 있다고 언급하였다. 여기서 중요한 성질이 하나 있는데 Pure State에서,
+이제 pure state와 mixed state의 차이를 살펴보자. Pure state와 mixed state를 구분하는 방법은 바로 **대각합(Trace, 트레이스)**를 이용한다.
+먼저 pure state에서는 파동함수를 구별할 수 있다고 언급하였다. 여기서 중요한 성질이 하나 있는데 pure state에서,
 
 $$
 \rho^2 = \rho
@@ -125,26 +127,26 @@ $$
 
 $$
 \begin{aligned}
-Tr\rho &= Tr\rho^2 \\
+\text{tr}\rho &= \text{tr}\rho^2 \\
 &= \sum_i \langle \phi_i \vert \rho \vert \phi_i \rangle \\
 &= \sum_i \langle \phi_i \vert \psi \rangle \langle \psi \vert \phi_i \rangle \\
 &= \sum_i a_ia_i^* = \sum_i p_i = 1
 \end{aligned}
 $$
 
-그러므로 Pure State의 모든 확률의 합은 1로 나타난다. 다음으로 Mixed State의 Density Matrix의 Trace를 구해보자. 이 때 Mixed State의 Density Matrix는 각 Pure State의 Density Matrix의 합
+그러므로 pure state의 모든 확률의 합은 1로 나타난다. 다음으로 mixed state의 density matrix의 trace를 구해보자. 이 때 mixed state의 density matrix는 각 pure state의 density matrix의 합
 
 $$
 \rho = \sum_i p_i\rho_i
 $$
 
-으로 표현된다. 여기서 구분되는 점은 Pure State와 달리
+으로 표현된다. 여기서 구분되는 점은 pure state와 달리
 
 $$
 \rho \neq \rho^2
 $$
 
-이라는 사실이다. 간단하게 살펴보면, 앞의 Pure State와 같이 전체 확률을 1로 둘 때 $Tr\rho = 1$이 되는 것은 당연하다. 하지만 $\rho^2$의 경우,
+이라는 사실이다. 간단하게 살펴보면, 앞의 pure state와 같이 전체 확률을 1로 둘 때 $\text{tr}\rho = 1$이 되는 것은 당연하다. 하지만 $\rho^2$의 경우,
 
 $$
 \begin{aligned}
@@ -153,25 +155,25 @@ $$
 \end{aligned}
 $$
 
-정의를 다시 생각해보면, 당연히 성립이 되지 않는다. 왜냐하면 우리는 Mixed State에서 정확히 직교 규격화된 ket으로 이루어진 파동함수를 알 수 없다고 했기 때문이다. 따라서 Mixed State의 $Tr\rho^2$은
+정의를 다시 생각해보면, 당연히 성립이 되지 않는다. 왜냐하면 우리는 mixed state에서 정확히 직교 규격화된 ket으로 이루어진 파동함수를 알 수 없다고 했기 때문이다. 따라서 mixed state의 $\text{tr}\rho^2$은
 
 $$
-Tr\rho^2 = \sum_ip_i^2 < 1
+\text{tr}\rho^2 = \sum_ip_i^2 < 1
 $$
 
-으로 나타난다.[^2] 이제 Pure State와 Mixed State의 등식을 정리하자.
+으로 나타난다.[^2] 이제 pure state와 mixed state의 등식을 정리하자.
 
 {% capture notice-2 %}
-**<u>THEOREM</u>**: **Pure State**에서 Density Matrix의 Trace는
+**<u>THEOREM</u>**: **Pure State**에서 density matrix의 trace는
 
 $$
-Tr \rho^2 = Tr \rho = 1
+\text{tr} \rho^2 = Tr \rho = 1
 $$
 
 **Mixed State**에서 Denstiy Matrix의 Trace는
 
 $$
-Tr \rho^2 < 1
+\text{tr} \rho^2 < 1
 $$
 
 {% endcapture %}
@@ -181,5 +183,6 @@ $$
 * J.J. Sakurai, Modern Quantum Mechanics, 3rd Ed., 3.4.2 Ensemble Averages and Desntiy Operator
 * 이해웅, 양자 정보학 강의, 1장
 
-[^1]: Density Matrix가 연산자의 역할을 수행하기 때문에 연산자로 부르기도 한다.
+[^1]: 엄밀하게는, density operator 라고 부르는 것이 맞다. 왜냐하면 density matrix 는 density operator 를
+주어진 system 의 orthonormal basis 로 matrix representation 한 것이 density matrix 가 되기 때문이다.
 [^2]: 사실 이부분에서도 뭔가 불명확한 느낌이 없지 않다. 단순히 Normalization 때문에 합이 1이 아니라는 것으로 작다고만 표현한다는 것이 정당화가 되는 것일까? 

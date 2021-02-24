@@ -134,13 +134,13 @@ $$
 S &= S_{tot} - S_{micro} \\
 &= k_B\ln{N} - \sum_i P_ik_B\ln{n_i} \\
 &= k_B\sum_i P_i \left( \ln{N} - \ln{n_i} \right) \\
-&= k_B\sum_i P_i \ln\frac{N}{{n_i}} \\
-&= -k_B\sum_i P_i \ln\frac{{n_i}}{N} \\
+&= k_B\sum_i P_i \ln\frac{N}{n_i} \\
+&= -k_B\sum_i P_i \ln\frac{n_i}{N} \\
 &= -k_B\sum_i P_i \ln{P_i}
 \end{aligned}
 $$
 
-Gibbs Entropy 표현은 우리가 실제 측정할 수 없는 microstate를 제외하고 상태의 확률을 알려주는 역할을 해준다.
+Gibbs entropy 표현은 우리가 실제 측정할 수 없는 microstate 를 제외하고 상태의 확률을 알려주는 역할을 해준다.
 
 ## 정보이론적 엔트로피 (Informatic Entropy)
 ### 섀넌 엔트로피 (Shannon Entropy)
@@ -150,17 +150,17 @@ $$
 Q = -k\log_2 P
 $$
 
-여기서 k는 양의 상수로, 대부분 1 로 둔다. 정보량에 음수가 붇는다는 것은, 어떤 문장에 담겨있는 확률 P가 작으면 정보 Q는 많아지는 의미를 가진다. Gibbs Entropy 표현과 같이 맞추면
+여기서 k는 양의 상수로, 대부분 1 로 둔다. 정보량에 음수가 붇는다는 것은, 어떤 문장에 담겨있는 확률 P가 작으면 정보 Q는 많아지는 의미를 가진다. Gibbs entropy 표현과 같이 맞추면
 
 $$
 S = \langle Q \rangle = -k\sum_iP_i\log_2P_i
 $$
 
-이를 Shannon Entropy라고 한다. 엄밀하게 따지면, $k=k_B, log_2 \rightarrow \ln$을 만족해야 Gibbs Entropy가 된다. 그러므로 정보이론에서의 엔트로피는 상수들이 의미하는 바가 열역학적 엔트로피와는 같지 않다.
-하지만 다소 정확하지 않은 접근이지만, 표현할 수 있는 식의 형태가 비슷하다. 그러므로 정보이론과 통계역학을 연관 짓는데에는 도움이 된다.[^2]
+이를 Shannon entropy라고 한다. 엄밀하게 따지면, $k=k_B, log_2 \rightarrow \ln$을 만족해야 Gibbs Entropy가 된다.[^2] 그러므로 정보이론에서의 엔트로피는 상수들이 의미하는 바가 열역학적 엔트로피와는 같지 않다.
+하지만 다소 정확하지 않은 접근이지만, 표현할 수 있는 식의 형태가 비슷하다. 그러므로 정보이론과 통계역학을 연관 짓는데에는 도움이 된다.[^3]
 
 ### 폰 노이만 엔트로피 (von Neumann Entropy)
-이제 폰 노이만 엔트로피에 대해서 알아볼 차례가 되었다. 폰 노이만 엔트로피는 확률이 있는 자리에 양자역학에서의 밀도 행렬(Density Matrix)로 대치가 된다. 즉 다시 말해,
+이제 폰 노이만 엔트로피에 대해서 알아볼 차례가 되었다. 폰 노이만 엔트로피는 확률이 있는 자리에 양자역학에서의 밀도 행렬(density matrix)로 대치가 된다. 즉 다시 말해,
 
 $$
 S = -Tr(\rho\ln\rho)
@@ -180,4 +180,5 @@ $$
 * Wikipedia, [von Neumann entropy](https://en.wikipedia.org/wiki/Von_Neumann_entropy)
 
 [^1]: 여기서 의문점, 만약에 microstate까지 고려한다면 곱의 형태로 나타내야 하지 않을 까? 그것은 앞의 볼츠만의 엔트로피 표현에서, **로그**가 들어간다는 점을 생각해보면 된다.
-[^2]: 물론 열과 정보 사이의 관계는 Rolf Landauer가 제시한 란다우어의 원리라는 것으로 연결짓기도 한다.
+[^2]: 사실 로그가 다른 것은 그렇게 중요하진 않다. 로그의 관계식으로 밑만 바꾸면 되기 때문에.
+[^3]: 물론 열과 정보 사이의 관계는 Rolf Landauer가 제시한 란다우어의 원리라는 것으로 연결짓기도 한다.
