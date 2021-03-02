@@ -11,8 +11,6 @@ published: true
 toc: true
 toc_sticky: true
 ---
-**경고**: 아직 완성되지 않은 게시글입니다. (폰노이만 엔트로피 관련 설명이 부실함)
-{: .notice--warning}
 
 이 게시글에서는 양자 정보를 배우기 앞서 통계역학적으로 필요한 개념들을 소개한다. 많은 내용을 함축적으로 담았기 때문에 양자 정보에 대해 어떤 흐름으로 가게 되는지 살펴보는 정도로 알아본다.
 
@@ -173,7 +171,8 @@ $$
 S = -\sum_i^n\lambda_i\ln{\lambda_i}
 $$
 
-이 되며 앞의 Shannon Entropy와 유사한 형태를 띄게된다.
+이 되며 앞의 Shannon Entropy와 유사한 형태를 띄게된다. 이것에 대한 자세한 계산과정과 설명은,
+'[슈미트 분해](physics/Schmidt-Decomposition/#폰-노이만-엔트로피와-concurrence)' 게시글을 참고할 수 있다.
 
 ## References
 * Stephen J. Blundell, Concepts in Thermal Physics, CH14, CH15

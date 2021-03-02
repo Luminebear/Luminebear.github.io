@@ -11,8 +11,6 @@ published: true
 toc: true
 toc_sticky: true
 ---
-**경고**: 아직 완성되지 않은 게시글입니다.
-{: .notice--warning}
 
 슈미트 분해(Schmidt Decomposition)는 양자 얽힘(Quantum Entanglement)에서 가장 중요한 수학적 기술 중 하나로, 이것을 이용하면 ket vector를 최소화된 항으로 만들어 줄 수 있다.
 
