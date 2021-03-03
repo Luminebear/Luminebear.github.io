@@ -80,14 +80,14 @@ $$
 두 subsystem 이 얽혀진 상태를 아래와 같은 축약된 형태
 
 $$
-\vert \uparrow \uparrow \rangle = \vert \uparrow \rangle_{\rm A} \otimes
-\vert \uparrow \rangle_{\rm B}
+\vert \uparrow \uparrow \rangle = \vert \uparrow_{\rm A} \rangle \otimes
+\vert \uparrow_{\rm B} \rangle
 $$
 
 으로 기술하면, 모든 가능한 상태는 다음과 같이 기술할 수 있다.
 
 $$
-\vert \psi \rangle_{\rm AB} = a\vert \uparrow \uparrow \rangle + b\vert \uparrow \downarrow \rangle + c\vert \downarrow \uparrow \rangle + d\vert \downarrow \downarrow \rangle
+\vert \psi_{\rm AB} \rangle = a\vert \uparrow \uparrow \rangle + b\vert \uparrow \downarrow \rangle + c\vert \downarrow \uparrow \rangle + d\vert \downarrow \downarrow \rangle
 $$
 
 이 때 a,b,c,d 는 복소수이고, 코펜하겐 해석에 따라 전체 확률이 1로 만족하기 위해, $\vert a \vert^2 + \vert b \vert^2 + \vert c \vert^2 + \vert d \vert^2 = 1$이다.
@@ -95,14 +95,35 @@ $$
 
 $$
 \begin{aligned}
-\vert \Psi \rangle_{\rm AB} &= b\vert \uparrow \downarrow \rangle + c\vert \downarrow \uparrow \rangle \\
-\vert \Phi \rangle_{\rm AB} &= a\vert \uparrow \uparrow \rangle + d\vert \downarrow \downarrow \rangle
+\vert \Psi_{\rm AB} \rangle &= b\vert \uparrow \downarrow \rangle + c\vert \downarrow \uparrow \rangle \\
+\vert \Phi_{\rm AB} \rangle &= a\vert \uparrow \uparrow \rangle + d\vert \downarrow \downarrow \rangle
 \end{aligned}
 $$
 
-첫 번째 상태 $\vert \Psi \rangle_{\rm AB}$의 경우 각 상태가 서로 반대로 얽혀 있으므로, '반상관관계(uncorrelation)'이며, 
-두 번째 상태 $\vert \Phi \rangle_{\rm AB}$의 경우 각 상태가 같은 상태로 얽혀 있으므로,
+첫 번째 상태 $\vert \Psi_{\rm AB} \rangle$의 경우 각 상태가 서로 반대로 얽혀 있으므로, '반상관관계(anticorrelation)'이며, 
+두 번째 상태 $\vert \Phi_{\rm AB} \rangle$의 경우 각 상태가 같은 상태로 얽혀 있으므로,
 '상관관계(correlation)'에 있다고 한다. 또한 이 두 상태는 서로 분리되지 않는 **얽혀있는**
-상태이다.
+상태이다. 
+
+설명을 위해 $\vert \Psi \rangle_{\rm AB}$를 살펴보면, 우리가 A에 대해 spin-up 을 측정하면,
+B는 spin-down 으로 결정된다. 반대로 A에 대해 spin-down 을 측정하면, B는 spin-up 으로 결정된다. 하지만,
+A가 spin-up 으로 측정이 될지, spin-down 으로 측정이 될지는 알 수 없으며, 단지 그 확률이 
+$\vert a \vert^2 \,, \vert b \vert^2$ 이다.
+
+## 분리 가능 상태 (Seperable State)
+**'곱 상태 (Product State)'**라고 하는 이 상태는 단순히 두 subsystem 이 독립적으로만
+구성되어 있는 것이다. 위와 같은 상태에서 개별 system 의 spin-up, spin-down 이 단독적으로 행동하며,
+식으로는 다음과 같이 나타낼 수 있다.
+
+$$
+\vert \phi_{AB} \rangle = \left( \alpha \vert \uparrow_{\rm A} \rangle + \beta \vert \downarrow_{\rm A} \rangle \right)
+\otimes \left( \gamma \vert \uparrow_{\rm B} \rangle + \delta \vert \downarrow_{\rm B} \rangle \right)
+$$
+
+다시말해, A, B 가 서로 상관관계 없이, A의 up-spin 과 down-spin 의 확률이 각각 $\vert \alpha \vert^2 \,, \vert \beta \vert^2$ 이며, B의 spin-up 과 spin-down 의 확률이 각각 $\vert \gamma \vert^2 \,, \vert \delta \vert^2$ 이다. 
+
+## References
+* 이해웅, 양자 정보학 강의, 1장 및 3장
+* 그 외 논문이나 기타 자료로 접한 것들 (특정지을 수 없음)
 
 [^1]: e: excited state, g: ground state
