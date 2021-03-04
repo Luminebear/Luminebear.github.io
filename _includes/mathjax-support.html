@@ -1,14 +1,17 @@
 <script>
   window.MathJax = {
     loader: {
-      load: ['input/tex', 'output/chtml', 'ui/menu'] // input options: input/tex-base, input/tex, input/tex-full // output: svg
+      load: ['input/tex', 'output/chtml', 'ui/menu', '[tex]/textmacros'] // input options: input/tex-base, input/tex, input/tex-full // output: svg
     },
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$', '$$'], ['\\[', '\\]']],
       tags: 'ams', // tag equations used ams packages
       tagSide: 'right',
-      tagIndent: "0.8em"
+      tagIndent: "0.8em",
+      packages: {
+        '[+]': ['textmacros'] // See here: http://docs.mathjax.org/en/latest/input/tex/extensions/textmacros.html
+        }
     },
     chtml: {
       scale: .9,                     // global scaling factor for all expressions
