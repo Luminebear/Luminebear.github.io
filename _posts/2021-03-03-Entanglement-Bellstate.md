@@ -89,6 +89,28 @@ $$
 A = \frac{b+c}{\sqrt{2}} \quad B = \frac{b-c}{\sqrt{2}} \quad C = \frac{a+d}{\sqrt{2}} \quad D = \frac{a-d}{\sqrt{2}}
 $$
 
-으로 계산된다. 그러므로 벨 상태 역시 각 상태의 측정 확률은 $\vert A \vert^2 \,, \vert B \vert^2 \,, \vert C \vert^2 \,, \vert D \vert^2$ 가 된다.
+으로 계산된다. 그러므로 벨 상태 역시 각 상태의 측정 확률은 $\vert A \vert^2 \,, \vert B \vert^2 \,, \vert C \vert^2 \,, \vert D \vert^2$ 가 되며,
+측정이 이루어짐에 따라 대응하는 Bell state 로 붕괴(collapse)가 된다.
+
+그리고, system 이 지금의 게시글과 같이 spin-system 을 기술하는 경우, 스핀 각운동량에 따라
+단일선 상태(Singlet State), 삼중선 상태(Triplet State)으로 나누어 진다.
+
+$$
+\vert \Psi_{\rm AB}^{-} \rangle = \frac{1}{\sqrt{2}} \left( \vert \uparrow \downarrow \rangle - \vert \downarrow \uparrow \rangle \right) : \text{Singlet State}
+$$
+$$
+\begin{cases}
+\vert \Psi_{\rm AB}^{+} \rangle = \frac{1}{\sqrt{2}} \left( \vert \uparrow \downarrow \rangle + \vert \downarrow \uparrow \rangle \right) \\
+\vert \Phi_{\rm AB}^{+} \rangle = \frac{1}{\sqrt{2}} \left( \vert \uparrow \uparrow \rangle + \vert \downarrow \downarrow \rangle \right) \\
+\vert \Phi_{\rm AB}^{-} \rangle = \frac{1}{\sqrt{2}} \left( \vert \uparrow \uparrow \rangle - \vert \downarrow \downarrow \rangle \right)
+\end{cases} : \text{Triplet State}
+$$
+
+Singlet state 는 antisymmetric 이고 스핀 양자수 s=0 이며, triplet state 는 symmetric 이고
+스핀 양자수 s=1 이다.
 
 [^1]: 엄밀하게는, 변수의 제곱인 경우.
+
+## References
+* 이해웅, 양자 정보학 강의, 3장
+* Wikipedia, [Triplet State](https://en.wikipedia.org/wiki/Triplet_state)
