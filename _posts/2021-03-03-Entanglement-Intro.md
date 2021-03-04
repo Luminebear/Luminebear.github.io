@@ -46,7 +46,7 @@ system 이 구성되면, 이것이 바로 **큐비트(Qubit)**가 된다.
 2. 전자의 스핀 - 스핀업: $\vert \uparrow \rangle$, 스핀다운: $\vert \downarrow \rangle$
 3. 원자의 에너지 준위 - 들뜬상태: $\vert e \rangle$, 바닥상태:$\vert g \rangle$[^1]
 
-세 경우 모두 두 가지로 상황을 나누어 생각하지만, 비트와는 다르게 **Ket** $`\vert \quad \rangle'$을 이용하여
+세 경우 모두 두 가지로 상황을 나누어 생각하지만, 비트와는 다르게 **Ket** $'\vert \quad \rangle\text'$을 이용하여
 나타낸다. 이것을 제대로 이해하기 위해서는 선형대수적 배경이 필요하다. 방향을 가지는 2차원의 수이기 때문인데,
 간단하게 다음과 같이 생각할 수 있다.
 
@@ -138,7 +138,8 @@ $$
 \vert\psi_{\rm AB}\rangle = \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle
 $$
 
-물론 규격화 조건 $\sum_{i,j}{\vert C_{ij} \vert}^2=1$를 만족하며, $\vert{i}_A\rangle, \vert{j}_B\rangle$는 orthonormal basis 이다. 여기서 특별히, 모든 복소수 계수 $C_{i,j}$가 $C_{i,j} = a_{i}b_{j}$를 만족하면,
+물론 규격화 조건 $\sum_{i,j}{\vert C_{ij} \vert}^2=1$를 만족하며, $\vert{i}\_A\rangle, \vert{j}\_B\rangle$ 
+는 orthonormal basis 이다. 여기서 특별히, 모든 복소수 계수 $C\_{i,j}$가 $C\_{i,j} = a\_{i}b\_{j}$를 만족하면,
 분리 가능 상태의 일반화된 식이 된다. 다시말해,
 
 $$
