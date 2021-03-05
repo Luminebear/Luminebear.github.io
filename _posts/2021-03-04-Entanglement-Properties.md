@@ -18,8 +18,9 @@ toc_sticky: true
 또한 여기서는 광학계를 기본으로 하는 경우에서 살펴보도록 한다. 즉, 수평 편광 $\vert \leftrightarrow \rangle$, 
 수직 편광 $\vert \updownarrow \rangle$ 을 basis 으로 하는 경우이다. 
 
-<figure>
-	<img src="/assets/images/polbasis.png" alt="" class="center">
+<figure alt="" class="center">
+  <a href="/assets/images/polbasis.png">
+	<img src="/assets/images/polbasis.png"></a>
 	<figcaption>수평 편광과 수직 편광을 basis로 하는 system 의 시각화.</figcaption>
 </figure>
 
@@ -66,7 +67,7 @@ $$
 즉 아주 멀리 떨어져 있더라도, 한 쪽에서 측정행위가 이루어지지 않는 이상은, 양자 상태를
 유지하게 된다는 점이다.
 
-## Orthonormal basis 변환에 대한 불변
+## Orthonormal basis 변환에 대한 correlation / anticorrelation 불변
 이번에는 basis 를 바꾸는 측정을 해보도록 하자. 기존의 측정이 수평, 수직 편광에 대해서
 이루어져 basis 를 이루었다면, 이번에는 45도를 틀어 $45^{\circ} \,, 135^{\circ}$ 를 구분하는
 측정을 한다고 해보자. 이렇게 만들어지는 새로운 basis 를 $\vert {+} \rangle \,, \vert {-} \rangle$
@@ -84,6 +85,83 @@ $$
     <a href="/assets/images/polnewbasis2d.png"><img src="/assets/images/polnewbasis2d.png"></a>
     <figcaption>45도 틀어서 만들어진 새로운 basis</figcaption>
 </figure>
+
+새롭게 세운 기준을 기존에 측정하던 방법으로 다시 쓰게되면,
+
+$$
+\vert 0 \rangle = \frac{1}{\sqrt{2}}\left( \vert {+} \rangle + \vert {-} \rangle \right)
+\qquad
+\vert 1 \rangle = \frac{1}{\sqrt{2}}\left( \vert {+} \rangle - \vert {-} \rangle \right)
+$$
+
+으로 나타내진다. 이제 이 식을 singlet Bell state 에 대입하도록 하자.
+
+$$
+\begin{aligned}
+\vert \Psi_{\rm AB}^{-} \rangle &= \frac{1}{\sqrt{2}} \left( \frac{1}{2}\left( \vert {+} \rangle + \vert {-} \rangle \right)\_{\rm A} \left( \vert {+} \rangle - \vert {-} \rangle \right)\_{\rm B} - \frac{1}{2}\left( \vert {+} \rangle - \vert {-} \rangle \right)\_{\rm A} \left( \vert {+} \rangle + \vert {-} \rangle \right)\_{\rm B} \right) \\
+&= \frac{1}{\sqrt{2}} \left( - \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right)
+\end{aligned}
+$$
+
+놀랍게도, basis 는 달라졌지만, anticorrelation 은 유지하는 것을 확인할 수 있다! 마찬가지로,
+[양자 얽힘: 벨 상태](/physics/Entanglement-Bellstate/#벨-상태-bell-state) 게시글에서 소개한
+나머지 Bell state 에 대해서도 $\vert + \rangle \,, \vert - \rangle$ 의 basis 로 변환을 하면,
+
+$$
+\begin{aligned}
+\vert \Psi_{\rm AB}^{+} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 1 \rangle + \vert 1 0 \rangle \right) \\
+&= \frac{1}{\sqrt{2}} \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle
+- \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right) 
+\rightarrow \vert \Phi_{\rm AB}^{-} \rangle \\
+\vert \Psi_{\rm AB}^{-} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 1 \rangle - \vert 1 0 \rangle \right) \\
+&= \frac{1}{\sqrt{2}} \left( -\vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle
++ \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right)
+\rightarrow -\vert \Psi_{\rm AB}^{-} \rangle \\
+\vert \Phi_{\rm AB}^{+} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 0 \rangle + \vert 1 1 \rangle \right) \\
+&= \frac{1}{\sqrt{2}} \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle 
++ \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right) 
+\rightarrow \vert \Phi_{\rm AB}^{+} \rangle \\
+\vert \Phi_{\rm AB}^{-} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 0 \rangle - \vert 1 1 \rangle \right) \\
+&= \frac{1}{\sqrt{2}} \left( \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle 
++ \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right) 
+\rightarrow \vert \Psi_{\rm AB}^{+} \rangle
+\end{aligned}
+$$
+
+으로 변환이 되는 모습을 알 수 있다. 두 번째 경우가 anticorrelation 인데, 나머지 경우들을
+살펴보면 correlation 끼리 바뀌거나 그대로 유지하는 모습을 보인다.
+
+## Basis 변환과 양자 얽힘
+또한 양자 얽힘에 있어 재미있는 사실은, orthonormal basis 에 대한 변환을 하지 않은
+상태에서 얽힘의 관계가 더 크다는 점이다. 예를 들어 $\vert 0 1 \rangle$ 과 같이 얽혀진
+큐비트가 주어진 상황에서, $\vert {+} \rangle \,, \vert {-} \rangle$ 으로 basis를 바꾼다고
+생각해보자. 그러면
+
+$$
+\begin{aligned}
+\vert 0 1 \rangle &= \frac{1}{2}\left( \vert {+} \rangle + \vert {-} \rangle \right)
+\left( \vert {+} \rangle - \vert {-} \rangle \right) \\
+&= \frac{1}{2} \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle - \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle - \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right) \\
+&= \frac{1}{2} \left[ \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle - \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right)
++ \left( - \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right) \right]
+\end{aligned}
+$$
+
+으로 정리할 수 있고, 각각 correlation 과 anticorrelation 으로 나뉘는 것을 확인할 수 있다.
+이러한 점이 눈여겨 보야할 점이다. 측정의 관점에서 생각해보면, 
+$\vert 0 \rangle \,, \vert 1 \rangle$ 을 측정하는 관점에서,
+반드시 anticorrelation 이 있다. 그러나 $\vert + \rangle \,, \vert - \rangle$ 으로 측정하는
+관점에서는, 50% 는 correlation 을, 50% 는 anticorrelation 이라는 점이다. 예를 들어
+A 의 상태가 $\vert - \rangle$ 이면
+
+$$
+\vert {-}\_{\rm A} \rangle \langle {-}\_{\rm A} \vert 0 1 \rangle 
+= \frac{1}{2} \left( - \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \right)
+$$
+
+으로 B가 $\vert - \rangle$ 일지 $\vert + \rangle$ 일지 알 수없다. 그러므로 상관도가 높은
+$\vert 0 \rangle \,, \vert 1 \rangle$ 의 측정이 얽힘의 상관관계를 가지고, basis 를 바꾼
+상황에서는 상관관계가 약해진 것이 된다.
 
 ## References
 * 이해웅, 양자 정보학 강의, 3장
