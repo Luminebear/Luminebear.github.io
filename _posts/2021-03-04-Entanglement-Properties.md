@@ -33,7 +33,7 @@ $$
 \vert \Psi_{\rm AB}^{-} \rangle = \frac{1}{\sqrt{2}} \left( \vert 01 \rangle - \vert 10 \rangle \right)
 $$
 
-물론 $\vert 0 1 \rangle = \vert 0_{A} \rangle \otimes \vert 1_{B} \rangle$ 이다.
+물론 $\vert 0 1 \rangle = \vert 0\_{A} \rangle \otimes \vert 1\_{B} \rangle$ 이다.
 
 ## 얽힘에 대한 측정과 붕괴
 먼저 고전적인 상황을 생각을 해보자. Alice 와 Bob 이라는 두 사람이 주머니에서 0 또는 1 이라는
@@ -50,8 +50,8 @@ $$
 $$
 
 으로 나타낸다. 마찬가지로 고전적인 상황과 동일하게 0 과 1 로 뽑는 것을 생각해보면,
-Alice 가 측정으로 $\vert 0_{A} \rangle$ 의 결과를 얻었다고 하자.
-그러면 Bob 은 $\vert 1_{B} \rangle$ 의 결과를 얻는다. 이것을 식으로 나타내면,
+Alice 가 측정으로 $\vert 0\_{A} \rangle$ 의 결과를 얻었다고 하자.
+그러면 Bob 은 $\vert 1\_{B} \rangle$ 의 결과를 얻는다. 이것을 식으로 나타내면,
 
 $$
 \begin{aligned}
