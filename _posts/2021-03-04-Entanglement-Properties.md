@@ -33,7 +33,7 @@ $$
 \vert \Psi_{\rm AB}^{-} \rangle = \frac{1}{\sqrt{2}} \left( \vert 01 \rangle - \vert 10 \rangle \right)
 $$
 
-물론 $\vert 0 1 \rangle = \vert 0\_{A} \rangle \otimes \vert 1\_{B} \rangle$ 이다.
+물론 $\vert 0 1 \rangle = \vert 0_{A} \rangle \otimes \vert 1_{B} \rangle$ 이다.
 
 ## 얽힘에 대한 측정과 붕괴
 먼저 고전적인 상황을 생각을 해보자. Alice 와 Bob 이라는 두 사람이 주머니에서 0 또는 1 이라는
@@ -50,8 +50,8 @@ $$
 $$
 
 으로 나타낸다. 마찬가지로 고전적인 상황과 동일하게 0 과 1 로 뽑는 것을 생각해보면,
-Alice 가 측정으로 $\vert 0\_{A} \rangle$ 의 결과를 얻었다고 하자.
-그러면 Bob 은 $\vert 1\_{B} \rangle$ 의 결과를 얻는다. 이것을 식으로 나타내면,
+Alice 가 측정으로 $\vert 0_{A} \rangle$ 의 결과를 얻었다고 하자.
+그러면 Bob 은 $\vert 1_{B} \rangle$ 의 결과를 얻는다. 이것을 식으로 나타내면,
 
 $$
 \begin{aligned}
@@ -98,8 +98,8 @@ $$
 
 $$
 \begin{aligned}
-\vert \Psi_{\rm AB}^{-} \rangle &= \frac{1}{\sqrt{2}} \left( \frac{1}{2}\left( \vert {+} \rangle + \vert {-} \rangle \right)\_{\rm A} \left( \vert {+} \rangle - \vert {-} \rangle \right)\_{\rm B} - \frac{1}{2}\left( \vert {+} \rangle - \vert {-} \rangle \right)\_{\rm A} \left( \vert {+} \rangle + \vert {-} \rangle \right)\_{\rm B} \right) \\
-&= \frac{1}{\sqrt{2}} \left( - \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right)
+\vert \Psi_{\rm AB}^{-} \rangle &= \frac{1}{\sqrt{2}} \left( \frac{1}{2}\left( \vert {+} \rangle + \vert {-} \rangle \right)_{\rm A} \left( \vert {+} \rangle - \vert {-} \rangle \right)_{\rm B} - \frac{1}{2}\left( \vert {+} \rangle - \vert {-} \rangle \right)_{\rm A} \left( \vert {+} \rangle + \vert {-} \rangle \right)_{\rm B} \right) \\
+&= \frac{1}{\sqrt{2}} \left( - \vert {+}_{\rm A} \rangle \vert {-}_{\rm B} \rangle + \vert {-}_{\rm A} \rangle \vert {+}_{\rm B} \rangle \right)
 \end{aligned}
 $$
 
@@ -110,20 +110,20 @@ $$
 $$
 \begin{aligned}
 \vert \Psi_{\rm AB}^{+} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 1 \rangle + \vert 1 0 \rangle \right) \\
-&= \frac{1}{\sqrt{2}} \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle
-- \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right) 
+&= \frac{1}{\sqrt{2}} \left( \vert {+}_{\rm A} \rangle \vert {+}_{\rm B} \rangle
+- \vert {-}_{\rm A} \rangle \vert {-}_{\rm B} \rangle \right) 
 \rightarrow \vert \Phi_{\rm AB}^{-} \rangle \\
 \vert \Psi_{\rm AB}^{-} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 1 \rangle - \vert 1 0 \rangle \right) \\
-&= \frac{1}{\sqrt{2}} \left( -\vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle
-+ \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right)
+&= \frac{1}{\sqrt{2}} \left( -\vert {+}_{\rm A} \rangle \vert {-}_{\rm B} \rangle
++ \vert {-}_{\rm A} \rangle \vert {+}_{\rm B} \rangle \right)
 \rightarrow -\vert \Psi_{\rm AB}^{-} \rangle \\
 \vert \Phi_{\rm AB}^{+} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 0 \rangle + \vert 1 1 \rangle \right) \\
-&= \frac{1}{\sqrt{2}} \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle 
-+ \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right) 
+&= \frac{1}{\sqrt{2}} \left( \vert {+}_{\rm A} \rangle \vert {+}_{\rm B} \rangle 
++ \vert {-}_{\rm A} \rangle \vert {-}_{\rm B} \rangle \right) 
 \rightarrow \vert \Phi_{\rm AB}^{+} \rangle \\
 \vert \Phi_{\rm AB}^{-} \rangle &= \frac{1}{\sqrt{2}} \left( \vert 0 0 \rangle - \vert 1 1 \rangle \right) \\
-&= \frac{1}{\sqrt{2}} \left( \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle 
-+ \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right) 
+&= \frac{1}{\sqrt{2}} \left( \vert {+}_{\rm A} \rangle \vert {-}_{\rm B} \rangle 
++ \vert {-}_{\rm A} \rangle \vert {+}_{\rm B} \rangle \right) 
 \rightarrow \vert \Psi_{\rm AB}^{+} \rangle
 \end{aligned}
 $$
@@ -141,9 +141,9 @@ $$
 \begin{aligned}
 \vert 0 1 \rangle &= \frac{1}{2}\left( \vert {+} \rangle + \vert {-} \rangle \right)
 \left( \vert {+} \rangle - \vert {-} \rangle \right) \\
-&= \frac{1}{2} \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle - \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle - \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right) \\
-&= \frac{1}{2} \left[ \left( \vert {+}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle - \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle \right)
-+ \left( - \vert {+}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \rangle \right) \right]
+&= \frac{1}{2} \left( \vert {+}_{\rm A} \rangle \vert {+}_{\rm B} \rangle - \vert {+}_{\rm A} \rangle \vert {-}_{\rm B} \rangle + \vert {-}_{\rm A} \rangle \vert {+}_{\rm B} \rangle - \vert {-}_{\rm A} \rangle \vert {-}_{\rm B} \rangle \right) \\
+&= \frac{1}{2} \left[ \left( \vert {+}_{\rm A} \rangle \vert {+}_{\rm B} \rangle - \vert {-}_{\rm A} \rangle \vert {-}_{\rm B} \rangle \right)
++ \left( - \vert {+}_{\rm A} \rangle \vert {-}_{\rm B} \rangle + \vert {-}_{\rm A} \rangle \vert {+}_{\rm B} \rangle \right) \right]
 \end{aligned}
 $$
 
@@ -155,8 +155,8 @@ $\vert 0 \rangle \,, \vert 1 \rangle$ 을 측정하는 관점에서,
 A 의 상태가 $\vert - \rangle$ 이면
 
 $$
-\vert {-}\_{\rm A} \rangle \langle {-}\_{\rm A} \vert 0 1 \rangle 
-= \frac{1}{2} \left( - \vert {-}\_{\rm A} \rangle \vert {-}\_{\rm B} \rangle + \vert {-}\_{\rm A} \rangle \vert {+}\_{\rm B} \right)
+\vert {-}_{\rm A} \rangle \langle {-}_{\rm A} \vert 0 1 \rangle 
+= \frac{1}{2} \left( - \vert {-}_{\rm A} \rangle \vert {-}_{\rm B} \rangle + \vert {-}_{\rm A} \rangle \vert {+}_{\rm B} \right)
 $$
 
 으로 B가 $\vert - \rangle$ 일지 $\vert + \rangle$ 일지 알 수없다. 그러므로 상관도가 높은
