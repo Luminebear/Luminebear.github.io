@@ -4,7 +4,7 @@ tags: [Butter-Fly, DigimonAdventure, lrc, 디지몬, 버터플라이, 디지몬�
 categories: 싱크가사
 mathjax: false # MathJax 사용을 위한 태그
 comments: true
-published: true
+published: false
 ---
 
 안녕하세요. Luminebear입니다. 

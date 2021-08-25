@@ -1,0 +1,8 @@
+I"J<p>CV의 업데이트 날짜는 pdf에 표기되어 있습니다.</p>
+
+<object type="application/pdf" data="/files/Curriculum_vitae.pdf" width="100%" height="100%">
+<p>It appears you don't have a PDF plugin for this browser.
+    No biggie... you can <a href="myfile.pdf">click here to
+    download the PDF file.</a></p>
+</object>
+:ET

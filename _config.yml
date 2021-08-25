@@ -97,15 +97,15 @@ author:
   name             : "Luminebear"
   avatar           : /assets/images/avatar.jpg
   bio              : "Physics, Computing, Quantum Computing and More"
-  location         : Somewhere, Korea, Republic of
+  location         : Busan, Korea, Republic of
   email            : "rainstar77@outlook.com"
   links:
+    - label: "CV"
+      icon: "fas fa-fw fa-link"
+      url: "/Curriculum_Vitae/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "rainstar77@outlook.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/Luminebear"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
