@@ -1,0 +1,900 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>순수 상태와 혼합 상태 :: Luminebear의 상상허브</title>
+<meta name="description" content="우리가 살고있는 지구에서 대기는 질소(78%), 산소(21%), 아르곤(0.93%), 이산화 탄소(0.04%)로 이루어져 있다고 알려져 있다.  이처럼 지구의 대기는 인간이 숨을 들이내쉬어 생명활동을 하는 산소로만 이루져 있지 않다. 이와 같이 양자계에서도 하나의 물질이 아닌 섞여있는 상태로 이루어져 있거나, 또는 하나의 물질로만 이루어진 순수한 상태를 생각해볼 수 있다. 이 게시글에서는 양자역학에서 구분하는 순수 상태와 혼합 상태를 알아보자 한다.">
+
+
+  <meta name="author" content="Luminebear">
+  
+  <meta property="article:author" content="Luminebear">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Luminebear의 상상허브">
+<meta property="og:title" content="순수 상태와 혼합 상태">
+<meta property="og:url" content="/physics/PureandMixed/">
+
+
+  <meta property="og:description" content="우리가 살고있는 지구에서 대기는 질소(78%), 산소(21%), 아르곤(0.93%), 이산화 탄소(0.04%)로 이루어져 있다고 알려져 있다.  이처럼 지구의 대기는 인간이 숨을 들이내쉬어 생명활동을 하는 산소로만 이루져 있지 않다. 이와 같이 양자계에서도 하나의 물질이 아닌 섞여있는 상태로 이루어져 있거나, 또는 하나의 물질로만 이루어진 순수한 상태를 생각해볼 수 있다. 이 게시글에서는 양자역학에서 구분하는 순수 상태와 혼합 상태를 알아보자 한다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-01-05T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/physics/PureandMixed/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Luminebear",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Luminebear의 상상허브 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
+
+  <link rel="stylesheet alternate" href="/assets/css/theme2.css" id="theme_source_2">
+  <script>
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark")
+    {
+      sessionStorage.setItem('theme', 'dark');
+      node1 = document.getElementById('theme_source');
+      node2 = document.getElementById('theme_source_2');
+      node1.setAttribute('rel', 'stylesheet alternate'); 
+      node2.setAttribute('rel', 'stylesheet');
+    }
+    else
+    {
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<button type="button" onclick="node1=document.getElementById('theme_source');node2=document.getElementById('theme_source_2');if(node1.getAttribute('rel')=='stylesheet'){node1.setAttribute('rel', 'stylesheet alternate'); node2.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'dark');}else{node2.setAttribute('rel', 'stylesheet alternate'); node1.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'light');} return false;">  
+  Change White/Dark theme
+</button>
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Luminebear의 상상허브
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="initial-content">
+      <!--for mathjax supporting-->
+      
+        <script>
+  window.MathJax = {
+    loader: {
+      load: ['input/tex', 'output/chtml', 'ui/menu'] // input options: input/tex-base, input/tex, input/tex-full // output: svg
+    },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams', // tag equations used ams packages
+      tagSide: 'right',
+      tagIndent: "0.8em",
+    },
+    chtml: {
+      scale: .9,                     // global scaling factor for all expressions
+      minScale: .5,                  // smallest scaling factor to use
+      matchFontHeight: true,         // true to match ex-height of surrounding font
+      mtextInheritFont: false,       // true to make mtext elements use surrounding font
+      merrorInheritFont: false,      // true to make merror text use surrounding font
+      mtextFont: '',                 // font to use for mtext, if not inheriting (empty means use MathJax fonts)
+      merrorFont: 'serif',           // font to use for merror, if not inheriting (empty means use MathJax fonts)
+      mathmlSpacing: false,          // true for MathML spacing rules, false for TeX rules
+      skipAttributes: {},            // RFDa and other attributes NOT to copy to the output
+      exFactor: .5,                  // default size of ex in em units
+      displayAlign: 'center',        // default for indentalign when set to 'auto'
+      displayIndent: '0'             // default for indentshift when set to 'auto'
+    },
+    svg: {
+      fontCache: 'global'
+    },
+  };
+</script>
+<script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    // other 1 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"
+    // other 2 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+</script> <!-- MathJax 3.0 Startup & Configurations -->
+      
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/avatar.jpg" alt="Luminebear" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Luminebear</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Physics, Computing, Quantum Computing and More</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Somewhere, Korea, Republic of</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:rainstar77@outlook.com">
+            <meta itemprop="email" content="rainstar77@outlook.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="순수 상태와 혼합 상태">
+    <meta itemprop="description" content="우리가 살고있는 지구에서 대기는 질소(78%), 산소(21%), 아르곤(0.93%), 이산화 탄소(0.04%)로 이루어져 있다고 알려져 있다. 이처럼 지구의 대기는 인간이 숨을 들이내쉬어 생명활동을 하는 산소로만 이루져 있지 않다. 이와 같이 양자계에서도 하나의 물질이 아닌섞여있는 상태로 이루어져 있거나, 또는 하나의 물질로만 이루어진 순수한 상태를 생각해볼 수 있다. 이 게시글에서는 양자역학에서 구분하는순수 상태와 혼합 상태를 알아보자 한다.">
+    <meta itemprop="datePublished" content="2021-01-05T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">순수 상태와 혼합 상태
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#순수-상태-pure-state">순수 상태 (Pure State)</a></li><li><a href="#혼합-상태-mixed-state">혼합 상태 (Mixed State)</a></li><li><a href="#밀도-행렬-density-matrix">밀도 행렬 (Density Matrix)</a></li><li><a href="#density-matrix를-이용한-pure-state와-mixed-state의-차이">Density Matrix를 이용한 Pure State와 Mixed State의 차이</a></li><li><a href="#references">References</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>우리가 살고있는 지구에서 대기는 질소(78%), 산소(21%), 아르곤(0.93%), 이산화 탄소(0.04%)로 이루어져 있다고 알려져 있다. 
+이처럼 지구의 대기는 인간이 숨을 들이내쉬어 생명활동을 하는 산소로만 이루져 있지 않다. 이와 같이 양자계에서도 하나의 물질이 아닌
+섞여있는 상태로 이루어져 있거나, 또는 하나의 물질로만 이루어진 순수한 상태를 생각해볼 수 있다. 이 게시글에서는 양자역학에서 구분하는
+<strong>순수 상태</strong>와 <strong>혼합 상태</strong>를 알아보자 한다.</p>
+
+<h2 id="순수-상태-pure-state">순수 상태 (Pure State)</h2>
+<p>정의부터 알아보고 가자.</p>
+
+<div class="notice--info">
+<p><strong><u>DEFINITION</u></strong>: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 있다면 이를 <strong>Pure State</strong>라고 한다. 다시말해,</p>
+
+\[\vert \psi \rangle = \sum_i a_i\vert \phi_i \rangle\]
+
+<p>여기서 $a_i$는 i번째 확률 진폭(Probability Amplitude), $\vert \phi \rangle_i$는 i번째 직교 규격화된 고유 함수이다.</p>
+</div>
+
+<p>다시 말해서 순수 상태는 각 직교 규격화된 Base Ket으로 중첩 되고 그것의 확률을 알 수 있는 상황을 말한다.</p>
+
+<h2 id="혼합-상태-mixed-state">혼합 상태 (Mixed State)</h2>
+<p>혼합 상태는 순수 상태가 통계적으로 잘 섞여진 상태(statistically ensemble state)라고 생각하면 된다.</p>
+
+<div class="notice--info">
+<p><strong><u>DEFINITION</u></strong>: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 없고 여러 pure state가 섞인 경우
+이를 <strong>Mixed State</strong>라고 한다. 이 경우에는 앞과는 달리 섞여있기 때문에 개별 파동함수의 구별이 불가능 하다. 수식으로는 다음과 같이 나타낼 수 있다.</p>
+
+\[\sum_i^n b_i\vert \psi_i \rangle = b_1\vert \psi_1 \rangle + b_2\vert \psi_2 \rangle + b_3\vert \psi_3 \rangle + \cdots\]
+
+<p>이 때 규격화 조건으로 $\sum_i^n b_i = 1$이고 여기서 $b_i$는 단순히 확률이다.</p>
+</div>
+
+<p>혼합 상태에서는 완전히 섞여있는 탓에 섞여져 있는 것의 각 파동함수를 알 수가 없다. 그러므로 주의할 점은 저 식에서 모든 파동함수의 개수와, 각 파동함수의 차원이 같을 필요가 없다. 그렇다면, 두 상태를 이렇게만 구분하는 걸까? 그렇지 않다. 두 상태를 구분하는 방법은 바로 <strong>밀도행렬</strong>을 이용하면 구별할 수 있다.</p>
+
+<h2 id="밀도-행렬-density-matrix">밀도 행렬 (Density Matrix)</h2>
+<p>밀도 행렬은 다음과 같이 정의된다.</p>
+
+<div class="notice--info">
+<p><strong><u>DEFINITION</u></strong>: 유한 차원 함수 공간에서 Pure State의 <strong>Denstiy Matrix</strong>는</p>
+
+\[\rho_{PS} \equiv \vert \psi \rangle \langle \psi \vert = \sum_i a_ia_i^*\vert\phi_i\rangle \langle\phi_i\vert\]
+
+<p>이 때 ${a_ia_i^<em>}$ 는 Probability Coefficient이고 ${\sum_i a_ia_i^</em> = 1}$ 인 Normalization Condition을 만족한다. 만약 Pure State가 아닌 Mixed State인 경우에는,</p>
+
+\[\rho_{MS} \equiv \sum_ib_i \vert \psi_i \rangle \langle \psi_i \vert\]
+
+<p>그리고 $\sum_i^n b_i = 1$</p>
+</div>
+
+<p>보다 이해를 돕기 위해서 density operator<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>가 등장하는 과정을 살펴보도록 하자. 먼저 우리가 어떤 관측가능한(Observable) ‘A’가 있다고 가정을 하자. Observable ‘A’는 기본적으로 eigenfunction</p>
+
+\[A\vert a' \rangle = a'\vert a' \rangle\]
+
+<p>을 만족하며, 이를 mixed ensemble (state)에서 측정(measurements in Q.M.)한다고 하자. 아주 많이 측정을 했다고 가정을 하면, Observable ‘A’의 평균을 알 수 있을 것이다. 이를 A에 대한 <strong>앙상블 평균(Ensemble Average)</strong>이라고 하며 계산하면</p>
+
+\[\begin{aligned}
+\langle A \rangle &amp;= \sum_i b_i\langle \psi_i \vert A \vert \psi_i \rangle \\
+&amp;= \sum_{i,j} b_i \langle\psi_i\vert  A \vert a'_j\rangle\langle a'_j \vert\psi_i\rangle \\
+&amp;= \sum_{i,j} b_i \vert \langle a'_j \vert \psi_i \rangle \vert^2 a'_j \\
+&amp;= \sum_{i,j} b_i \langle a'_j \vert \psi_i \rangle \langle \psi_i \vert a'_j \rangle a'_j
+\end{aligned}\]
+
+<p>이다. 그렇다면 여기서 또 다른 base ket set를 걸어보면 어떨까?</p>
+
+\[\begin{aligned}
+\langle A \rangle &amp;= \sum_{i,j} b_i \langle\psi_i\vert  A \vert a'_j\rangle\langle a'_j \vert\psi_i\rangle \\
+&amp;= \sum_i \sum_j \sum_k b_i \langle\psi_i\vert a_k^{''} \rangle \langle a_k^{''} \vert A \vert a'_j\rangle\langle a'_j \vert\psi_i\rangle \\
+&amp;= \sum_j \sum_k \left( \sum_i b_i \langle a'_j \vert\psi_i\rangle \langle\psi_i\vert a_k^{''} \rangle \right) \langle a_k^{''} \vert A \vert a'_j\rangle
+\end{aligned}\]
+
+<p>방금전의 식과 하나가 있을 때와 비교하면, 몇 개의 Base ket set이 있던 하나의 고정된 항이 있고 단순히 pure state의 합에만 의존하는 것을 볼 수 있다. 즉</p>
+
+\[\sum_{i} b_i \vert \psi_i \rangle \langle \psi_i \vert\]
+
+<p>이것이 density operator 이다. 여기서 summation 만 없으면 pure state의 desity operator 가 된다. 그리고
+주어진 orthonormal basis (eigenvector) 으로 matrix representation 을 하는 경우, denstiy matrix 가
+구성된다.</p>
+
+<h2 id="density-matrix를-이용한-pure-state와-mixed-state의-차이">Density Matrix를 이용한 Pure State와 Mixed State의 차이</h2>
+
+<p>이제 pure state와 mixed state의 차이를 살펴보자. Pure state와 mixed state를 구분하는 방법은 바로 <strong>대각합(Trace, 트레이스)</strong>를 이용한다.
+먼저 pure state에서는 파동함수를 구별할 수 있다고 언급하였다. 여기서 중요한 성질이 하나 있는데 pure state에서,</p>
+
+\[\rho^2 = \rho\]
+
+<p>이것은 간단하게 보일 수 있다.</p>
+
+\[\begin{aligned}
+\rho^2 = \vert \psi \rangle \langle \psi \vert \psi \rangle \langle \psi \vert = \vert \psi \rangle \langle \psi \vert
+\end{aligned}\]
+
+<p>따라서 Pure State의 Density Matrix의 Trace를 구해보자.</p>
+
+\[\begin{aligned}
+\text{tr}\rho &amp;= \text{tr}\rho^2 \\
+&amp;= \sum_i \langle \phi_i \vert \rho \vert \phi_i \rangle \\
+&amp;= \sum_i \langle \phi_i \vert \psi \rangle \langle \psi \vert \phi_i \rangle \\
+&amp;= \sum_i a_ia_i^* = \sum_i p_i = 1
+\end{aligned}\]
+
+<p>그러므로 pure state의 모든 확률의 합은 1로 나타난다. 다음으로 mixed state의 density matrix의 trace를 구해보자. 이 때 mixed state의 density matrix는 각 pure state의 density matrix의 합</p>
+
+\[\rho = \sum_i p_i\rho_i\]
+
+<p>으로 표현된다. 여기서 구분되는 점은 pure state와 달리</p>
+
+\[\rho \neq \rho^2\]
+
+<p>이라는 사실이다. 간단하게 살펴보면, 앞의 pure state와 같이 전체 확률을 1로 둘 때 $\text{tr}\rho = 1$이 되는 것은 당연하다. 하지만 $\rho^2$의 경우,</p>
+
+\[\begin{aligned}
+\rho^2 &amp;= \left( \sum_ip_i\rho_i \right) \left( \sum_ip_i\rho_i \right) \\
+&amp;\neq \left( \sum_i \langle \phi_i \vert \rho \vert \phi_i \rangle \right)\left( \sum_i \langle \phi_i \vert \rho \vert \phi_i \rangle \right)
+\end{aligned}\]
+
+<p>정의를 다시 생각해보면, 당연히 성립이 되지 않는다. 왜냐하면 우리는 mixed state에서 정확히 직교 규격화된 ket으로 이루어진 파동함수를 알 수 없다고 했기 때문이다. 따라서 mixed state의 $\text{tr}\rho^2$은</p>
+
+\[\text{tr}\rho^2 = \sum_ip_i^2 &lt; 1\]
+
+<p>으로 나타난다.[^2] 이제 pure state와 mixed state의 등식을 정리하자.</p>
+
+<div class="notice--info">
+<p><strong><u>THEOREM</u></strong>: <strong>Pure State</strong>에서 density matrix의 trace는</p>
+
+\[\text{tr} \rho^2 = Tr \rho = 1\]
+
+<p><strong>Mixed State</strong>에서 Denstiy Matrix의 Trace는</p>
+
+\[\text{tr} \rho^2 &lt; 1\]
+
+</div>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>J.J. Sakurai, Modern Quantum Mechanics, 3rd Ed., 3.4.2 Ensemble Averages and Desntiy Operator</li>
+  <li>이해웅, 양자 정보학 강의, 1장</li>
+</ul>
+
+<p>주어진 system 의 orthonormal basis 로 matrix representation 한 것이 density matrix 가 되기 때문이다.
+[^2]: 사실 이부분에서도 뭔가 불명확한 느낌이 없지 않다. 단순히 Normalization 때문에 합이 1이 아니라는 것으로 작다고만 표현한다는 것이 정당화가 되는 것일까?</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>엄밀하게는, density operator 라고 부르는 것이 맞다. 왜냐하면 density matrix 는 density operator 를 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#phyiscs" class="page__taxonomy-item" rel="tag">Phyiscs</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#quantuminformation" class="page__taxonomy-item" rel="tag">QuantumInformation</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#quantummechanics" class="page__taxonomy-item" rel="tag">QuantumMechanics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EB%AC%BC%EB%A6%AC%ED%95%99" class="page__taxonomy-item" rel="tag">물리학</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%96%91%EC%9E%90%EC%97%AD%ED%95%99" class="page__taxonomy-item" rel="tag">양자역학</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%96%91%EC%9E%90%EC%A0%95%EB%B3%B4" class="page__taxonomy-item" rel="tag">양자정보</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#physics" class="page__taxonomy-item" rel="tag">Physics</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2021-01-05T00:00:00+09:00">January 5, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EC%88%9C%EC%88%98+%EC%83%81%ED%83%9C%EC%99%80+%ED%98%BC%ED%95%A9+%EC%83%81%ED%83%9C%20%2Fphysics%2FPureandMixed%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fphysics%2FPureandMixed%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fphysics%2FPureandMixed%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/physics/QIprepost/" class="pagination--pager" title="양자 정보학을 위한 준비
+">이전</a>
+    
+    
+      <a href="/physics/ReducedMatrix/" class="pagination--pager" title="얽혀있는 공간의 밀도 행렬
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Entanglement-Properties/" rel="permalink">양자 얽힘: 양자 얽힘만의 특징
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">경고: 아직 완성되지 않은 게시글입니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Entanglement-Bellstate/" rel="permalink">양자 얽힘: 벨 상태
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">앞의 게시글에서 두 스핀계가 주어질 때의 식
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Entanglement-Intro/" rel="permalink">양자 얽힘: 분리 가능과 얽힘
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">경고: 아직 완성되지 않은 게시글입니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Schmidt-Decomposition/" rel="permalink">슈미트 분해
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">슈미트 분해(Schmidt Decomposition)는 양자 얽힘(Quantum Entanglement)에서 가장 중요한 수학적 기술 중 하나로, 이것을 이용하면 ket vector를 최소화된 항으로 만들어 줄 수 있다.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Luminebear. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "/physics/PureandMixed/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/physics/PureandMixed"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://luminebear-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

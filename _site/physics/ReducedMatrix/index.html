@@ -1,0 +1,861 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>얽혀있는 공간의 밀도 행렬 :: Luminebear의 상상허브</title>
+<meta name="description" content="앞의 게시글에서는 pure state와 mixed state가 어떤 차이가 있는 지 알아보았다. 이번에는 pure state에서 기술하되,  전체 system 이 Hilbert space 이고 subsystem 이 A와 B로 존재할 때, density matrix가 어떻게 나타나는지 살펴보고자 한다.">
+
+
+  <meta name="author" content="Luminebear">
+  
+  <meta property="article:author" content="Luminebear">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Luminebear의 상상허브">
+<meta property="og:title" content="얽혀있는 공간의 밀도 행렬">
+<meta property="og:url" content="/physics/ReducedMatrix/">
+
+
+  <meta property="og:description" content="앞의 게시글에서는 pure state와 mixed state가 어떤 차이가 있는 지 알아보았다. 이번에는 pure state에서 기술하되,  전체 system 이 Hilbert space 이고 subsystem 이 A와 B로 존재할 때, density matrix가 어떻게 나타나는지 살펴보고자 한다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-01-07T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/physics/ReducedMatrix/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Luminebear",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Luminebear의 상상허브 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
+
+  <link rel="stylesheet alternate" href="/assets/css/theme2.css" id="theme_source_2">
+  <script>
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark")
+    {
+      sessionStorage.setItem('theme', 'dark');
+      node1 = document.getElementById('theme_source');
+      node2 = document.getElementById('theme_source_2');
+      node1.setAttribute('rel', 'stylesheet alternate'); 
+      node2.setAttribute('rel', 'stylesheet');
+    }
+    else
+    {
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<button type="button" onclick="node1=document.getElementById('theme_source');node2=document.getElementById('theme_source_2');if(node1.getAttribute('rel')=='stylesheet'){node1.setAttribute('rel', 'stylesheet alternate'); node2.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'dark');}else{node2.setAttribute('rel', 'stylesheet alternate'); node1.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'light');} return false;">  
+  Change White/Dark theme
+</button>
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Luminebear의 상상허브
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="initial-content">
+      <!--for mathjax supporting-->
+      
+        <script>
+  window.MathJax = {
+    loader: {
+      load: ['input/tex', 'output/chtml', 'ui/menu'] // input options: input/tex-base, input/tex, input/tex-full // output: svg
+    },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams', // tag equations used ams packages
+      tagSide: 'right',
+      tagIndent: "0.8em",
+    },
+    chtml: {
+      scale: .9,                     // global scaling factor for all expressions
+      minScale: .5,                  // smallest scaling factor to use
+      matchFontHeight: true,         // true to match ex-height of surrounding font
+      mtextInheritFont: false,       // true to make mtext elements use surrounding font
+      merrorInheritFont: false,      // true to make merror text use surrounding font
+      mtextFont: '',                 // font to use for mtext, if not inheriting (empty means use MathJax fonts)
+      merrorFont: 'serif',           // font to use for merror, if not inheriting (empty means use MathJax fonts)
+      mathmlSpacing: false,          // true for MathML spacing rules, false for TeX rules
+      skipAttributes: {},            // RFDa and other attributes NOT to copy to the output
+      exFactor: .5,                  // default size of ex in em units
+      displayAlign: 'center',        // default for indentalign when set to 'auto'
+      displayIndent: '0'             // default for indentshift when set to 'auto'
+    },
+    svg: {
+      fontCache: 'global'
+    },
+  };
+</script>
+<script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    // other 1 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"
+    // other 2 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+</script> <!-- MathJax 3.0 Startup & Configurations -->
+      
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/avatar.jpg" alt="Luminebear" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Luminebear</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Physics, Computing, Quantum Computing and More</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Somewhere, Korea, Republic of</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:rainstar77@outlook.com">
+            <meta itemprop="email" content="rainstar77@outlook.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="얽혀있는 공간의 밀도 행렬">
+    <meta itemprop="description" content="앞의 게시글에서는 pure state와 mixed state가 어떤 차이가 있는 지 알아보았다. 이번에는 pure state에서 기술하되, 전체 system 이 Hilbert space 이고 subsystem 이 A와 B로 존재할 때, density matrix가 어떻게 나타나는지 살펴보고자 한다.">
+    <meta itemprop="datePublished" content="2021-01-07T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">얽혀있는 공간의 밀도 행렬
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#개요">개요</a></li><li><a href="#example-spin-system">Example: Spin System</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>앞의 게시글에서는 pure state와 mixed state가 어떤 차이가 있는 지 알아보았다. 이번에는 pure state에서 기술하되, 
+전체 system 이 Hilbert space 이고 subsystem 이 A와 B로 존재할 때, density matrix가 어떻게 나타나는지 살펴보고자 한다.</p>
+
+<h2 id="개요">개요</h2>
+<p>먼저 주어진 조건의 Hilbert space 를</p>
+
+\[\mathcal{H}_{AB} = \mathcal{H}_A\otimes\mathcal{H}_B\]
+
+<p>으로 기술할 수 있다. 그리고 이와 같은 경우에는 A system 과 B system 의 unit vector 로 얽혀있는 파동함수는,</p>
+
+\[\vert\psi_{AB}\rangle = \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle\]
+
+<p>이다. 이를 pure state 의 density matrix 의 정의에 따라 적어보면,</p>
+
+\[\begin{aligned}
+\rho_{AB} &amp;= \vert\psi_{AB}\rangle \langle\psi_{AB}\vert \\
+&amp;= \left( \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}_A\vert\langle{l}_B\vert \right) \\
+&amp;= \sum_{i,j}\sum_{k,l}{C_{ij}}{C_{kl}^*} \left( \vert{i}_A\rangle \langle{k}_A\vert \right) \left( \vert{j}_B\rangle\langle{l}_B\vert \right)
+\end{aligned}\]
+
+<p>이 때 파동함수의 bra와 ket의 index는 다르게 구성됨에 주의하자. 이제 여기서 A나 B의 density matrix 는 어떻게 구하는가? 이 때 사용되는
+정의가 바로 <strong>환산 밀도 행렬 (Reduced Density Matrix)</strong>이다.</p>
+
+<div class="notice--info">
+<p><strong><u>DEFINITION</u></strong> : 전체 system 이 $\mathcal{H}_{AB}$ 으로 이루어진 Hilbert space 에서 
+전체 system 의 density matrix 에 대한
+<strong>Reduced Density Matrix</strong> $\rho_A$, $\rho_B$는</p>
+
+\[\begin{aligned}
+\rho_A = \text{tr}_B\vert \psi_{AB} \rangle \langle \psi_{AB} \vert \\
+\rho_B = \text{tr}_A\vert \psi_{AB} \rangle \langle \psi_{AB} \vert
+\end{aligned}\]
+
+<p>여기서 tr은 <strong>대각합 (Trace, 트레이스)</strong>이다.</p>
+</div>
+
+<p>식을 간단하게 해석해보면, $\rho_A$는 density matrix에서 B의 대각 성분을 모두 합하고 남은 것들, 즉 A만을 의미한다. 이제 앞에서 주어진 density matrix $\rho_{AB}$로 A에 대한 reduced density matrix를 구해보도록 하자.</p>
+
+\[\begin{aligned}
+\rho_A &amp;= Tr_B \rho_{AB} \\
+&amp;= Tr_B \left( \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}_A\vert\langle{l}_B\vert \right) \\
+\end{aligned}\]
+
+<p>이 때 B에 대한 trace 는 아래와 같은 관계식을 만족한다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+\[Tr_B(\vert{j}_B\rangle\langle{l}_B\vert) = \delta_{jl}\]
+
+<p>그러므로 $\rho_A$는</p>
+
+\[\begin{aligned}
+\rho_A &amp;= \sum_{i,j}\sum_{k,l} \delta_{jl} {C_{ij}}{C_{kl}^*} \left( \vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \langle{k}_A\vert\langle{l}_B\vert \right) \\
+&amp;= \sum_{i,j}\sum_{k} {C_{ij}}{C_{kj}^*} \left( \vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \langle{k}\vert_A\langle{j}\vert_B \right)
+\end{aligned}\]
+
+<p>이 때 여기서 completeness relation</p>
+
+\[\sum_{j} = \vert j_B \rangle \langle j_B \vert = \mathbf{I}\]
+
+<p>을 만족하기 때문에 최종적으로 A의 reduced density matrix는</p>
+
+\[\rho_A = \sum_{i,j,k} {C_{ij}}{C_{kj}^*} \vert{i}_A\rangle \langle{k} \vert_A\]
+
+<p>으로 결정된다. 마찬가지로 B에 대한 reduced density matrix는</p>
+
+\[\rho_B = \sum_{i,j,l}{C_{ij}}{C_{il}^*}\vert{j}\rangle_B\langle{l}\vert_B\]
+
+<h2 id="example-spin-system">Example: Spin System</h2>
+<p>스핀계에서 다음과 같은 순수상태의 파동함수가 주어질 때 reduced density matrix 를 계산해보도록 하자.</p>
+
+\[\vert \psi \rangle = \frac{1}{2} \left( \vert \uparrow \uparrow \rangle + \vert \uparrow \downarrow \rangle + \vert \downarrow \uparrow \rangle + \vert \downarrow \downarrow \rangle \right)\]
+
+<p>여기서 $\vert \uparrow \uparrow \rangle = \vert \uparrow_A \rangle \otimes \vert \uparrow_B \rangle$를 의미한다. 먼저 density matrix 는</p>
+
+\[\begin{aligned}
+\rho &amp;= \vert \psi \rangle \langle \psi \vert \\
+&amp;= \frac{1}{4} \left( \vert \uparrow \uparrow \rangle + \vert \uparrow \downarrow \rangle + \vert \downarrow \uparrow \rangle + \vert \downarrow \downarrow \rangle \right) \left( \langle \uparrow \uparrow \vert + \langle \uparrow \downarrow \vert + \langle \downarrow \uparrow \vert + \langle \downarrow \downarrow \vert \right) \\
+\end{aligned}\]
+
+<p>으로 주어진 eigenvalue 에 대한 matrix representaion 을 통해
+4x4 Matrix로 구성이 될 것이다. A에 대한 reduced density matrix를 구해보자.</p>
+
+\[\begin{aligned}
+\rho_A &amp;= Tr_B\rho_{AB} \\
+&amp;= \sum_i \langle i_B \vert \rho_{AB} \vert i_B \rangle \\
+&amp;= \langle \uparrow_B \vert \rho_{AB} \vert \uparrow_B \rangle + \langle \downarrow_B \vert \rho_{AB} \vert \downarrow_B \rangle \\
+&amp;= \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right) + \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right)
+\end{aligned}\]
+
+<p>B에 대한 reduced density matrix도 계산해보면</p>
+
+\[\begin{aligned}
+\rho_B &amp;= Tr_B\rho_{AB} \\
+&amp;= \sum_i \langle i_A \vert \rho_{AB} \vert i_A \rangle \\
+&amp;= \langle \uparrow_A \vert \rho_{AB} \vert \uparrow_A \rangle + \langle \downarrow_A \vert \rho_{AB} \vert \downarrow_A \rangle \\
+&amp;= \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right) + \frac{1}{4} \left( \vert \uparrow \rangle + \vert \downarrow \rangle \right) \left( \langle \uparrow \vert + \langle \downarrow \vert \right)
+\end{aligned}\]
+
+<p>으로 A와 B에 대한 reduced denstiy matrix를 구했다. 지금과 같은 상황에서는 두 공간이 다르지만 동일한 식을 구성하는 모습을 보인다.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>J.J. Sakurai, Jim Napolitano, ‘Modern Quantum Mechanics’, 1.5 Change of Basis - Transformation Matrix 참조. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#phyiscs" class="page__taxonomy-item" rel="tag">Phyiscs</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#quantuminformation" class="page__taxonomy-item" rel="tag">QuantumInformation</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#quantummechanics" class="page__taxonomy-item" rel="tag">QuantumMechanics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EB%AC%BC%EB%A6%AC%ED%95%99" class="page__taxonomy-item" rel="tag">물리학</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%96%91%EC%9E%90%EC%97%AD%ED%95%99" class="page__taxonomy-item" rel="tag">양자역학</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%96%91%EC%9E%90%EC%A0%95%EB%B3%B4" class="page__taxonomy-item" rel="tag">양자정보</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#physics" class="page__taxonomy-item" rel="tag">Physics</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2021-01-07T00:00:00+09:00">January 7, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EC%96%BD%ED%98%80%EC%9E%88%EB%8A%94+%EA%B3%B5%EA%B0%84%EC%9D%98+%EB%B0%80%EB%8F%84+%ED%96%89%EB%A0%AC%20%2Fphysics%2FReducedMatrix%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fphysics%2FReducedMatrix%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fphysics%2FReducedMatrix%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/physics/PureandMixed/" class="pagination--pager" title="순수 상태와 혼합 상태
+">이전</a>
+    
+    
+      <a href="/physics/Information-Theory/" class="pagination--pager" title="엔트로피와 정보 이론
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Entanglement-Properties/" rel="permalink">양자 얽힘: 양자 얽힘만의 특징
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">경고: 아직 완성되지 않은 게시글입니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Entanglement-Bellstate/" rel="permalink">양자 얽힘: 벨 상태
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">앞의 게시글에서 두 스핀계가 주어질 때의 식
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Entanglement-Intro/" rel="permalink">양자 얽힘: 분리 가능과 얽힘
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">경고: 아직 완성되지 않은 게시글입니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Schmidt-Decomposition/" rel="permalink">슈미트 분해
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">슈미트 분해(Schmidt Decomposition)는 양자 얽힘(Quantum Entanglement)에서 가장 중요한 수학적 기술 중 하나로, 이것을 이용하면 ket vector를 최소화된 항으로 만들어 줄 수 있다.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Luminebear. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "/physics/ReducedMatrix/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/physics/ReducedMatrix"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://luminebear-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
