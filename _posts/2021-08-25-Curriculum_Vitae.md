@@ -5,8 +5,6 @@ categories:
 mathjax: false # MathJax 사용을 위한 태그
 comments: false
 published: true
-toc: false
-toc_sticky: false
 ---
 
 CV의 업데이트 날짜는 pdf에 표기되어 있습니다.
