@@ -84,7 +84,7 @@ $$
 이 때 여기서 completeness relation
 
 $$
-\sum_{j} = \vert j_B \rangle \langle j_B \vert = \mathbf{I}
+\sum_{j} \vert j_B \rangle \langle j_B \vert = \mathbf{I}
 $$
 
 을 만족하기 때문에 최종적으로 A의 reduced density matrix는
