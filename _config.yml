@@ -16,8 +16,8 @@ minimal_mistakes_skin    : "dirt" # "default", "air", "aqua", "contrast", "dark"
 minimal_mistakes_skin2   : "dark"
 
 # Site Settings
-locale                   : "ko-KR"
-title                    : "Luminebear의 상상허브"
+locale                   : "en-US"
+title                    : "Luminebear's Imagination Hub"
 title_separator          : "::"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Luminebear"
