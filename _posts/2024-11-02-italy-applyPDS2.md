@@ -64,6 +64,7 @@ TRENTO CENTRO
 FRAZIONARIO U.P. : XXXXX  
 DATA            : DD/MM/YYYY
 
+{% endcapture %}
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
 해당문서가 접수자용 서류로 발급됨과 동시에 언제, 어디서 문서가 생성되었는 지 정보가 담긴다.
@@ -76,6 +77,7 @@ CODICE ISTANZA : XXXXXXXXXXXX
 
 CODICE ASSICURATA : XXXXXXXXXXXX
 
+{% endcapture %}
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
 이탈리아 이민국에 접수된 번호등의 정보이다.
@@ -88,6 +90,7 @@ INDIRIZZO : Viale Verona, 187
 
 DATA E ORA : DD/MM/YYYY HH:MM
 
+{% endcapture %}
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
 **중요항목 첫 번째.** 이 항목에 본인이 차후 과정을 진행하기 위해 **언제, 어디를 방문**해야하는지 명시된다.
@@ -114,6 +117,7 @@ FIRMA DEL RICHIEDENTE
 
 (Your signature should be presented here)
 
+{% endcapture %}
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
 작성한 키트의 개수, marca da bollo 수입인지 제시, 이탈리아 경찰이 정보를 받아 접수및 처리를 진행한다는 설명과 개인정보 보호에 대한 설명이 적혀있다.
@@ -132,6 +136,7 @@ In quella sede, dovra' esibire:
 figli di eta' inferiore anni 14: 2 foto tessera; Passaporto
 originale e valido e la PRESENZA del minore allo sportello.
 
+{% endcapture %}
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
 **중요항목 두 번째.** 이 항목에 본인이 차후 과정을 진행하기 위해 **필요서류가 무엇인지** 명시된다.
@@ -145,6 +150,7 @@ originale e valido e la PRESENZA del minore allo sportello.
 - 우체국에서 발급한 Ricevuta (첫 번째 서류)와 작성한 Bolletino (두 번째 서류) (가능한 경우)
 - 14세 이하의 아동을 본인의 체류허가에 포함하여 가입하는 경우: 2개의 여권 사진, 유효한 여권, 그리고 아동 동반
 
+{% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
 이 때 신규신청시 필요한 건 안내장을 포함한 모든 서류, 증명사진, 여권 원본이다.
