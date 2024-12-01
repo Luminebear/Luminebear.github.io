@@ -1,66 +1,14 @@
 ---
 title: "이탈리아 박사과정 입학기 - 체류허가증 신청"
-tags: [phd]
-categories: phd, italy, 외국생활
+tags: [phd, italy, 외국생활]
+categories: phd
 mathjax: false
 comments: true
 published: true
 ---
 
-# Intro
-유럽에는 EU로 묶여있는 것과 동시에 국경을 상호개방하여, 국가로서의 정체성은 지니되 국가간 교류가 원활하도록 하는 '쉥겐 협정 (Schengen Agreement)'이 있다.
-이탈리아 역시 이 협정을 따르는 국가들 중 하나이며, 이에따라 주변국간 국경이 개방되어 있는 상황이다.
-따라서 이러한 경우, 비쉥겐 국가간 Border Control은 최초로 입국/출국하는 쉥겐 지역 - 비쉥겐 국가가 된다.
-이렇게 국가간 국경을 상호개방하여 쉥겐 - 비쉥겐의 국경으로 확장되는 상황이므로, 이에 따른 비자 역시 "국가를 입국하는 비자"가 아닌 "쉥겐 지역을 입국하는 비자 (Schengen VISA)"가 된다.
-
-그러나 이렇게 되면 쉥겐 협약이 맺어진 국가에서 장기 거주하는 외국인이 있을경우 관리가 상당히 까다로워지는 면이 있다.
-물론 쉥겐 비자라도 비자를 발급하는 국가의 언어에 맞추어서 발급되기는 하지만, 언어만 다를 뿐 사용하는 비자 스티커의 형식과 모양은 동일하다.
-여행목적인 경우 이러한 구분을 하는 수고를 들일 필요가 없는 것은 사실이다.
-
-이탈리아의 경우 장기거주하는 외국인은 **반드시 입국 후 8일 (주말이나 공휴일은 제외함) 이내에 체류허가(residence permit, permesso di soggiorno)를 신청**해야 한다.
-그렇지 않으면 벌금이 청구될 수 있다고 하니 주의하도록 한다.
-
-# 신청 과정
-내가 소속된 트렌토 대학교의 경우 외국학생을 적극적으로 받아들여서 그런지 외국인을 위한 시스템이 잘 갖춰저 있다.
-이미 출국 전 이를 도와주는 부서인 Welcome Office에서 사전에 Codice Fiscale를 발급해두는 등 *이탈리아 같지 않은?* 아주 친절함을 보였다.
-
-이탈리아 우체국(Poste Italiane) 홈페이지에는 [신청방법](https://www.poste.it/prodotti/guida-rilascio-e-rinnovo-permesso-di-soggiorno.html)이 안내되어 있다 (물론 이탈리아어).
-체류허가 신청을 위한 필요한 서류는 다음과 같다.
-
-## 준비물
-- 체류허가 신청 키트 (키트 잘로; kit giallo)
-- 마르카 다 볼로 우표 (Marca da bollo)
-- 정보가 기록된 여권면의 사본 (여권 표지, 출입국도장, 비자 등)
-- 세금 번호 (코디체 피스칼레; codice fiscale)
-
-Kit giallo는 **지정된** Poste Italiane에서만 구할 수 있으므로 사전에 어느 곳에서 이를 취급하는지 파악이 필요하다.
-이 키트를 취급하는 곳은 **"Servizi Sportello Amico"** 라고 명시된 우체국이며 이는 마찬가지로 Poste Italiane 홈페이지에서 확인가능하다.
-나의 경우 체류허가 신청 키트는 이미 학교에서 보유하고 있어서 따로 구할 필요는 없었지만, 체류허가 신청을 진행한 곳이 어차피 이 키트를 취급하는 곳이였다.
-
-Marca da bollo는 이탈리아 내 **타바끼 (tabacchi)** 어느 곳에서나 구매할 수 있다. 
-단, 카드는 받지않고 현금으로 지불해야 하니 주의하자. 
-이 우표의 역할은 대한민국으로 치면 정부 수입인지 비슷한 것인데, 이탈리아 내에서 공문서 등을 보낼 때 이를 보증하는 역할을 수행하는 것으로 인식하고 있다.
-근데 우표 하나가 무슨 16유로... 대한민국이면 천원인가 하는 걸... 
-
-코디체 피스칼레의 경우 키트에 작성하도록 되어있어 본인 번호가 뭔지만 알고있으면 된다.
-
-## 체류허가 신청 키트 내용 작성하기
-**여기서 부터 이탈리아의 행정처리가 한국과 달리 동떨어지는지 체감할 수 있다.**
-물론 코로나19를 겪으면서 대부분의 시민들이 컴퓨터 사용에 더욱 익숙해진터라 **상당히 많은 부분이 바뀐 것은 사실이며,** 그럼에도 불구하고 아직까지 이러한 아날로그를 추구하고 있다.
-
-체류허가 신청 키트의 양식은 이탈리아 이민국 포탈 [Portale Immigrazione](https://www.portaleimmigrazione.it/default.aspx) (사이트가 2000년대 초에 머물러 있다...)에서 확인할 수 있다.
-제목 "LA NUOVA PROCEDURA"의 게시물을 살펴보면 몇몇 단어에 링크가 걸려있는 데 그 링크에서 PDF본을 제공하고 있다.
-
-- [Sportello Amico Kit](https://www.portaleimmigrazione.it/docs/Buste/Busta_gialla_Extra_UE.pdf)
-- [Bollettino postale premarcato](https://www.portaleimmigrazione.it/docs/PSE/PSE.pdf)
-- [Modulo 1](https://www.portaleimmigrazione.it/docs/italiano/Modulo_1.pdf)
-- [Modulo 2](https://www.portaleimmigrazione.it/docs/italiano/Modulo_2.pdf)
-
-나의 경우 Amico Kit안에 Bollettino postale premarcato, Modulo 1이 포함되어 있었다.
-
-### Bollettino 작성
-
-### Modulo 1 작성
+이전 게시글에 대한 내용은 여기로: [이탈리아 박사과정 입학기 - 체류허가증 신청 1](/phd/italy-applyPDS1)
+{: .notice--info}
 
 ## 우체국 방문하기
 2024년 기준 카드결제(비접촉/IC) 가능.
@@ -69,10 +17,20 @@ Marca da bollo는 이탈리아 내 **타바끼 (tabacchi)** 어느 곳에서나 
 
 > Piazza Alessandro Vittoria, 1, 38122 Trento TN
 
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44291.290021594956!2d11.047471761703482!3d46.066940927302184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4782714b29021df7%3A0xf29e718154dd4b81!2sPoste%20Italiane!5e0!3m2!1sen!2sit!4v1733076987916!5m2!1sen!2sit" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
 트렌토의 두오모인 '산 비질리오 트렌토 대성당(San Vigilio Trento Cathedral)' 근처에 있어 쉽게 찾아갈 수 있다.
 
 ## 결제 영수증 및 접수증 수령 (아주 중요)
-접수과정이 모두 완료되면 우체국 직원은 결제 영수증과 접수를 했다는 일종의 증명인 서류? 지급해주는데, **이 서류를 잃어버리지 않도록 주의하자.**
+접수과정이 모두 완료되면 우체국 직원은 결제 영수증과 접수를 했다는 일종의 증명인 서류?를 지급해주는데, **이 서류를 잃어버리지 않도록 주의하자.**
 서류는 다음과 같다.
 
 - 작성했던 Bollettino postale premarcato
