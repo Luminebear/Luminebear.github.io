@@ -93,7 +93,7 @@ Modulo 1은 총 8페이지로 구성되어 있으며, 신규신청의 경우 1�
 
 이를 유의하여 아래지지 한국어가 병기된 사진을 참고하여 Modulo 1을 작성하면 된다.
 
-{% include gallery1 caption="한국어 병기된 Modulo 1 작성 페이지" %}
+{% include gallery id="gallery1" caption="한국어 병기된 Modulo 1 작성 페이지" %}
 
 실제 작성한 Modulo 1의 첫 페이지는 다음과 같다. 
 
