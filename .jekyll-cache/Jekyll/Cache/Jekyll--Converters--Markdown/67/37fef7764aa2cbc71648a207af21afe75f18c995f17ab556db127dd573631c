@@ -1,4 +1,4 @@
-I"�.<p>슈미트 분해(Schmidt Decomposition)는 양자 얽힘(Quantum Entanglement)에서 가장 중요한 수학적 기술 중 하나로, 이것을 이용하면 ket vector를 최소화된 항으로 만들어 줄 수 있다.</p>
+I".<p>슈미트 분해(Schmidt Decomposition)는 양자 얽힘(Quantum Entanglement)에서 가장 중요한 수학적 기술 중 하나로, 이것을 이용하면 ket vector를 최소화된 항으로 만들어 줄 수 있다.</p>
 
 <p>이 방법은 우리가 선형대수학에서 배운 <a href="https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process">‘그람-슈미트 과정(Gram-Schmidt Process)’</a>의 그 Enhard Schmidt가 제안한 방법이다. 그러면 이제 정의를 살펴보도록 하자.</p>
 
@@ -43,7 +43,7 @@ $\vert{i}_A\rangle, \vert{j}_B\rangle$는 orthonormal basis 이다.
 \vert \psi \rangle_A = \frac{1}{2}(\vert + \rangle_A \vert + \rangle_B)
 \end{aligned}\]
 
-<p>앞의 정의와 같이 같은 index로 나타내지는 것을 확인할 수 있다. 이것이 Schmidt decomposition이며, 이 때 Schmidt number는 1이 된다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+<p>앞의 정의와 같이 같은 index로 나타내지는 것을 확인할 수 있다. 이것이 Schmidt decomposition이며, 이 때 Schmidt number는 1이 된다.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
 
 <h2 id="일반적인-경우">일반적인 경우</h2>
 <p>앞에서 $\vert\psi_{AB}\rangle$와 같은 상태에 있는 일반적인 경우에 Schmidt decomposition을 어떻게 기술할 수 있을까? 
@@ -72,7 +72,7 @@ $\vert{i}_A\rangle, \vert{j}_B\rangle$는 orthonormal basis 이다.
 + {C_{11}}{C_{11}^*} \vert{1}_A\rangle \langle{1}_A \vert \\
 \end{aligned}\]
 
-<p>상수들을 행렬로 묶으면 다음과 같은 형태가 된다.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> 이것을 행렬 U라고 부르자.</p>
+<p>상수들을 행렬로 묶으면 다음과 같은 형태가 된다.<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> 이것을 행렬 U라고 부르자.</p>
 
 \[U =
 \begin{pmatrix}
@@ -161,7 +161,7 @@ $\vert{i}_A\rangle, \vert{j}_B\rangle$는 orthonormal basis 이다.
 
 <p>으로 바뀌는 것이다.</p>
 
-<p>다음으로 concurrence<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> 라는 척도가 존재한다. 정의를 살펴보자.</p>
+<p>다음으로 concurrence<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> 라는 척도가 존재한다. 정의를 살펴보자.</p>
 
 <div class="notice--info">
 <p><strong><u>DEFINITION</u></strong> : 전체 system 이 $\mathcal{H}_{AB}$ 으로 이루어진 Hilbert space 에서
@@ -211,13 +211,13 @@ C &amp;=  2\vert bc-ad \vert
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1" role="doc-endnote">
+    <li id="fn:1">
       <p>이 수가 상수 값인 1/2을 의미하는 것이 아님을 상기하자. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2" role="doc-endnote">
+    <li id="fn:2">
       <p>이것은 Matrix Representation으로 간주할 수 있다. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:3" role="doc-endnote">
+    <li id="fn:3">
       <p>양자 얽힘의 정도, 일치도라는 한국어의 번역이 있으나 정해진 단어는 없는 것 같아서 영문 명칭으로 표기함. <a href="https://dictionary.cambridge.org/dictionary/english/concurrence">Cambridge Dictionary</a>에서는 다음으로 설명한다. ‘a situation in which things or events happen or exist at the same time’ <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>

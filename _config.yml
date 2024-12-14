@@ -97,11 +97,12 @@ author:
   name             : "Luminebear"
   avatar           : /assets/images/avatar.jpg
   bio              : "Physics, Computing, Quantum Computing and More"
-  location         : Trento, Italy
+  location         : <a style="display:inline;" href="https://maps.app.goo.gl/H4HJCaqoDdEVATfr9" target="_blank">Trento, Italy</a>
   email            : "rainstar77@outlook.com"
   links:
+  # Icons: https://fontawesome.com/
     - label: "CV"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-id-badge"
       url: "/Curriculum_Vitae/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -118,6 +119,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/yong-kwon/7b9832305"
 
 # Site Footer
 footer:

@@ -1,4 +1,4 @@
-I"�<p>앞의 게시글에서 두 스핀계가 주어질 때의 식</p>
+I"�<p>앞의 게시글에서 두 스핀계가 주어질 때의 식</p>
 
 \[\begin{aligned}
 \vert \psi_{\rm AB} \rangle &amp;= a\vert \uparrow \uparrow \rangle + b\vert \uparrow \downarrow \rangle + c\vert \downarrow \uparrow \rangle + d\vert \downarrow \downarrow \rangle
@@ -25,7 +25,7 @@
 \vert \Phi_{\rm AB} \rangle &amp;= \vert a \vert^2 \vert \uparrow \uparrow \rangle + (1-\vert a \vert^2)\vert \downarrow \downarrow \rangle
 \end{aligned}\]
 
-<p>따라서, 정규화된 이항분포(Binomial Distribution)을 따르게 된다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> 그러므로, 변수의 값이 0이나 1이면,
+<p>따라서, 정규화된 이항분포(Binomial Distribution)을 따르게 된다.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> 그러므로, 변수의 값이 0이나 1이면,
 분리 가능 상태가 되므로, 얽힘의 정도는 0이 된다. 그렇다면, 얽힘이 최대가 되는 경우는 언제일까?
 바로 $’ 1/\sqrt{2} ‘$일 때 이다. 즉,</p>
 
@@ -82,7 +82,7 @@
 </ul>
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1" role="doc-endnote">
+    <li id="fn:1">
       <p>엄밀하게는, 변수의 제곱인 경우. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>

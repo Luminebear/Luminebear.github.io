@@ -1,4 +1,4 @@
-I"�&<p class="notice--warning"><strong>경고</strong>: 아직 완성되지 않은 게시글입니다.</p>
+I"�&<p class="notice--warning"><strong>경고</strong>: 아직 완성되지 않은 게시글입니다.</p>
 
 <p>이번에는 고전적 상관관계와 달리 양자 얽힘에서 나타나는 특징을 조금 더 자세히 다루어보도록 하자.
 또한 여기서는 광학계를 기본으로 하는 경우에서 살펴보도록 한다. 즉, 수평 편광 $\vert \leftrightarrow \rangle$, 
@@ -56,7 +56,7 @@ Alice 가 측정으로 $\vert 0_{A} \rangle$ 의 결과를 얻었다고 하자.
 \[\vert {+} \rangle = \frac{1}{\sqrt{2}} \left( \vert 0 \rangle + \vert 1 \rangle \right) \qquad
 \vert {-} \rangle = \frac{1}{\sqrt{2}} \left( \vert 0 \rangle - \vert 1 \rangle \right)\]
 
-<p>으로 나타낼 수 있다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+<p>으로 나타낼 수 있다.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
 
 <figure class="half">
     <a href="/assets/images/polnewbasis3d.png"><img src="/assets/images/polnewbasis3d.png" /></a>
@@ -139,7 +139,7 @@ $\vert 0 \rangle \,, \vert 1 \rangle$ 의 측정이 얽힘의 상관관계를 �
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1" role="doc-endnote">
+    <li id="fn:1">
       <p>물론, 후자는 $-45^\circ$ 를 basis 로 할 수도 있다. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>

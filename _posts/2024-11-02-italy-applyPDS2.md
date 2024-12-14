@@ -2,6 +2,8 @@
 title: "이탈리아 박사과정 입학기 - 체류허가증 신청 2"
 tags: [phd, italy, 외국생활]
 categories: phd
+sidebar:
+  nav: "docs"
 mathjax: false
 comments: true
 published: true

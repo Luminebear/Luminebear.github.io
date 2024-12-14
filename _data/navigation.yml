@@ -6,3 +6,20 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: Physics
+    url: /categories/physics
+    children:
+      - title: "Quantum Computing"
+        url: /tags/#qc
+      - title: "Quantum Information"
+        url: /tags/#qi
+
+  - title: PhD
+    url: /categories/phd
+    children:
+      - title: "Studying abroad"
+        url: /tags/#studying_abroad
+      - title: "University of Trento"
+        url: /tags/#unitn
