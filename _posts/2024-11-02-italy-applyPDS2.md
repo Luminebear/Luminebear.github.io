@@ -1,5 +1,5 @@
 ---
-title: "이탈리아 박사과정 입학기 - 체류허가증 신청"
+title: "이탈리아 박사과정 입학기 - 체류허가증 신청 2"
 tags: [phd, italy, 외국생활]
 categories: phd
 mathjax: false
@@ -11,9 +11,9 @@ published: true
 {: .notice--info}
 
 ## 우체국 방문하기
-2024년 기준 카드결제(비접촉/IC) 가능.
-트레블월렛/트레블로그 등의 외화 가상계좌방식 결제 정상.
-트렌토 내에 Amico Kit을 취급하는 곳에서 접수를 받았으며 주소는 다음과 같다.
+필요한 서류를 모두 작성했으면 우체국에 방문하여 접수하자. 
+서류접수는 Amico Kit을 취급하는 곳에서만 가능하니 유의.
+나는 트렌토 내에 Amico Kit을 취급하는 곳에서 방문하여 접수하였으며, 주소는 다음과 같다.
 
 > Piazza Alessandro Vittoria, 1, 38122 Trento TN
 
@@ -28,6 +28,8 @@ published: true
 </iframe>
 
 트렌토의 두오모인 '산 비질리오 트렌토 대성당(San Vigilio Trento Cathedral)' 근처에 있어 쉽게 찾아갈 수 있다.
+
+참고로 결제는 2024년 기준 카드결제(비접촉/IC), 트레블월렛/트레블로그 등의 외화 가상계좌방식 결제 모두 가능하다.
 
 ## 결제 영수증 및 접수증 수령 (아주 중요)
 접수과정이 모두 완료되면 우체국 직원은 결제 영수증과 접수를 했다는 일종의 증명인 서류?를 지급해주는데, **이 서류를 잃어버리지 않도록 주의하자.**
@@ -50,8 +52,7 @@ Google검색으로 발견한 이탈리아 경찰국에서 만든 [문서](https:
 - USER ID: 홀로그램이 부착된 부분의 숫자 12자리
 - PASSWORD: 바코드가 위치한 부분의 숫자 11자리 그리고 하이픈 그리고 숫자 1자리에서 하이픈을 제외한 숫자 (이를테면 12345678901-2 에서 실제 PASSWORD는 123456789012)
 
-이 정보를 가지고 페이지에 접속한다.
-'Nome Utente [U]'에 USER ID를, 'Password [P]'에 PASSWORD를 입력하면 된다.
+이 정보를 가지고 페이지에 접속하여 로그인 하면 진행상황을 살펴볼 수 있다.
 
 ### 세 번째 서류의 역할
 세 번째 서류에는 다음과 같은 내용이 한 페이지에 작성되어 있다.
@@ -156,3 +157,42 @@ originale e valido e la PRESENZA del minore allo sportello.
 이 때 신규신청시 필요한 건 안내장을 포함한 모든 서류, 증명사진, 여권 원본이다.
 이민국에서 추가서류를 요청할 수 있는데, 이를 확인하려면 두 번째 서류를 통하여 해당 웹사이트를 방문하면 된다.
 나의 경우 **어떠한 통보도 없이 추가서류 요청**이 제시되었다...
+
+## Questra 방문 전 진행상황 살펴보기
+Questra를 방문하기 전 진행상황은 이탈리아 이민국 포탈 [Portale Immigrazione](https://www.portaleimmigrazione.it/default.aspx)의 메인 페이지에 접속하여, 오른쪽 하단에 **Area Ricevuta Comuni/Patronati**라는 항목을 선택해 접속하여 확인해볼 수 있다.
+
+<figure>
+<a href="/assets/images/pmprogress1.png"><img src="/assets/images/pmprogress1.png"></a>
+<figcaption>PDS 진행확인을 위한 웹페이지</figcaption>
+</figure>
+
+웹페이지를 접속하게 되면 다음과 같은 로그인창이 나타난다.
+두 번째 문서를 참고하여, 'Nome Utente [U]'에 USER ID를, 'Password [P]'에 PASSWORD를 입력하면 된다.
+
+<figure>
+<a href="/assets/images/pmprogress2.png"><img src="/assets/images/pmprogress2.png"></a>
+<figcaption>웹페이지 로그인 이후 확인할 수 있는 내역</figcaption>
+</figure>
+
+로그인을 마치면 다음과 같이 진행상황을 확인해볼 수 있다.
+나의 경우 우체국에서 접수할 때 서류 몇가지를 첨부하지 않았고, 따라서 웹사이트에는 다음과 같이 미비서류가 안내되어 있었다.
+
+{% capture notice-2 %}
+- Doc Assente : Fotocopia della certificazione attestente il corso di studio vistata
+- Doc Assente : Fotocopia della polizza assicurativa contro rischi di malattia e infortunio
+
+{% endcapture %}
+<div class="notice--info">{{ notice-2 | markdownify }}</div>
+
+첫 번째는 **유학 목적에 의한 학교 등록 접수증의 사본**, 두 번째는 **보험 서류 사본**이다.
+실제로 나는 학교 권유에 의하여 내년 말까지 전 기간을 아우르는 PDS를 신청하는 것으로 선택하였고, 국가 보험 (한국의 경우 국민건강보험과 비슷한 것) 가입할 예정이다.
+본 국가 보험의 경우 보장기간이 항상 새해 첫 날부터 그 해의 마지막일이다.
+따라서 나는 우체국 방문시 해당 서류를 지참하지 않았다.
+그래서 아무래도 추가 서류를 요청한 것으로 생각된다.
+
+마지막으로 Convocazione에 기록된 내용은 세 번째 서류의 내용과 동일하다.
+방문일(첨부 스크린샷에는 숨김처리), 방문장소, 지시사항들이 안내되어있다.
+
+여기까지가 우체국에 접수 후 살펴볼 수 있는 상황이다.
+다음 게시글에는 Questra 방문하여 해당 절차를 진행해보고 난 뒤 후기를 작성해봐야겠다.
+[이탈리아 박사과정 입학기 - 체류허가증 신청 3](/phd/italy-applyPDS3)
