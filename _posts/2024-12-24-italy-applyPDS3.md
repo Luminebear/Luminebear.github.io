@@ -1,13 +1,20 @@
 ---
 title: "이탈리아 박사과정 입학기 - 체류허가증 신청 3"
-tags: [phd, italy, 외국생활]
+tags: [phd, italy, studying_abroad]
 categories: phd
 sidebar:
   nav: "docs"
-lastmod: 2024-12-29 16:30:00
+last_modified_at: 2024-12-29
 mathjax: false
 comments: true
 published: true
+gallery1:
+  - url: /assets/images/pmresult1.png
+    image_path: /assets/images/pmresult1.png
+    title: "Polizia di Stato에서 제공하는 PDS조회페이지"
+  - url: /assets/images/pmresult2.png
+    image_path: /assets/images/pmresult2.png
+    title: "PDS번호 조회후 나타나는 화면"
 ---
 
 이전 게시글에 대한 내용은 여기로: [이탈리아 박사과정 입학기 - 체류허가증 신청 2](/phd/italy-applyPDS2)
@@ -21,25 +28,30 @@ published: true
 
 Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글에 올린 안내장의 항목을 가져오면,
 
+{% capture notice-2 %}
 - 본 안내장
 - 흰 배경 바탕의 최근 촬영한 증명사진 4장
 - 유효한 여권 원본
 - 소유한 페르메소 디 소쪼르노
 - 우체국에서 발급한 Ricevuta (첫 번째 서류)와 작성한 Bolletino (두 번째 서류) (가능한 경우)
 - 14세 이하의 아동을 본인의 체류허가에 포함하여 가입하는 경우: 2개의 여권 사진, 유효한 여권, 그리고 아동 동반
-{: .notice}
+{% endcapture %}
+<div class="notice">{{ notice-2 | markdownify }}</div>
 
 여기서 내가 준비한 서류는 **본 안내장, 흰 배경 바탕의 최근 촬영한 증명사진 4장, 여권 원본, 우체국 발급 서류**이고, 여기서 추가적으로
 
+{% capture notice-2 %}
 - 특정 면이 기록된 여권 사본
 - 집 계약 서류 (본인의 경우 기숙사 계약 서류)
 - 보험 서류
 - 학교 등록 문서
-{: .notice}
+{% endcapture %}
+<div class="notice">{{ notice-2 | markdownify }}</div>
 
 를 인쇄하여 지참했다.
 따라서 1. 유학/교환학생 목적으로 2. 신규신청하는 경우 필요한 서류는 다음과 같이 정리할 수 있겠다.
 
+{% capture notice-2 %}
 **유학 또는 교환학생(studio)을 목적으로 하는 경우의 Permesso di Soggiorno 신청시 필요서류**
 - 우체국 방문하여 접수하고 난 뒤 받은 안내장
 - 흰 배경 바탕의 최근 촬영한 증명사진 4장
@@ -49,7 +61,8 @@ Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글�
 - 기숙사 계약 서류 사본
 - 보험 서류 사본
 - 학교 등록 문서
-{: .notice--info}
+{% endcapture %}
+<div class="notice--info">{{ notice-2 | markdownify }}</div>
 
 **주의!**: 모든 서류는 반드시 **사본**으로 챙겨가도록 하자.
 원본은 본인이 소유하고 있으면 된다.
@@ -74,6 +87,12 @@ Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글�
 
 본래 학교측에서 도우미를 붙여줄 예정이었지만 하필 크리스마스 시즌이라 도울 수 있는 학생이 배정되어 있지 않아 직접 방문해야된다고 고지를 받았기에,
 하는 수 없이 직접 방문했다.
+
+<figure>
+<a href="/assets/images/pmvisit1.jpg"><img src="/assets/images/pmvisit1.jpg"></a>
+<figcaption>PDS 등록을 위해 준비한 문서들...</figcaption>
+</figure>
+
 사진을 따로 촬영하지 않았지만, 방문 전 따라갈 항목은 아래와 같다.
 
 1. Trento Questura에 접근하면 일단 철문이 보인다. 차도와 인도의 구분이 크게 되어 있지 않으니 접근하는 차를 주의하며 들어간다.
@@ -86,6 +105,12 @@ Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글�
 이럴꺼면 시간은 왜 고지하는지...
 나는 "p 26"으로 배정받았고, 도착했을 때는 "p 11"까지 진행되고 있는 상황이였다.
 많이 기다려야 겠구나... 하며 대기했다.
+
+<figure class="half">
+    <a href="/assets/images/pmvisit2.jpg"><img src="/assets/images/pmvisit2.jpg"></a>
+    <a href="/assets/images/pmvisit3.jpg"><img src="/assets/images/pmvisit3.jpg"></a>
+    <figcaption>제공받은 번호표와 대기명단</figcaption>
+</figure>
 
 ## 서류 제출과 카운터 인터뷰
 > "Pi ventisei!"
@@ -124,15 +149,7 @@ Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글�
 ## Questura 방문 후 진행상황
 Questra를 방문한 후 PDS의 진행상황은 이탈리아 Polizia di Stato [Permesso di soggiorno](https://questure.poliziadistato.it/stranieri) 페이지에 접속하여 확인해볼 수 있다.
 
-<figure>
-<a href="/assets/images/pmprogress1.png"><img src="/assets/images/pmresult1.png"></a>
-<figcaption>PDS 진행확인을 위한 웹페이지</figcaption>
-</figure>
+{% include gallery id="gallery1" caption="PDS 진행확인을 위한 Polizia di Stato 웹페이지" %}
 
 웹페이지를 접속하게 되면 다음과 같이 코드를 입력하는 창이 나타난다.
 File number의 경우 PDS접수를 완료하고 나면, 다시 받은 Ricevuta에 숫자와 문자를 기입해주는데, 이 숫자와 문자를 입력하면 현재 진행상황을 알 수 있다. 
-
-<figure>
-<a href="/assets/images/pmprogress2.png"><img src="/assets/images/pmresult2.png"></a>
-<figcaption>웹페이지 로그인 이후 확인할 수 있는 내역</figcaption>
-</figure>

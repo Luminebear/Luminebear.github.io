@@ -1,7 +1,8 @@
 ---
 title: "이탈리아 박사과정 입학기 - 체류허가증 신청 1"
-tags: [phd, italy, 외국생활]
+tags: [phd, italy, studying_abroad]
 categories: phd
+last_modified_at: 2024-12-29
 mathjax: false
 comments: true
 published: true
@@ -19,6 +20,7 @@ gallery1:
 
 # Intro
 유럽에는 EU로 묶여있는 것과 동시에 국경을 상호개방하여, 국가로서의 정체성은 지니되 국가간 교류가 원활하도록 하는 '쉥겐 협정 (Schengen Agreement)'이 있다.
+(자세한건 영문 위키백과 참조: [Schengen Agreement](https://en.wikipedia.org/wiki/Schengen_Agreement))
 이탈리아 역시 이 협정을 따르는 국가들 중 하나이며, 이에따라 주변국간 국경이 개방되어 있는 상황이다.
 따라서 이러한 경우, 비쉥겐 국가간 Border Control은 최초로 입국/출국하는 쉥겐 지역 - 비쉥겐 국가가 된다.
 이렇게 국가간 국경을 상호개방하여 쉥겐 - 비쉥겐의 국경으로 확장되는 상황이므로, 이에 따른 비자 역시 "국가를 입국하는 비자"가 아닌 "쉥겐 지역을 입국하는 비자 (Schengen VISA)"가 된다.
@@ -86,10 +88,13 @@ Marca da bollo는 이탈리아 내 **타바끼 (tabacchi)** 어느 곳에서나 
 Modulo 1은 총 8페이지로 구성되어 있으며, 신규신청의 경우 1페이지, 2페이지, 3페이지만을 작성한다.
 작성 전 몇가지 주의사항이 있으니 유의하도록 하자.
 
+{% capture notice-2 %}
 - 영문은 모두 **대문자**로 작성
 - 선택항목에서는 **X**로 선택을 표기
 - 마르카 다 볼로 인지를 붙인 뒤 인지면에 걸처 본인 서명
-{: .notice--danger}
+
+{% endcapture %}
+<div class="notice--danger">{{ notice-2 | markdownify }}</div>
 
 이를 유의하여 아래지지 한국어가 병기된 사진을 참고하여 Modulo 1을 작성하면 된다.
 

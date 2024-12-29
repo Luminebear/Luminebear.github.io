@@ -1,9 +1,10 @@
 ---
 title: "이탈리아 박사과정 입학기 - 체류허가증 신청 2"
-tags: [phd, italy, 외국생활]
+tags: [phd, italy, studying_abroad]
 categories: phd
 sidebar:
   nav: "docs"
+last_modified_at: 2024-12-29
 mathjax: false
 comments: true
 published: true
@@ -12,7 +13,7 @@ published: true
 이전 게시글에 대한 내용은 여기로: [이탈리아 박사과정 입학기 - 체류허가증 신청 1](/phd/italy-applyPDS1)
 {: .notice--info}
 
-## 우체국 방문하기
+# 우체국 방문
 필요한 서류를 모두 작성했으면 우체국에 방문하여 접수하자. 
 서류접수는 Amico Kit을 취급하는 곳에서만 가능하니 유의.
 나는 트렌토 내에 Amico Kit을 취급하는 곳에서 방문하여 접수하였으며, 주소는 다음과 같다.
