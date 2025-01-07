@@ -4,6 +4,7 @@ tags: [MathJax, Jekyll, LaTeX]
 mathjax: true # MathJax 사용을 위한 태그
 comments: false # 댓글기능
 toc: true
+published: false
 ---
 
 # Heading 1

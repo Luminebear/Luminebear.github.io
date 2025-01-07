@@ -6,6 +6,9 @@ sidebar:
   nav: "docs"
 last_modified_at: 2024-12-29
 mathjax: false
+toc: true
+toc_label: Table of Contents
+toc_sticky: true
 comments: true
 published: true
 ---

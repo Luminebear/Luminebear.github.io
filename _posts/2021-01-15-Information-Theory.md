@@ -1,6 +1,6 @@
 ---
 title: "엔트로피와 정보 이론"
-tags: [Phyiscs, Information, QuantumInformation, 물리학, 정보, 양자정보] # 태그 입력
+tags: [Phyiscs, Information, qi, 물리학, 정보, 양자정보] # 태그 입력
 categories: Physics
 mathjax: true # MathJax 사용을 위한 태그
 image:

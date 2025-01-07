@@ -1,8 +1,11 @@
 ---
 title: "이탈리아 박사과정 입학기 - 비자"
 tags: [phd, visa]
-categories:
+categories: phd
 mathjax: false
+toc: true
+toc_label: Table of Contents
+toc_sticky: true
 comments: true
 published: true
 ---

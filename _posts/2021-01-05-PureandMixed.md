@@ -1,6 +1,6 @@
 ---
 title: "순수 상태와 혼합 상태"
-tags: [Phyiscs, QuantumMechanics, QuantumInformation, 물리학, 양자역학, 양자정보] # 태그 입력
+tags: [Phyiscs, QuantumMechanics, qi, 물리학, 양자역학, 양자정보] # 태그 입력
 categories: Physics
 mathjax: true # MathJax 사용을 위한 태그
 image:

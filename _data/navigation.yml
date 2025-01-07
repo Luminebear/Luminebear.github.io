@@ -20,6 +20,6 @@ docs:
     url: /categories/phd
     children:
       - title: "Studying abroad"
-        url: /tags/#studying_abroad
+        url: /tags/#studying-abroad
       - title: "University of Trento"
         url: /tags/#unitn

@@ -6,6 +6,9 @@ sidebar:
   nav: "docs"
 last_modified_at: 2024-12-29
 mathjax: false
+toc: true
+toc_label: Table of Contents
+toc_sticky: true
 comments: true
 published: true
 gallery1:
@@ -89,7 +92,7 @@ Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글�
 하는 수 없이 직접 방문했다.
 
 <figure>
-<a href="/assets/images/pmvisit1.jpg"><img src="/assets/images/pmvisit1.jpg"></a>
+<a href="/assets/images/pmvisit1.jpg"><img src="/assets/images/pmvisit1.jpg" height="50%"></a>
 <figcaption>PDS 등록을 위해 준비한 문서들...</figcaption>
 </figure>
 

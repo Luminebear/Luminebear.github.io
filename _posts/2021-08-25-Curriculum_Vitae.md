@@ -13,6 +13,6 @@ The recently updated date of my CV is indicated in the PDF file below.
 
 <object type="application/pdf" data="/files/Curriculum_vitae.pdf" width="100%" height="100%">
 <p>It appears you don't have a PDF plugin for this browser.
-    No biggie... you can <a href="myfile.pdf">click here to
+    No biggie... you can <a href="/files/Curriculum_vitae.pdf">click here to
     download the PDF file.</a></p>
 </object>
