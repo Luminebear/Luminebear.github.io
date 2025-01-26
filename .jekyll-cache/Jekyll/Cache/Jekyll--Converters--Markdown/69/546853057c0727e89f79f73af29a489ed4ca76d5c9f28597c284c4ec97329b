@@ -1,8 +1,0 @@
-I"u
-<p><strong><u>DEFINITION</u></strong>: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 없고 여러 pure state가 섞인 경우
-이를 <strong>Mixed State</strong>라고 한다. 이 경우에는 앞과는 달리 섞여있기 때문에 개별 파동함수의 구별이 불가능 하다. 수식으로는 다음과 같이 나타낼 수 있다.</p>
-
-\[\sum_i^n b_i\vert \psi_i \rangle = b_1\vert \psi_1 \rangle + b_2\vert \psi_2 \rangle + b_3\vert \psi_3 \rangle + \cdots\]
-
-<p>이 때 규격화 조건으로 $\sum_i^n b_i = 1$이고 여기서 $b_i$는 단순히 확률이다.</p>
-:ET

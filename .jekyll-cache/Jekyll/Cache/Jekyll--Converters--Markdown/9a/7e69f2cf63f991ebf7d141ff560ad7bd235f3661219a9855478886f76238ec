@@ -1,8 +1,0 @@
-I"�
-<p><strong><u>DEFINITION</u></strong> : 전체 system 이 $\mathcal{H}_{AB}$ 으로 이루어진 Hilbert space 에서 
-임의의 파동함수에 대한 <strong>슈미트 분해</strong>는</p>
-
-\[\vert\psi_{AB}\rangle = \sum_{k}{\lambda_{k}}\vert{k}_A\rangle\vert{k}_B\rangle\]
-
-<p>여기서 $\lambda_k$ 의 개수를 <strong>슈미트 수(Schmidt Number)</strong>라고 한다.</p>
-:ET

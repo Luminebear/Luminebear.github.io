@@ -1,7 +1,0 @@
-I"�
-<p><strong><u>DEFINITION</u></strong>: 어떤 양자계에서 파동함수가 중첩되어 있을 때, 각 파동함수를 구별할 수 있다면 이를 <strong>Pure State</strong>라고 한다. 다시말해,</p>
-
-\[\vert \psi \rangle = \sum_i a_i\vert \phi_i \rangle\]
-
-<p>여기서 $a_i$는 i번째 확률 진폭(Probability Amplitude), $\vert \phi \rangle_i$는 i번째 직교 규격화된 고유 함수이다.</p>
-:ET
