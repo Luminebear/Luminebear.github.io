@@ -1,6 +1,6 @@
 ---
 title: "이탈리아 박사과정 입학기 - DoV 공증"
-tags: [phd, visa, DoV]
+tags: [phd, visa, DoV, studying_abroad]
 categories: phd
 mathjax: false
 toc: true
