@@ -92,9 +92,10 @@ Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글�
 하는 수 없이 직접 방문했다.
 
 <figure>
-<a href="/assets/images/pmvisit1.jpg"><img src="/assets/images/pmvisit1.jpg" height="50%"></a>
+<a href="/assets/images/pmvisit1.jpg"><img src="/assets/images/pmvisit1.jpg" style="max-width: 50%;"></a>
 <figcaption>PDS 등록을 위해 준비한 문서들...</figcaption>
 </figure>
+{: .text-center}
 
 사진을 따로 촬영하지 않았지만, 방문 전 따라갈 항목은 아래와 같다.
 
@@ -110,10 +111,11 @@ Questura 방문 전 챙겨야 할 서류는 다음과 같다. 이전 게시글�
 많이 기다려야 겠구나... 하며 대기했다.
 
 <figure class="half">
-    <a href="/assets/images/pmvisit2.jpg"><img src="/assets/images/pmvisit2.jpg"></a>
-    <a href="/assets/images/pmvisit3.jpg"><img src="/assets/images/pmvisit3.jpg"></a>
+    <a href="/assets/images/pmvisit2.jpg"><img src="/assets/images/pmvisit2.jpg" style="max-width: 50%;"></a>
+    <a href="/assets/images/pmvisit3.jpg"><img src="/assets/images/pmvisit3.jpg" style="max-width: 50%;"></a>
     <figcaption>제공받은 번호표와 대기명단</figcaption>
 </figure>
+{: .text-center}
 
 ## 서류 제출과 카운터 인터뷰
 > "Pi ventisei!"

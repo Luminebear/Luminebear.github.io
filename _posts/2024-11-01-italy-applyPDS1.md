@@ -106,9 +106,10 @@ Modulo 1은 총 8페이지로 구성되어 있으며, 신규신청의 경우 1�
 실제 작성한 Modulo 1의 첫 페이지는 다음과 같다. 
 
 <figure>
-<a href="/assets/images/pmreal.jpg"><img src="/assets/images/pmreal.jpg"></a>
+<a href="/assets/images/pmreal.jpg"><img src="/assets/images/pmreal.jpg" style="max-width: 50%;" /></a>
 <figcaption>실제 작성한 Modulo의 첫 페이지</figcaption>
 </figure>
+{: .text-center}
 
 나는 Modulo 1의 3페이지까지 작성을 완료하고 우체국을 방문했다.
 

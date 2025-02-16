@@ -2,6 +2,9 @@
 title: "이탈리아 박사과정 입학기 - DoV 공증"
 tags: [phd, visa, DoV, studying_abroad]
 categories: phd
+sidebar:
+  nav: "docs"
+last_modified_at: 2025-02-17
 mathjax: false
 toc: true
 toc_label: Table of Contents
@@ -41,6 +44,9 @@ published: true
 본인이 어떤 학위수준(고등학교/학사/석사/박사 등)을 증명하냐에 따라서 필요한 서류가 상이할 수 있으며, 자세한 필요서류는 대사관 홈페이지에서 확인하도록 하자.
 '석사' 학위에 대한 증명을 기준으로, DoV 발급시 필요한 서류는 다음과 같다.
 
+{% capture notice-2 %}
+**DoV 발급 필요서류 목록**
+
 1. 신청서 (모든 항목기입)
 2. 국문기본증명서 1 부 (동사무소 또는 구청에서 발급)
 3. 여권사본
@@ -48,6 +54,8 @@ published: true
 5. 학위수여증명서의 이탈리아어 번역문 (반드시 대사관 공인 번역사에게 의뢰) 원본 + 사본
 6. 영문학위수여증명서 (입학년월일과 학위명 명시)
 7. 영문성적증명서
+{% endcapture %}
+<div class="notice--info">{{ notice-2 | markdownify }}</div>
 
 일부 서류의 경우 원본과 사본을 동시에 요구하는데, 이는 나중에 DoV 발급시 원본서류 일부를 같이 첨부해서 돌려주기 때문이다.
 각 필요서류를 발급받는 방법은 다음과 같다.
@@ -55,17 +63,19 @@ published: true
 ## 신청서
 > 1번부터 5번까지의 과정을 생략하고 싶다면: [서류 및 번역 공증](https://ambseoul.esteri.it/ko/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/traduzione-e-legalizzazione-dei-documenti/)
 
-1. 주한이탈리아대사관 웹사이트에 접속하자. (https://ambseoul.esteri.it)
+1. 주한이탈리아대사관 웹사이트에 접속하자. [https://ambseoul.esteri.it](https://ambseoul.esteri.it)
 2. 상단의 '영사과 및 비자 업무' 선택
 3. 페이지 접속후 (PC기준) 오른쪽 메뉴에서 "외국인을 위한 서비스" 선택
 4. 다시 오른쪽 메뉴에서 "서류 및 번역 공증" 선택 
 5. 본문 내용 중 "학력가치확인서" 또는 "DICHIARAZIONE DI VALORE" 클릭여 신청서 다운로드
 
 ## 국문기본증명서
-이탈리아는 신기하게도 곳곳에서 공무집행시 서인의 출생지를 꼭 묻는 경우가 있다. 우리나라로 가져오면 '등록기준지 (본적)'에 해당된다. 기본적으로 대한민국 주민등록증에는 이러한 정보가 명시되지 않기에, 본인 앞 국문기본증명서를 요구하는 것으로 보인다.
+이탈리아는 신기하게도 곳곳에서 공무집행시 본인의 출생지를 꼭 묻는 경우가 있다. 우리나라로 가져오면 '등록기준지 (본적)'에 해당된다. 기본적으로 대한민국 주민등록증에는 이러한 정보가 명시되지 않기에, 본인 앞 국문기본증명서를 요구하는 것으로 보인다.
 
-국문기본증명서는 대한민국 정부24에서 검색하거나, 또는 본 업무는 대법원관할이므로 전자가족관계등록시스템에 접속 (https://efamily.scourt.go.kr)하여 인쇄하도록 하자. 2024년 기준 PDF저장 가능.
+국문기본증명서는 대한민국 정부24에서 검색하거나, 또는 본 업무는 대법원관할이므로 전자가족관계등록시스템에 접속 하여 인쇄하도록 하자. 2024년 기준 PDF저장 가능.
 
+[대법원 전자가족관계등록시스템](https://efamily.scourt.go.kr){: .btn .btn--primary .btn--large}
+{: .text-center}
 ## 여권사본
 당연하지만 본인 개인정보가 명시된 면의 여권 사본을 인쇄하여 지참하자.
 
@@ -78,7 +88,10 @@ published: true
 물론 서울권에 거주하고 있다면 업무시간에 맞춰서 아포스티유 발급기관에 방문하면 된다.
 하지만 그 외의 경우라면? **무조건 아포스티유를 발급하는 기관에 우편 배송**으로 서류발급을 진행해야 한다.
 아포스티유 발급은 어떠한 공공기관에도 위탁 업무처리가 불가능하며 재외동포청에서 관할업무를 진행하고 있다.
-아포스티유와 관련한 설명과 발급절차는 재외동포청 사이트에서 안내하고 있으니 여기 들어가서 절차를 밟도록 하자 ([링크 바로가기](https://oka.go.kr/oka/services/info/apostille/)).
+아포스티유와 관련한 설명과 발급절차는 재외동포청 사이트에서 안내하고 있으니 여기 들어가서 절차를 밟도록 하자.
+
+[재외동포청 아포스티유 정보](https://oka.go.kr/oka/services/info/apostille/){: .btn .btn--primary .btn--large}
+{: .text-center}
 
 신청일 기준 나는 부산에 거주하고 있었기 때문에 단순히 아포스티유 발급만으로 방문하기에는 시간적+재정적으로 낭비이기에 우편으로 진행했다.
 대한민국 공공기관 답게 일은 신속하게 처리되었고, 신청 문서 전달 1일 + 공문 처리 1일 + 아포스티유 부착 문서 수령 1일 으로 총 **3일 소요**되었다.
@@ -89,7 +102,7 @@ published: true
 참고로 번역해야할 서류는 **한국어로 작성된 학위수여증명서**이며 안내사항에도 나와있듯 **반드시 대사관 공인 번역사에게 의뢰**해야 한다.
 나는 이메일로 직접 연락하여 진행하였고 번역비용은 어느 번역사에 의뢰하든 동일요금으로 책정되어 있는 듯 하다. 자세한 비용은 공개할 수 없지만 적어도 대행사에 맡기는 것보다는 저렴하다고 말할 수 있다.
 
-번역사 명단은 [서류 및 번역 공증](https://ambseoul.esteri.it/ko/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/traduzione-e-legalizzazione-dei-documenti/) 게시글에서 확인하면 된다.
+번역사 명단은 이탈리아 대사관 사이트에서 **서류 및 번역 공증** 게시글에서 확인하면 된다. [사이트 바로가기](https://ambseoul.esteri.it/ko/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/traduzione-e-legalizzazione-dei-documenti/){: .btn .btn--info}
 주기적으로 업데이트 되고 있으니 반드시 해당 게시글에서 확인하여 개인연락을 취해 문서번역을 의뢰하도록 하자.
 마찬가지로 본인은 부산에 거주하고 있었기 때문에 번역사와 일에 대해 조율하면서 다음과 같이 업무를 진행했다.
 

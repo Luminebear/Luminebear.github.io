@@ -11,15 +11,21 @@ docs:
   - title: Physics
     url: /categories/physics
     children:
-      - title: "Quantum Computing"
+      - title: "Quantum Computing / 양자컴퓨팅"
         url: /tags/#qc
-      - title: "Quantum Information"
+      - title: "Quantum Information / 양자정보"
         url: /tags/#qi
 
   - title: PhD
     url: /categories/phd
     children:
-      - title: "Studying abroad"
+      - title: "Studying abroad / 유학정보"
         url: /tags/#studying-abroad
-      - title: "University of Trento"
+      - title: "University of Trento / 트렌토 대학"
         url: /tags/#unitn
+
+  - title: Travel
+    url: /categories/travel
+    children:
+      - title: "이탈리아"
+        url: /tags/#travel-italy
