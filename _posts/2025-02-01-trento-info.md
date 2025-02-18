@@ -1,6 +1,6 @@
 ---
 title: "트렌토 여행하기 1 - 일반"
-tags: [Trento]
+tags: [travel-Italy, Trento]
 categories: travel
 sidebar:
   nav: "docs"

@@ -1,5 +1,5 @@
 ---
-title: "이탈리아 박사과정 입학기 - 수령"
+title: "이탈리아 유학, 박사과정 입학기 - 수령"
 tags: [phd, visa, DoV, studying_abroad]
 categories: phd
 sidebar:

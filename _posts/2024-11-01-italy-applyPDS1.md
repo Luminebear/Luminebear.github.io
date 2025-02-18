@@ -1,5 +1,5 @@
 ---
-title: "이탈리아 박사과정 입학기 - 체류허가증 신청 1"
+title: "이탈리아 박사과정 유학 생활기 - 체류허가증 신청 1"
 tags: [phd, italy, studying_abroad]
 categories: phd
 last_modified_at: 2024-12-29
