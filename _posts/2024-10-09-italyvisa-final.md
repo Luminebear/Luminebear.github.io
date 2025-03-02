@@ -56,7 +56,7 @@ published: true
 {% endcapture %}
 <div class="notice--primary">{{ notice-2 | markdownify }}</div>
 
-를 수령했다.
+를 가져와 내게 주었다.
 대사관 직원분은 모든 서류를 주며 간략하게 입국이후 해야할 절차에 대하여 안내를 해주었고, 특히 체류허가 신청시 학교입학을 증명해야 하기때문에 제출한 Universitaly 서류를 챙겨라고 안내받았다.
 Universitaly 서류는 대사관에서 인증하는 스티커 및 도장이 날인되어 있었다.
 

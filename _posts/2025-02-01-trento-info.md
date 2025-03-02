@@ -4,7 +4,7 @@ tags: [travel-Italy, Trento]
 categories: travel
 sidebar:
   nav: "docs"
-last_modified_at: 2025-02-16
+last_modified_at: 2025-03-02
 mathjax: false
 toc: true
 toc_label: Table of Contents
@@ -143,10 +143,29 @@ published: true
 <div class="notice--success">{{ notice-2 | markdownify }}</div>
 
 # 트렌토 시내 교통
-업데이트 예정.
+트렌토는 도시의 규모가 그렇게 큰 편은 아니라서 메트로나 트램등의 교통시설은 없다.
+프로빈차 규모에서 살펴보면, 트렌토에서는 
+
+1. 시내(Urbano)권역 버스 
+2. 시외(Extraurbano)권역 버스
+3. 일반 국철 기차 및 FTM 노선
+4. 트렌토 - 사르다냐(Sardagna)간 케이블카
+
+가 운영되고 있다.
+여기서 '시외권역 버스'란 Flixbus와 같이 큰 도시간 연결하는 버스가 아닌 프로빈차 내 도시를 연결하기 위한 서비스로, 직통이 아닌 중간중간 버스 정류장에서 정차한다.
+시외버스와 같은 좌석버스이긴 하지만 좌석지정은 되어 있지 않다. 
+
+대중교통 서비스는 [Trentino Trasporti](https://www.trentinotrasporti.it/)에서 버스와 일부 구간 이탈리아 국철, 그리고 트렌토 내 특수 철도인 트렌토 - 말레 - 메자나 구간 (Ferrovia Trento-Malé-Mezzana (FTM))을 운영하고 있으며, 동시에 국철구간은 트렌이탈리아에 의해 운영된다.
+
+버스노선과 기차 운영노선은 구글맵스에서 확인할 수 있지만, 시내 교통 지도는 따로 없었으나 [최근에 우리학교의 학생들이 영국 Tube 노선도를 참고하여 버스와 근처 기차 노선을 포함한 지도를 만들어서 배포](https://mag.unitn.it/storie/121255/una-tube-map-per-trento)하고 있어 참고하면 좋다.
+
+[지도 다운로드 받기](https://mag.unitn.it/alfresco/download/workspace/SpacesStore/9f1d9f3a-5e70-401b-b6c4-0bd016be7769/Mappa%20bus.pdf){: .btn .btn--primary .btn--large}
+{: .text-center}
+
+버스 시간대와 기차 시간대는 실시간으로 구글맵스에 업데이트 되어서 운영사 페이지에서 시간을 참고할 필요는 없지만, 간혹 파업(strike)으로 운영이 멈추는 경우가 종종 있어 이런 경우는 확인이 필요하다.
 
 # 볼거리 정보
-업데이트 예정.
+자세한 정보는 업데이트 예정.
 
 
 [^1]: 대한민국 행정 구분에 따르면 '도'급에 해당.
