@@ -4,7 +4,7 @@ tags: [phd, italy, studying_abroad]
 categories: phd
 sidebar:
   nav: "docs"
-last_modified_at: 2024-12-29
+last_modified_at: 2025-03-04
 mathjax: false
 toc: true
 toc_label: Table of Contents
@@ -158,3 +158,7 @@ Questra를 방문한 후 PDS의 진행상황은 이탈리아 Polizia di Stato [P
 
 웹페이지를 접속하게 되면 다음과 같이 코드를 입력하는 창이 나타난다.
 File number의 경우 PDS접수를 완료하고 나면, 다시 받은 Ricevuta에 숫자와 문자를 기입해주는데, 이 숫자와 문자를 입력하면 현재 진행상황을 알 수 있다. 
+
+# 수령 후기
+Questura 방문이후 약 2달 정도 까먹은 채 기다린 끝에, 방문하라는 문자가 발송되었고, 성공적으로 수령했다!
+수령 후기는 다음 게시글로 넘긴다. [이탈리아 박사과정 유학 생활기 - 체류허가증 수령](/phd/italy-applyPDS-final)
