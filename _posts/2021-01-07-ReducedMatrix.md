@@ -1,34 +1,47 @@
 ---
 title: "얽혀있는 공간의 밀도 행렬"
-tags: [Phyiscs, QuantumMechanics, qi, 물리학, 양자역학, 양자정보] # 태그 입력
+tags: [Phyiscs, QuantumMechanics, qi] # 태그 입력
 categories: Physics
+sidebar:
+  nav: "docs"
+last_modified_at: 2025-03-15
 mathjax: true # MathJax 사용을 위한 태그
 image:
   path: /_images/abstract-3.jpg
   feature: abstract-3.jpg
+toc: true
+toc_label: Table of Contents
+toc_sticky: true
 comments: true
 published: true
-toc: true
-toc_sticky: true
 ---
 
-앞의 게시글에서는 pure state와 mixed state가 어떤 차이가 있는 지 알아보았다. 이번에는 pure state에서 기술하되, 
-전체 system 이 Hilbert space 이고 subsystem 이 A와 B로 존재할 때, density matrix가 어떻게 나타나는지 살펴보고자 한다. 
+앞의 게시글 ["순수 상태와 혼합 상태"](/physics/PureandMixed/)에서는 pure state와 mixed state가 어떤 차이가 있는 지 알아보았다.
+이번에는 양자 상태를 이루는 Hilbert space가 composite system, 즉 여러 시스템으로 이루어져 있는 경우 density matrix가 어떻게 기술되고, 어떤 특성을 가지는 지 살펴보고자 한다.
 
 ## 개요
-먼저 주어진 조건의 Hilbert space 를
+먼저 양자계를 표현하는 공간은 Hilbert space으로 N차원 복소공간 $\mathbb{C}^N$에서 $N=2$인 경우로 기술된다. 
+즉 Hilbert space $\mathcal{H} \in \mathbb{C}^2$ 이다.
+이러한 Hilbert space가 composite system으로 구성되어, 하위계(subsystem) 이 A와 B로 존재할 때, density matrix가 어떻게 나타나는지 살펴본다. 
+주어진 조건에서 Hilbert space 를
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A\otimes\mathcal{H}_B
 $$
 
-으로 기술할 수 있다. 그리고 이와 같은 경우에는 A system 과 B system 의 unit vector 로 얽혀있는 파동함수는,
+으로 기술할 수 있다.
+여기서 연산자 $\otimes$는 두 벡터공간의 곱을 이루는 ['텐서곱'](https://en.wikipedia.org/wiki/Tensor_product)이다.
+Subsystem A와 B의 기저가 $\vert i_{\rm A} \rangle, \vert j_{\rm B} \rangle$으로 기술될 때,
+pure state의 composite system basis $\vert \psi_{\rm AB} \rangle$는
 
 $$
-\vert\psi_{AB}\rangle = \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle
+\vert\psi_{AB}\rangle = \sum_{i,j}{C_{ij}}\vert{i}_{\rm A}\rangle \otimes \vert{j}_{\rm B}\rangle
 $$
 
-이다. 이를 pure state 의 density matrix 의 정의에 따라 적어보면,
+이 때 계수 ${C_{ij}}$는 복소수이며 $\vert {C_{ij}} \vert^2 = 1$을 만족한다.
+참고로, $\vert{i}_{\rm A}\rangle \otimes \vert{j}_{\rm B}\rangle$는 텐서곱을 생략하여 편의상 $\vert{i}_{\rm A}\rangle \vert{j}_{\rm B}\rangle$ 또는 $\vert{i}_{\rm A} {j}_{\rm B}\rangle$으로 기술할 수 있으며, 앞으로 기술될 식에 대해서는 텐서곱 연산자를 생략한다.
+
+Pure state의 density operator의 정의에 따라 composite system의 density operator는
 
 $$
 \begin{aligned}
@@ -38,7 +51,8 @@ $$
 \end{aligned}
 $$
 
-이 때 파동함수의 bra와 ket의 index는 다르게 구성됨에 주의하자. 이제 여기서 A나 B의 density matrix 는 어떻게 구하는가? 이 때 사용되는
+이 때 파동함수의 bra와 ket의 index는 다르게 구성됨에 주의하자. 
+이제 여기서 A나 B의 density matrix 는 어떻게 구하는가? 이 때 사용되는
 정의가 바로 **환산 밀도 행렬 (Reduced Density Matrix)**이다.
 
 {% capture notice-2 %}
@@ -48,28 +62,30 @@ $$
 
 $$
 \begin{aligned}
-\rho_A = \text{tr}_B\vert \psi_{AB} \rangle \langle \psi_{AB} \vert \\
-\rho_B = \text{tr}_A\vert \psi_{AB} \rangle \langle \psi_{AB} \vert
+\rho_A = {\rm Tr}_B\vert \psi_{AB} \rangle \langle \psi_{AB} \vert \\
+\rho_B = {\rm Tr}_A\vert \psi_{AB} \rangle \langle \psi_{AB} \vert
 \end{aligned}
 $$
 
-여기서 tr은 **대각합 (Trace, 트레이스)**이다.
+여기서 Tr은 **대각합 (Trace, 트레이스)**이다.
 {% endcapture %}
 <div class="notice--info">{{ notice-2 | markdownify }}</div>
 
-식을 간단하게 해석해보면, $\rho_A$는 density matrix에서 B의 대각 성분을 모두 합하고 남은 것들, 즉 A만을 의미한다. 이제 앞에서 주어진 density matrix $\rho_{AB}$로 A에 대한 reduced density matrix를 구해보도록 하자.
+식을 간단하게 해석해보면, $\rho_A$는 density matrix에서 B의 대각 성분을 모두 합하고 남은 것들, 즉 A만을 의미한다. 
+
+앞에서 주어진 density matrix $\rho_{AB}$로 A에 대한 reduced density matrix를 구해보도록 하자.
 
 $$
 \begin{aligned}
-\rho_A &= Tr_B \rho_{AB} \\
-&= Tr_B \left( \sum_{i,j}{C_{ij}}\vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}_A\vert\langle{l}_B\vert \right) \\
+\rho_{\rm A} &= {\rm Tr}_{\rm B} \rho_{\rm AB} \\
+&= {\rm Tr}_{\rm B} \left( \sum_{i,j}{C_{ij}}\vert{i}_{\rm A}\rangle\vert{j}_B\rangle \right) \left( \sum_{k,l}{C_{kl}^*}\langle{k}_A\vert\langle{l}_B\vert \right) \\
 \end{aligned}
 $$
 
 이 때 B에 대한 trace 는 아래와 같은 관계식을 만족한다.[^1]
 
 $$
-Tr_B(\vert{j}_B\rangle\langle{l}_B\vert) = \delta_{jl}
+{\rm Tr}_{\rm B}(\vert{j}_{\rm B}\rangle\langle{l}_{\rm B}\vert) = \delta_{jl}
 $$
 
 그러므로 $\rho_A$는
@@ -77,17 +93,18 @@ $$
 $$
 \begin{aligned}
 \rho_A &= \sum_{i,j}\sum_{k,l} \delta_{jl} {C_{ij}}{C_{kl}^*} \left( \vert{i}_A\rangle\vert{j}_B\rangle \right) \left( \langle{k}_A\vert\langle{l}_B\vert \right) \\
-&= \sum_{i,j}\sum_{k} {C_{ij}}{C_{kj}^*} \left( \vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \langle{k}\vert_A\langle{j}\vert_B \right)
+&= \sum_{i,j}\sum_{k} {C_{ij}}{C_{kj}^*} \left( \vert{i}\rangle_A\vert{j}\rangle_B \right) \left( \langle{k}\vert_A\langle{j}\vert_B \right) \\
+&= 
 \end{aligned}
 $$
 
-이 때 여기서 completeness relation
+이 때 completeness relation
 
 $$
 \sum_{j} \vert j_B \rangle \langle j_B \vert = \mathbf{I}
 $$
 
-을 만족하기 때문에 최종적으로 A의 reduced density matrix는
+이므로 최종적으로 A의 reduced density matrix는
 
 $$
 \rho_A = \sum_{i,j,k} {C_{ij}}{C_{kj}^*} \vert{i}_A\rangle \langle{k} \vert_A
@@ -140,4 +157,4 @@ $$
 
 으로 A와 B에 대한 reduced denstiy matrix를 구했다. 지금과 같은 상황에서는 두 공간이 다르지만 동일한 식을 구성하는 모습을 보인다.
 
-[^1]: J.J. Sakurai, Jim Napolitano, 'Modern Quantum Mechanics', 1.5 Change of Basis - Transformation Matrix 참조.
+[^1]: 이 식에 대해서는 J.J. Sakurai, Jim Napolitano, 'Modern Quantum Mechanics', 1.5 Change of Basis - Transformation Matrix 을 참조할 것.

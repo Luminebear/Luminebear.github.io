@@ -1,15 +1,19 @@
 ---
 title: "슈미트 분해"
-tags: [Phyiscs, Information, qi, 물리학, 정보, 양자정보] # 태그 입력
+tags: [Phyiscs, QuantumMechanics, qi] # 태그 입력
 categories: Physics
+sidebar:
+  nav: "docs"
+last_modified_at: 2025-03-15
 mathjax: true # MathJax 사용을 위한 태그
 image:
   path: /_images/abstract-3.jpg
   feature: abstract-3.jpg
+toc: true
+toc_label: Table of Contents
+toc_sticky: true
 comments: true
 published: true
-toc: true
-toc_sticky: true
 ---
 
 슈미트 분해(Schmidt Decomposition)는 양자 얽힘(Quantum Entanglement)에서 가장 중요한 수학적 기술 중 하나로, 이것을 이용하면 ket vector를 최소화된 항으로 만들어 줄 수 있다.
@@ -279,6 +283,12 @@ C &=  2\vert bc-ad \vert
 $$
 
 으로 구해진다. 여기서 C로 대치한 값이 바로 **Concurrence** 이다. 즉 다시 말해 행렬의 Off-Diagonal 성분이 concurrence가 된다.
+
+## References
+* W. K. Wootters, “Entanglement of Formation of an Arbitrary State of Two Qubits”,  [Physical Review Letters 80, 2245–2248 (1998)](https://doi.org/10.1103/PhysRevLett.80.2245)
+* J. Um, H. Park, and H. Hinrichsen, "Entanglement versus mutual information in quantum spin chains", [Journal of Statistical Mechanics: Theory and Experiment 2012, P10026 (2012)](https://doi.org/10.1088/1742-5468/2012/10/P10026)
+* Y. Kwon, S. K. Baek, and J. Um, "Correlation between concurrence and mutual information", [Journal of Statistical Mechanics: Theory and Experiment 2022, 093104 (2022)](https://doi.org/10.1088/1742-5468/ac8e5b).
+
 
 [^1]: 이 수가 상수 값인 1/2을 의미하는 것이 아님을 상기하자. 
 [^2]: 이것은 Matrix Representation으로 간주할 수 있다.
