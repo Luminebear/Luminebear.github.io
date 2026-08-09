@@ -1,8 +1,39 @@
 <!-- start custom head snippets -->
 {% if site.minimal_mistakes_skin2 %}
-<button type="button" onclick="node1=document.getElementById('theme_source');node2=document.getElementById('theme_source_2');if(node1.getAttribute('rel')=='stylesheet'){node1.setAttribute('rel', 'stylesheet alternate'); node2.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'dark');}else{node2.setAttribute('rel', 'stylesheet alternate'); node1.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'light');} return false;">  
-  Change White/Dark theme
-</button>
+<link rel="stylesheet alternate" href="{{ '/assets/css/theme2.css' | relative_url }}" id="theme_source_2">
+<script>
+  (function () {
+    var lightTheme = document.querySelector('link[href$="/assets/css/main.css"]');
+    var darkTheme = document.getElementById('theme_source_2');
+
+    if (!lightTheme || !darkTheme) return;
+
+    lightTheme.id = 'theme_source';
+
+    function setTheme(theme) {
+      var useDarkTheme = theme === 'dark';
+      lightTheme.rel = useDarkTheme ? 'stylesheet alternate' : 'stylesheet';
+      darkTheme.rel = useDarkTheme ? 'stylesheet' : 'stylesheet alternate';
+      sessionStorage.setItem('theme', useDarkTheme ? 'dark' : 'light');
+    }
+
+    setTheme(sessionStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = 'Change White/Dark theme';
+      button.addEventListener('click', function () {
+        setTheme(lightTheme.rel === 'stylesheet' ? 'dark' : 'light');
+      });
+      document.body.insertBefore(button, document.body.firstChild);
+    });
+  }());
+</script>
+{% endif %}
+
+{% if page.mathjax %}
+  {% include mathjax-support.html %}
 {% endif %}
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
