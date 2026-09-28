@@ -1,0 +1,36 @@
+name: Jekyll build validation
+
+on:
+  push:
+    branches:
+      - maintenance/pages-build-validation
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      JEKYLL_ENV: production
+      BUNDLE_FROZEN: "true"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Ruby and install locked gems
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "4.0.6"
+          bundler: "2.5.23"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle _2.5.23_ exec jekyll build --trace
