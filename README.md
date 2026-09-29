@@ -1,163 +1,112 @@
-# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+# Luminebear's Imagination Hub
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
+Operations repository for a personal Jekyll blog: https://luminebear.github.io
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+## Current setup
 
-:sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
+- Minimal Mistakes: `4.21.0`, pinned in Gemfile.
+- Jekyll: `4.3.4`, as recorded in the current Gemfile.lock.
+- Ruby: `4.0.6`; Bundler: `2.5.23`.
+- Local build and preview tested on Fedora 44 Server.
+- GitHub Actions uses `ubuntu-24.04` with the Ruby and Bundler versions above.
+- Theme configuration: `theme: minimal-mistakes-jekyll` in `_config.yml`.
+- Default layouts, includes, Sass, and JavaScript are supplied by the theme gem.
+- Site content, settings, and required custom overrides are maintained in this repository.
+- Gemfile and Gemfile.lock define the dependencies. The theme has not yet been upgraded.
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) to continue developing and maintaining it.**
+## Build and preview
 
-[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
+Run these commands from the repository root in a Linux shell.
 
-**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
+```bash
+bundle _2.5.23_ check
+```
 
-[![Minimal Mistakes live preview][2]][1]
+On a new environment with missing dependencies, review the setup and run
+`bundle _2.5.23_ install` to install the locked dependencies.
+Do not run `bundle update` for routine writing or builds.
 
-[1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: screenshot.png (live preview)
+Standard build and preview commands:
 
-![layout examples](screenshot-layouts.png)
+```bash
+JEKYLL_ENV=production bundle _2.5.23_ exec jekyll build --trace
+bundle _2.5.23_ exec jekyll serve --host 127.0.0.1 --port 4000
+```
 
-## Notable features
+In the tested Fedora 44 Server environment, a non-interactive SSH session could
+not locate the `jekyll` executable even though the required gems were installed.
+Before reinstalling gems or changing settings, use the installed executable
+directly. This invocation was verified for both build and preview:
 
-- Bundled as a "theme gem" for easier installation/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data.
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and [utterances](https://utteranc.es/)).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Brazilian Portuguese (Português brasileiro), Catalan, Chinese, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
+```bash
+jekyll_path=$(bundle _2.5.23_ show jekyll)
+JEKYLL_ENV=production bundle _2.5.23_ exec ruby "$jekyll_path/exe/jekyll" build --trace
+bundle _2.5.23_ exec ruby "$jekyll_path/exe/jekyll" serve --host 127.0.0.1 --port 4000
+```
 
-## Skins (color variations)
+Open http://127.0.0.1:4000 on the machine running the preview.
+For a remote server, use VSCode port forwarding or an SSH tunnel configured
+for your own host. Keep the preview bound to the loopback interface.
 
-This theme comes in nine different skins (in addition to the default one).
+If port 4000 is occupied, select another port and adjust forwarding accordingly.
+Stop the server and any tunnel with Ctrl+C in their respective terminals.
+Restart the preview server after changing `_config.yml`.
+The old `rake preview` task targeted the theme's test site and is no longer used.
+An npm build is not required to regenerate theme JavaScript.
 
-| `air` | `contrast` | `dark` |
-| --- | --- | --- |
-| [![air skin](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive-large.png) | [![contrast skin](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive-large.png) | [![dark skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive-large.png) |
+## Review and deployment
 
-| `dirt` | `mint` | `sunrise` |
-| --- | --- | --- |
-| [![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive-large.png) | [![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive-large.png) | [![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive-large.png) |
+1. Create a working branch from the latest master and make small changes.
+2. Build locally, check the rendered site, commit, and publish the branch.
+3. Open a pull request targeting master and confirm the GitHub Actions build succeeds.
+4. Merge after review and approval. A push to master triggers build and deployment.
+5. Verify the public site as well as the Actions results.
 
-| `aqua` | `neon` | `plum` |
-| --- | --- | --- |
-| [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
+The workflow is defined in `.github/workflows/jekyll.yml`.
+GitHub Pages uses GitHub Actions as its deployment source.
+Pull requests run the build but skip deployment.
+A push to an ordinary working branch does not trigger this workflow by itself;
+open a pull request for validation.
+The current workflow also allows pushes to `maintenance/pages-build-validation`
+and manual runs. Deployment is restricted to master push events or manual runs
+on master.
+The `runs-on: ubuntu-24.04` setting selects the GitHub runner; it does not change
+the local server's operating system.
 
-## Demo pages
+## Customizations to preserve
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tag. |
+| Location | Purpose |
+| --- | --- |
+| `_includes/head/custom.html` | Dark-mode toggle, sessionStorage restoration, conditional MathJax loading |
+| `_includes/mathjax-support.html` | MathJax configuration and loading; enabled by `mathjax: true` in a post |
+| `assets/css/main.scss` | Default dirt skin, #fff background, #1a1a1a text, font loading |
+| `assets/css/theme2.scss` | Dark skin and font loading |
+| `_sass/custom/_variables.scss` | MaruBuri, NanumSquare, NanumSquareRound, D2 Coding font families; x-large 1366px and max-width 1600px |
+| `_sass/custom/_typography.scss` | Responsive font sizes of 14/16/18/18px |
+| `_sass/custom/_dark.scss` | Dark-theme icon color adjustments |
+| `_data/navigation.yml` | Site navigation |
 
-Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
+Posts are stored in `_posts/`; images and attachments are in `assets/images/`
+and `files/`. Avoid copying the entire theme back into the repository or editing
+installed gem files directly.
 
-[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
-[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
-[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
-[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
-[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
-[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
-[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
-[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+## Before upgrading the theme
 
-## Installation
+- Check the working tree and baseline commit; use a separate branch.
+- Review Gemfile version changes together with Gemfile.lock changes.
+- Verify dark mode and stored preferences, equations, fonts, responsive sizes, and widths.
+- Check search, navigation, the table of contents, image popups, posts, categories, and tags.
+- Check build output, sitemap, feed, GitHub Actions results, and the deployed site.
+- Resolve conflicts with existing customizations explicitly rather than removing them silently.
+- Distinguish existing warnings, such as Sass deprecations, from new errors.
 
-There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
+## Theme attribution and notices
 
-### Gem-based method
-
-With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
-
-This allows for easier installation and updating as you don't have to manage any of the theme files. To install:
-
-1. Add the following to your `Gemfile`:
-
-   ```ruby
-   gem "minimal-mistakes-jekyll"
-   ```
-
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
-
-   ```bash
-   bundle
-   ```
-
-3. Set the `theme` in your project's Jekyll `_config.yml` file:
-
-   ```yaml
-   theme: minimal-mistakes-jekyll
-   ```
-
-To update the theme run `bundle update`.
-
-### Remote theme method
-
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
-
-To install:
-
-1. Create/replace the contents of your `Gemfile` with the following:
-
-   ```ruby
-   source "https://rubygems.org"
-
-   gem "github-pages", group: :jekyll_plugins
-   gem "jekyll-include-cache", group: :jekyll_plugins
-   ```
-
-2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
-
-3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
-
-   ```bash
-   bundle
-   ```
-
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.21.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
-
-**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
-
-## Usage
-
-For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
-
----
-
-## Contributing
-
-Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
-
-For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
-
-### Pull Requests
-
-When submitting a pull request:
-
-1. Clone the repo.
-2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`).
-3. Open a pull request on GitHub and describe the feature or fix.
-
-Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
+This blog uses Michael Rose's [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
+The original Credits and License notices are preserved below.
+These notices concern the theme and its included components; they do not separately
+grant permission to reuse all personal posts or images.
+The repository's [LICENSE](LICENSE) file is also retained.
 
 ---
 
