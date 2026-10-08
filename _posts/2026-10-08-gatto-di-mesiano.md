@@ -1,7 +1,7 @@
 ---
 title: "트렌토 Mesiano의 명물 고양이"
 tags: [italy, trento, mesiano]
-categories: 
+categories: daily
 sidebar:
   nav: "docs"
 last_modified_at: 2026-10-08
