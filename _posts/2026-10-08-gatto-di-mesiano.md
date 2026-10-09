@@ -39,20 +39,20 @@ gallery-2:
     image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQT1OSWfTNLzToLErVc5w7y9AcJzgPMxWJSXbJhGlk8gj_A?width=1024
     alt: "placeholder image 1"
     title: "Canon EOS R6 Mark II | RF 35mm F1.8 MACRO IS STM | f/4 1/250 sec ISO 4000"
-  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQSq4yaf9dz6SqROs3k3Egg4AVYP4bw-jnx63JY6ogKyQVk?width=2560&height=1707
-    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQSq4yaf9dz6SqROs3k3Egg4AVYP4bw-jnx63JY6ogKyQVk?width=1024
+  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQQPpC0yIi6UTqNgQgApKtB3AaIrCcmGlizzvysuZi8e4ts?width=2560&height=1696
+    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQQPpC0yIi6UTqNgQgApKtB3AaIrCcmGlizzvysuZi8e4ts?width=1024
     alt: "placeholder image 2"
     title: "Canon EOS R6 Mark II | RF 35mm F1.8 MACRO IS STM | f/4 1/200 sec ISO 6400"
-  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQR-Ll5qyaKnTZdtdY1e-GGaAbR_TelnkeCPlH3xsix2-eM?width=2560&height=1707
-    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQR-Ll5qyaKnTZdtdY1e-GGaAbR_TelnkeCPlH3xsix2-eM?width=1024
+  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQSJNT89fqspSp3-SUWyLfeiARE2OfRWxGsPVAiL9ytOMZQ?width=2560&height=1696
+    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQSJNT89fqspSp3-SUWyLfeiARE2OfRWxGsPVAiL9ytOMZQ?width=1024
     alt: "placeholder image 3"
     title: "Canon EOS R6 Mark II | RF 35mm F1.8 MACRO IS STM | f/1.8 1/250 sec ISO 1600"
-  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQQ3bInaqfWbQIn7Piy_UtZkAUInOmpcIuSK0in9tvEYoLc?width=2560&height=1707
-    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQQ3bInaqfWbQIn7Piy_UtZkAUInOmpcIuSK0in9tvEYoLc?width=1024
+  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQRXGwYjAUv_TYZt78j2Q1P7AXsYqzZayzQ7pNeNZ4oGffo?width=2560&height=1696
+    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQRXGwYjAUv_TYZt78j2Q1P7AXsYqzZayzQ7pNeNZ4oGffo?width=1024
     alt: "placeholder image 2"
     title: "Canon EOS R6 Mark II | RF 35mm F1.8 MACRO IS STM | f/1.8 1/320 sec ISO 1600"
-  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQSbv83WOxZQRbrh6nO1-LmEARYYhHn2im8tcms78JXfoos?width=2560&height=1707
-    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQSbv83WOxZQRbrh6nO1-LmEARYYhHn2im8tcms78JXfoos?width=1024
+  - url: https://1drv.ms/i/c/312505b0dc7733c1/IQQfkQ1VEhSlQZqzvXOEBzknAQLpEcWJasv72qWkmOC5rsA?width=2560&height=1696
+    image_path: https://1drv.ms/i/c/312505b0dc7733c1/IQQfkQ1VEhSlQZqzvXOEBzknAQLpEcWJasv72qWkmOC5rsA?width=1024
     alt: "placeholder image 3"
     title: "Canon EOS R6 Mark II | RF 35mm F1.8 MACRO IS STM | f/1.8 1/250 sec ISO 1250"
 ---
@@ -103,7 +103,8 @@ gallery-2:
 사실 이 날의 뒷이야기가 있는데, 나는 이탈리아 트렌토에서 박사과정을 시작한 이후 처음으로 2025년 12월 한국에 처음으로 돌아갔었다.
 근데 하필 이탈리아로 돌아오는 날에 카메라를 놔두고 가는 바람에... 사진을 찍을 기회를 많이 잃었다.
 5개월을 카메라 없이 지내다가 스트레스가 상당히 쌓이는걸 느끼면서 도저히 버틸 수 없음을 느꼈고, 결국 카메라를 국제택배로 받으며 사진 찍는 것에 대해 감각을 잃지 않았는 지 테스트를 해볼겸 하여 찍은 사진이였다.
-참고로 이 날 사진을 찍으면서 알게된 인스타그램 계정도 있는데 다양한 사진들이 있으니 살펴보면 될 듯하다. [인스타그램 계정](https://www.instagram.com/ilgattodimesiano/?utm_source=ig_web_button_share_sheet)
+참고로 이 날 사진을 찍으면서 알게된 인스타그램 계정도 있는데 다양한 사진들이 있으니 살펴보면 될 듯하다. 
+[인스타그램 계정](https://www.instagram.com/ilgattodimesiano/?utm_source=ig_web_button_share_sheet){: .btn .btn--primary}
 
 마지막으로 며칠 전에 찍은 사진들을 올려보며 포스트 마무리. 트렌토를 방문할 일이 있다면 소소한 볼거리로 추천.
 
